@@ -16,16 +16,6 @@
 		"oAP": "\/.gitattributes",
 		"oF": 0
 		},
-	"\/anatomia.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/anatomia-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/anatomianorweskiego.sublime-project": {
 		"cB": 0,
 		"ft": 8192,
@@ -33,11 +23,21 @@
 		"oAP": "\/anatomianorweskiego.sublime-project",
 		"oF": 0
 		},
-	"\/anatomianorweskiego.sublime-workspace": {
+	"\/build\/anatomia.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/build\/anatomia-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/build\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/anatomianorweskiego.sublime-workspace",
+		"oAP": "\/build\/index.html",
 		"oF": 0
 		},
 	"\/framework_master\/.gitignore": {
@@ -310,9 +310,9 @@
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/index.html",
-		"oF": 1
+		"oA": 0,
+		"oAP": "\/build\/index.html",
+		"oF": 3
 		},
 	"\/scss\/anatomia.scss": {
 		"aP": 1,
@@ -322,7 +322,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/anatomia.css",
+		"oAP": "\/build\/anatomia.css",
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
