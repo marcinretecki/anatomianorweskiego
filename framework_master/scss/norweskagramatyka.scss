@@ -1,0 +1,413 @@
+//
+// NorweskaGramatyka.pl
+//
+
+// Variables
+@import "partials/variables";
+@import "partials/mixins";
+
+// Reset
+@import "partials/reset";
+
+//  Core
+@import "partials/scaffolding";
+@import "partials/typography";
+@import "partials/images";
+@import "partials/buttons";
+@import "partials/forms";
+
+//  Layout
+@import "partials/layout";
+@import "partials/grids";
+@import "partials/sections";
+
+@import "partials/navbar";
+@import "partials/ex";
+
+//  Utilities
+@import "partials/utilities";
+
+@import "partials/shame";
+
+
+//Media
+@import "partials/media";
+
+
+// Header
+.aid-header{
+  position: relative;
+}
+
+.aid-header--back {
+  width: 100%;
+
+  background: rgba( $dark, 0.33);
+}
+
+.aid-header--back .section-content {
+
+  padding-top: $space-6;
+  padding-bottom: $space-6;
+
+  @include for-tablet-portrait-up {
+
+    padding-top: $space-8;
+    padding-bottom: $space-8;
+
+  }
+}
+
+.aid-header-h1 {
+  margin-bottom: 0;
+}
+
+.aid-header--back .aid-header-h1 {
+  text-shadow: -1px 1px 1px rgba( 0,0,0,0.5 );
+}
+
+.aid-header-img {
+  max-width: 100%;
+  width: 188px;
+  width: calc( 188px + #{$space-2} );
+  display:block;
+  margin:0 auto $space;
+}
+
+.aid-header-artist,
+.aid-header-artist:visited,
+.aid-header-artist:hover {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  padding: $space-half;
+
+  color: $white;
+  font-size: 12px;
+  line-height: $line-0;
+  text-decoration: none;
+  font-style: italic;
+}
+.aid-header-artist:hover {
+  text-decoration: underline;
+}
+
+
+.aid-chat-bubble {
+  position: relative;
+
+  float: left;
+  clear: both;
+
+  max-width: 80%;
+  padding: $space-half $space;
+  margin: $space-half 0 $space-half 0;
+  border-radius: $space-half $space-half $space-half 0;
+  padding: 0.5rem;
+  background: $white;
+}
+
+.aid-chat-bubble--right {
+  float: right;
+
+  border-radius: $space-half $space-half 0 $space-half;
+
+  color: $white;
+  background: $green;
+}
+
+.aid-chat-bubble__emojione-svg {
+
+}
+
+
+// Module
+
+.aid-item {
+  position:relative;
+  width:100%;
+  border-bottom:1px solid $green;
+  border-radius:0;
+  padding-top:$space-4;
+  padding-bottom:$space-4;
+}
+
+.aid-h2{
+  margin:0 0 $space-2 0;
+  font-size:$size-3;
+  color:$green;
+  position:relative;
+}
+
+.aid-item h3{margin-top:$space-2;}
+
+.aid-item ul,.aid-item ol{margin:0 0 $space-2;padding:0 $space-2;font-size:$size-1;counter-reset:li;}
+.aid-item li{margin:0}
+.aid-item li:last-child ul,
+.aid-item li:last-child ol{margin-bottom:0;}
+
+.aid-item .aid-np{
+  padding:$space-half $space-2;
+  margin:0 0 $space-2;
+  border-top:3px solid $green;
+  border-radius:3px;
+  background:#fff;
+}
+.aid-np li{padding:0;list-style:none;background:none;}
+ol .aid-np, ul .aid-np{margin-left:-$space-2;margin-bottom:$space;}
+ol.aid-np li{position:relative;}
+ol.aid-np li:before{position:absolute;right:100%;counter-increment:li;content:counter(li) "." "\00a0";}
+.aid-item li + li{margin-top:$space-half;}
+
+.aid-item dt + dt{margin-top:$space-half;}
+.con{font-size:$size-2;text-align:left;margin:0}
+.aid-np dt + .con{margin-top:$space;}
+
+
+// Tables
+td,th{text-align:left;}
+.aid-table-wrapper {
+  overflow-y: auto;
+  -webkit-overflow-scrolling:touch;
+  margin:0 0 $space-2;
+}
+.aid-table {
+  width:100%;margin:0;border-collapse:collapse;background:$white;border-radius:3px;
+}
+.aid-table td,.aid-table th{padding:$space-half $space;margin:0;vertical-align:top}
+.aid-table td:first-child,.aid-table th:first-child{padding-left:$space-2;}
+.aid-table td:last-child,.aid-table th:last-child{padding-right:$space-2;}
+.aid-table thead th {
+  margin:0;
+  background:$green;
+  font-weight: 400;
+  color:#fff;
+}
+.aid-table thead tr:first-child th:first-child{border-top-left-radius:3px;}
+.aid-table thead tr:first-child th:last-child{border-top-right-radius:3px;}
+.aid-table tr{margin:0;}
+.aid-table tr + tr td,.aid-table tr + tr th{border-top:1px solid $beige;}
+.aid-table thead tr + tr th{border-top:1px solid $green-border;}
+.aid-table-border tr:first-child td{border-top:3px solid $green;}
+.aid-table-border tr:first-child td:first-child{border-radius:3px 0 0 0;}
+.aid-table-border tr:first-child td:last-child{border-radius:0 3px 0 0;}
+
+.aid-table-np td {
+  font-style: italic;
+  white-space: nowrap;
+}
+
+.aid-clean-head{height:3px;padding:0 !important;}
+
+
+// Aid Item Footer
+.aid-footer {
+  margin-top:$space-4;
+  position:relative;
+}
+.aid-footer h4 {
+  font-size: $size-1;
+}
+.aid-footer ul{
+  padding: 0;
+  margin: 0;
+}
+.aid-footer li {
+  padding-left: 0;
+}
+.aid-footer li::before {
+  display: none;
+}
+
+
+.aid-footer__faces-col {
+
+  @include for-tablet-portrait-up {
+    text-align: center;
+    float: right;
+  }
+}
+
+
+.aid-footer__faces {
+  position: relative;
+}
+
+.aid-btn-face {
+  padding: $space-half $space;
+}
+
+.emojione-svg {
+  position: relative;
+  top: -3px;
+
+  display: inline-block;
+  width: $space-2;
+  height: $space-2;
+  margin: 0 3px;
+
+  font-size: inherit;
+  vertical-align: middle;
+}
+
+.emojione-svg--chat {
+  height: ($size-1 * $line-1);
+  width: ($size-1 * $line-1);
+  transform: scale(1.1);
+}
+
+
+.aid-feedback-thanks {
+  transition: none;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+
+  display: none;
+
+  padding: $space;
+
+  border-radius: 3px;
+
+  background: $white;
+  text-align: center;
+  font-style: italic;
+  line-height: $space-2;
+}
+
+
+
+// Aid Main Footer
+.aid-section-footer{}
+.aid-section-footer li:before{background-color:$white;}
+.aid-section-footer-logo{margin-top:$space-2;color:$white;font:200 20px/1.25 $bariol;}
+.aid-section-footer-logo span{color:$blue-light;}
+.aid-section-footer ul li{margin-left:-$space;}
+
+// Buttons
+.btn {margin-right:0;}
+.btn-fb { background-color:#3b5998; color: $white; }
+.btn-fb:hover, .btn-fb:focus{ background-color:#3b5998;border-color:$dark; }
+.btn-tw { background-color:#55acee; color: $white; }
+.btn-tw:hover, .btn-tw:focus {background-color:#55acee;border-color:$dark; }
+
+
+
+
+.aid-hr{border-bottom:1px solid $green;border-radius:0;margin:$space-4 0 0;}
+
+
+.aid-list-section{position:fixed;top:0;bottom:0;left:0;width:25%;overflow-y:scroll;background:$green;
+  @media #{$m770}{
+    position:relative;width:auto;overflow:auto;
+  }
+}
+
+.aid-list{font-size:$size-0;margin:0;border-top:1px solid $green-border;border-bottom:1px solid $green-light;}
+
+.btn-aid-list{display:none;
+  @media #{$m770}{
+    display:block;position:fixed;right:0;bottom:0;left:0;border-radius:0;
+    margin:0;
+    background-color: $white;
+  }
+}
+
+
+
+
+
+p i:lang(no), li i:lang(no), dt i:lang(no){padding:1px 6px;border-radius:3px;background:$beige-hover;color:$green-border;}
+
+
+
+
+
+
+.aid-problems-list {
+  margin-bottom: $space;
+  background: $green;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.aid-problems-list--sublist {
+  margin: 0;
+  display: none;
+}
+
+.aid-problems-list__item {
+  display: block;
+  padding: $space $space-2;
+  margin: 0;
+  background-color: $green;
+  border: 1px solid $green-light;
+  border-width: 1px 0 0;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.aid-problems-list__item:focus, .aid-problems-list__item:hover {
+  background-color: $green-hover;
+  color: $white;
+}
+
+.aid-problems-list__item--first {
+  border-radius: 3px 3px 0 0;
+  border-width: 0;
+}
+
+.aid-problems-list__item--last {
+  border-radius: 0 0 3px 3px;
+}
+
+.aid-problems-list__item--sublist {
+  background-color: $dark;
+  border-color: $dark-light;
+}
+
+.aid-problems-list__item--sublist--first {
+    border-width: 0;
+}
+
+.aid-problems-list__item--sublist:focus, .aid-problems-list__item--sublist:hover {
+  background-color: $dark-hover;
+}
+
+
+
+
+.js__hidden .aid-item {
+  display: none;
+  opacity: 0;
+}
+
+.js__verb .aid-item__verb,
+.js__modale .aid-item__modale,
+.js__imperativ .aid-item__imperativ,
+.js__presens-perfektum .aid-item__presens-perfektum,
+.js__preteritum .aid-item__preteritum,
+.js__futurum .aid-item__futurum,
+.js__presens .aid-item__presens,
+.js__passiv .aid-item__passiv,
+.js__adjektiv .aid-item__adjektiv,
+.js__gradering .aid-item__gradering,
+.js__perfektum-partisipp .aid-item__perfektum-partisipp,
+.js__determinativ .aid-item__determinativ,
+.js__substantiv .aid-item__substantiv,
+.js__genitiv .aid-item__genitiv,
+.js__sideordning .aid-item__sideordning,
+.js__sporsmal .aid-item__sporsmal,
+.js__underordning .aid-item__underordning,
+.js__syntaks .aid-item__syntaks,
+.js__eiendomspronomen .aid-item__eiendomspronomen,
+.js__personlige-pronomen .aid-item__personlige-pronomen,
+.js__sporrepronomen .aid-item__sporrepronomen,
+.js__refleksive-pronomen .aid-item__refleksive-pronomen {
+  display: block;
+  opacity: 1;
+}

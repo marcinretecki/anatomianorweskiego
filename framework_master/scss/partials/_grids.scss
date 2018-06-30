@@ -1,0 +1,232 @@
+//
+//  New grid ideas
+//
+//  our main width is 1064px width 20px pad
+//  old grid made 16 x 64px stripes
+//  col-1 was never used, but col-7 was to create space between
+//  columns that should be half width but have background that doesn't touch
+//  thats why we had l-1-32 and r-1-32
+//
+//  new grid should come in 20px (1rem) multiplications to match out vertical rythm
+//  new grid should have main column suited for text (best line length on all devices)
+//  columns for sidebars, images, image-links
+//  easy full-width images
+
+//  think, what is needed, all articles view can help
+
+//
+.max-45 {
+  width: 45 * $space;
+  max-width: 100%;
+  //padding-left: $space;
+  //padding-right: $space;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//
+// Grid
+//
+
+.row {
+  overflow: hidden;
+  margin-left: (-$space);
+  margin-right: (-$space);
+}
+.col {
+  margin-left: (-$space);
+  margin-right: (-$space);
+}
+[class*='col-'] {
+  float: left;
+  display: block;
+  padding-left: $space;
+  padding-right: $space;
+}
+.col-15,
+.p-15 > p {
+  width: $col-15;
+}
+.col-14,
+.p-14 > p {
+  width: $col-14;
+}
+.col-13,
+.p-13 > p {
+  width: $col-13;
+}
+.col-12,
+.p-12 > p {
+  width: $col-12;
+}
+.col-11,
+.p-11 > p {
+  width: $col-11;
+}
+
+// OBS! Legacy code
+.col-10 {
+  width: $col-10;
+  padding-left: $space;
+  padding-right: $space;
+  @media #{$m770} {
+    width: auto;
+  }
+}
+.p-10 > p,
+.p-10 > section,
+.p-10 > object,
+.p-10 > blockquote,
+.p-10 > dl,
+.p-10 > ul,
+.p-10 > ol,
+.p-10 > h3,
+.p-10 > .ex,
+.p-10 > .trans,
+.p-10 > figure {
+  width: 35 * $space;
+  max-width: 100%;
+  padding-left: $space;
+  padding-right: $space;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-10 .row {
+  margin-left: (-$space);
+  margin-right: (-$space);
+  padding: 0;
+}
+.p-10 .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.p-10 h2,
+.p-10 h3 {
+  text-align: center;
+}
+
+// Po przerobieniu wszystkich cytatów na figure, usuń poniżej
+.p-10 > blockquote {
+  margin: $space-4 auto;
+  padding-bottom: $size-1 * 1.25;
+}
+.p-10 > blockquote p:first-child {
+  text-indent: -0.5em;
+}
+.p-10 > blockquote p:first-child:before {
+  content: open-quote;
+}
+.p-10 > blockquote p:last-of-type:after {
+  content: close-quote;
+}
+.p-10 > blockquote .author {
+  left: $space;
+  bottom: 0;
+  top: auto;
+}
+.p-10 > blockquote .share {
+  left: auto;
+  right: $space;
+  top: auto;
+  bottom: 0;
+}
+.p-10 > iframe,
+.p-10 > object {
+  margin-bottom: $space;
+}
+
+.p-10 > p:last-child {
+  margin-bottom: 0;
+}
+
+.col-9,
+.p-9 > p {
+  width: $col-9;
+}
+.col-8,
+.p-8 > p {
+  width: $col-8;
+  @media #{$m640} {
+    width: auto;
+    float: none;
+  }
+}
+.col-7,
+.p-7 > p {
+  width: $col-7;
+}
+.col-6,
+.p-6 > p {
+  width: $col-6;
+}
+.col-5,
+.p-5 > p {
+  width: $col-5;
+}
+.col-4,
+.p-4 > p {
+  width: $col-4;
+  @media #{$m770} {
+    width: $col-8;
+  }
+}
+.col-3,
+.p-3 > p {
+  width: $col-3;
+}
+.col-2,
+.p-2 > p {
+  width: $col-2;
+  @media #{$m770} {
+    width: $col-4;
+  }
+}
+.col-1,
+.p-1 > p {
+  width: $col-1;
+}
+
+//  usunąłem bo mnie wnerwiało
+// .p-center > p{float:none;}
+// // OBS!
+// .p-center > *{float:none;margin-left:auto;margin-right:auto;}
+
+.l-1-32 {
+  margin-left: $col-1-32;
+}
+.l-1 {
+  margin-left: $col-1;
+}
+.l-2 {
+  margin-left: $col-2;
+}
+.l-3 {
+  margin-left: $col-3;
+}
+.l-4 {
+  margin-left: $col-4;
+}
+
+.l-1-32,
+.l-1,
+.l-2,
+.l-3,
+.l-4 {
+  @media #{$m640} {
+    margin-left: 0;
+  }
+}
+
+.r-1-32 {
+  margin-right: $col-1-32;
+}
+
+.minus-l-5 {
+  margin-left: (-$col-5);
+}
+.minus-r-5 {
+  margin-right: (-$col-5);
+}
+
+/* ! Problem with centered floats (padding necessary or not?) */

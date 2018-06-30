@@ -1,0 +1,249 @@
+//
+// Forms
+//
+
+// Reset
+
+// Much to update and rethink here
+form {
+  margin: 0 0 $space-2;
+}
+form p,
+label {
+  margin: 0 0 $space-half;
+}
+button,
+input,
+select,
+textarea,
+label {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-size: $size-0;
+  vertical-align: baseline;
+  *vertical-align: middle;
+  //-webkit-appearance:none;
+  box-shadow: none;
+}
+input,
+textarea,
+button {
+  display: block;
+  padding: $space-half $space;
+  border: 1px solid $beige-border;
+  border-radius: 3px;
+  line-height: 1.1875;
+  background: $white;
+}
+input {
+  width: 70%;
+}
+input[type='submit'],
+.btn-input {
+  width: auto;
+  border: 1px solid transparent;
+  background-color: $blue;
+  color: $white !important;
+  font-size: 1rem;
+}
+input[type='submit']:hover,
+input[type='submit']:focus,
+.btn-input:hover,
+.btn-input:focus {
+  background-color: $blue-hover;
+  outline: none;
+}
+input[type='submit']:active,
+.btn-input:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+input[type='checkbox'],
+input[type='radio'] {
+  width: auto;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+input[type='image'] {
+  width: auto;
+  border: 0;
+  background: none;
+}
+label {
+  width: auto;
+  cursor: pointer;
+}
+label input[type='radio'] {
+  margin-right: $space-half;
+}
+.form-kursy {
+  margin-left: 3.75rem;
+  padding-left: $space-2;
+}
+.form-green {
+  border-left: 1px solid $green-light;
+}
+.form-orange {
+  border-left: 1px solid $orange-light;
+}
+.form-red {
+  border-left: 1px solid $red-light;
+}
+.form-green input {
+  border-color: $green;
+}
+.form-orange input {
+  border-color: $orange;
+}
+.form-red input {
+  border-color: $red;
+}
+.form-long label {
+  display: block;
+  margin: 0 0 3px;
+  padding: 0;
+}
+.form-long input {
+  display: inline;
+  width: 100%;
+  margin-bottom: $space;
+}
+.form-long .no-margin {
+  margin-bottom: 0;
+}
+.form-long input[type='radio'] {
+  width: auto;
+  height: $size-1;
+  float: left;
+  margin-right: $space-half;
+}
+.form-long input[type='radio'] + label {
+  display: inline;
+}
+.form-long input[type='submit'] {
+  width: auto;
+  display: block;
+  margin-bottom: $space-half;
+}
+textarea {
+  width: 100%;
+  height: $space-8;
+  overflow: auto;
+  vertical-align: top;
+}
+.textarea-big {
+  height: 17.5rem;
+  border: 0;
+  font-size: $size-1;
+  line-height: 1.5;
+}
+
+.form-newsletter {
+  margin-bottom: $space-2;
+}
+.form-newsletter input {
+  width: 100%;
+  font-size: 1.25rem;
+}
+.form-newsletter label {
+  display: block;
+}
+
+#loginform label {
+  display: block;
+}
+
+.hidden-input {
+  display: none;
+  visibility: hidden;
+}
+
+input:focus,
+textarea:focus {
+  border-color: $dark;
+}
+
+.comment-form {
+}
+.comment-form label {
+  display: inline-block;
+}
+.comment-form textarea {
+}
+.comment-form input {
+  width: 50%;
+}
+.comment-form textarea,
+.comment-form input {
+  @media #{$m400} {
+    width: 100%;
+  }
+}
+input + .note {
+  margin-top: $space-half;
+}
+
+.form-100 {
+}
+.form-100 label {
+  display: block;
+  text-align: left;
+}
+.form-100 input,
+.form-100 button {
+  display: block;
+  width: 100%;
+  margin: 0 auto $space-half;
+}
+
+/* TRZEBA ujednolicić formy, tam gdzie 100% width */
+
+// Treningi
+.form-treningi {
+}
+.form-treningi .hidden-input {
+  display: none;
+}
+
+.form-treningi h4 {
+  margin: $space 0 0;
+}
+.form-treningi label,
+.form-treningi-email {
+  margin: $space-half $space-half 0 0;
+}
+
+.form-treningi input:checked + label {
+  background: $green;
+  color: $white;
+}
+.form-treningi input:checked + label:hover {
+  background: $green-hover;
+  color: $white;
+}
+
+.form-treningi-email {
+  border: 1px solid $beige;
+}
+.form-treningi-email:focus {
+  border-color: $dark;
+}
+
+//
+// Main search form
+//
+.search-form {
+  margin-bottom: $space-4;
+}
+.search-form .s {
+  display: inline-block;
+  width: 72.5%;
+  margin: 0 2.5% 0 0;
+  font: normal normal normal $size-1/normal $body-font;
+}
+.search-form .btn-search {
+  width: 25%;
+}

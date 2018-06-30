@@ -1,0 +1,220 @@
+//
+// @Media
+//
+
+@media screen and (max-width: 1024px) {
+  [class*='section-levels']:before,
+  .hr:before {
+    display: none;
+  }
+  [class*='section-line-'] {
+    right: 0;
+    margin-right: 3.5rem;
+  }
+  .aside-main {
+    left: auto;
+    right: 0;
+    margin: 0 $space 0 0;
+  }
+  img {
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 905px) {
+  .content .col-10 {
+    width: auto;
+  }
+  .about-top h1 {
+    width: 50%;
+    font-size: $size-3;
+  }
+
+  .aside-main {
+    position: static;
+    width: auto;
+    padding: 0 $space;
+    margin: 0 auto;
+  }
+  .aside-bubble {
+    width: 280px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .aside-newsletter-fields {
+    float: left;
+    width: 48%;
+  }
+  .aside-newsletter-bottom ul {
+    float: right;
+    width: 48%;
+    margin-top: $space-half;
+  }
+
+  .textarea-big {
+    width: 100%;
+  }
+
+  .sowa {
+    margin-top: 0;
+  }
+
+  .divider,
+  .hr-short {
+    margin: $space-2 auto;
+  }
+  .like-warsztaty {
+    margin-top: (-$space);
+  }
+
+  .hero-arrow {
+    width: 4rem;
+  }
+}
+
+@media #{$m770} {
+  .col-4:nth-child(2n + 1) {
+    clear: left;
+  }
+  .col-4:nth-child(n + 3) {
+    margin-top: $space-2;
+  }
+  .space-x4 .col-4:nth-child(2n + 3) {
+    margin-top: $space-4;
+  }
+
+  [class*='section-levels'] {
+    padding-right: $space;
+  }
+  .about-top h1 {
+    position: static;
+    width: auto;
+    padding: $space $space-half 0;
+    margin: 0;
+    color: #000;
+    font-size: 1.5rem;
+    text-shadow: none;
+  }
+  .about-quotes-author {
+    margin: 0 0 $space;
+    text-align: right;
+  }
+  .bigquote {
+    width: auto;
+    margin-left: $space;
+    margin-right: $space;
+  }
+  .about-quotes blockquote {
+    margin: 0;
+  }
+  .section-levels-b {
+    padding-bottom: $space;
+  }
+
+  .cloud-sowa {
+    max-height: $space-8;
+  }
+  .cloud-wrap:before,
+  .cloud-wrap:after {
+    display: none;
+  }
+
+  .aside-main-alt [type='text'],
+  .aside-main-alt [type='email'] {
+    width: 45%;
+    font-size: 1rem;
+  }
+  .aside-main-alt [type='submit'] {
+    margin-left: 0;
+  }
+  .aside-main-alt .intro {
+    font-size: 1.25rem;
+  }
+
+  .section-recommends .col-8 {
+    overflow: hidden;
+  }
+
+  .form-long {
+    margin-left: 0;
+    padding: 0;
+    border: 0;
+  }
+}
+
+@media #{$m640} {
+  [class*='col-'] {
+    float: none;
+    width: auto;
+  }
+  [class*='col-'] + [class*='col-'] {
+    margin-top: $space-2;
+  }
+
+  form .row [class*='col-'],
+  .section-8-0 [class*='col-'] {
+    margin: 0;
+  }
+
+  .textarea-big {
+    width: 100%;
+    margin-bottom: $space-half;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  input {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .hero {
+    height: auto;
+  }
+}
+
+@media print {
+  html {
+    font-size: 1em;
+    color: black;
+  }
+
+  .main-column,
+  .p-10 > p,
+  .p-10 > section,
+  .p-10 > object,
+  .p-10 > blockquote,
+  .p-10 > dl,
+  .p-10 > ul,
+  .p-10 > ol,
+  .p-10 > h3,
+  .p-10 > .ex,
+  .p-10 > .trans,
+  .p-10 > figure {
+    width: 100%;
+  }
+
+  article > *,
+  header,
+  footer,
+  #search {
+    display: none;
+  }
+  article:before {
+    content: 'NocnaSowa.pl';
+    font: $size-3 $bariol;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: $space-2;
+  }
+  article:after {
+    content: attr(data-title);
+    font: $size-2 $body-font;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+}

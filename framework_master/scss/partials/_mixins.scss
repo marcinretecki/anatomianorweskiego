@@ -1,0 +1,71 @@
+//
+// Mixins
+//
+// Ex:
+// @include transition;
+
+@mixin transition {
+  transition: all 0.4s ease;
+}
+@mixin transition-bezier {
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+@mixin font-bariol-thin {
+  font-weight: 200;
+  font-family: $bariol;
+}
+
+@mixin font-bariol-reg {
+  font-weight: 400;
+  font-family: $bariol-reg;
+}
+
+// trzeba też zrobić mixiny dla wielkości fontów i dodać line-height, żeby był consistent
+
+@mixin scrolling {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+@mixin text-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+//
+//  MEDIA
+//
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+// usage
+//  .my-box {
+//    padding: 10px;
+//
+//    @include for-desktop-up {
+//      padding: 20px;
+//    }
+//  }

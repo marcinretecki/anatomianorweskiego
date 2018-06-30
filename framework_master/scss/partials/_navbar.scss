@@ -1,0 +1,250 @@
+//
+//  New main nav/header
+//
+// gdzie to???
+.caret {
+  display: inline-block;
+  margin: $space-quarter 0;
+  border: 5px solid transparent;
+  border-top-color: $gray-on-dark;
+  border-bottom: 0;
+}
+
+a:hover .caret,
+.caret:hover {
+  border-top-color: $white;
+}
+
+.header-top {
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.header-top--fixed {
+  position: fixed;
+}
+
+.header-top--absolute {
+  position: absolute;
+}
+
+.header-top--shadowed {
+  box-shadow: 0 0 $space rgba(0, 0, 0, 0.25);
+}
+
+.header-top--hidden {
+  transform: translate3d(0, -100%, 0);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.section-nav {
+  width: 1064px;
+  max-width: 100%;
+  min-height: $space-2;
+  margin: 0 auto;
+}
+
+.section-nav__toggle {
+  display: inline-block;
+  float: left;
+
+  @include for-tablet-portrait-up {
+    display: none;
+  }
+}
+
+.section-nav__like {
+  @include for-phone-only {
+    transform: scale(0.75);
+    transform-origin: right center;
+    padding-bottom: 0;
+  }
+}
+
+.section-nav__search {
+  opacity: 0.66;
+  height: $space-2;
+  width: $space-4;
+  background: transparent url('i/search.png') center center no-repeat;
+
+  @include for-phone-only {
+    background-size: auto 50%;
+  }
+}
+
+.section-nav__search:hover {
+  opacity: 1;
+}
+
+.section-nav__search--x {
+  background-image: url('i/x.png');
+}
+
+.navbar {
+  display: inline-block;
+
+  @include for-phone-only {
+    display: none;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transform: translate(0, -150%);
+  }
+}
+
+/*ul*/
+.navbar__list {
+  padding: 0;
+  margin: 0;
+}
+
+/*ul*/
+.navbar__list > li {
+  display: inline;
+  padding: 0;
+  margin: 0;
+}
+
+/*ul*/
+.navbar__list > li::before {
+  display: none;
+}
+
+/*ul*/
+.navbar__list a {
+  margin: 0;
+}
+
+//  when the menu hides, buttons change
+.navbar .btn-nav {
+  @include for-phone-only {
+    display: block;
+    padding-top: $space;
+    padding-bottom: $space;
+    text-align: left;
+  }
+}
+
+.navbar-logo {
+}
+
+.navbar-logo--centered {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.navbar-logo__blue {
+  color: $blue;
+}
+
+.navbar-logo--ns {
+  @include for-phone-only {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+}
+
+.navbar-logo:hover .navbar-logo__blue,
+.navbar-logo__blue:hover,
+.navbar-logo:active .navbar-logo__blue,
+.navbar-logo:focus .navbar-logo__blue {
+  color: $white;
+}
+
+// old navs code
+nav ul {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+nav li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+nav li:before {
+  display: none;
+}
+
+nav a {
+  display: block;
+  margin: 0;
+  font-style: normal;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+}
+
+
+//
+//  Nav Submenu
+//  Shows tags/categories on the main blog
+//
+.section-submenu {
+  border-bottom: 1px solid $dark-bright;
+}
+.navbar-submenu {
+  height: $space-2;
+  padding: 0;
+  margin: 0 auto -1px;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: top;
+}
+
+.navbar-submenu__list {
+  display: inline-block;
+  position: relative;
+  padding-right: $space-2;
+}
+.navbar-submenu__list > li {
+  position: static;
+}
+
+.navbar-submenu__btn,
+.navbar-submenu__list a {
+  //  same height as .navbar-submenu
+  height: $space-2;
+  border-bottom: 1px solid transparent;
+  opacity: 0.66;
+  background-color: transparent;
+  color: $font-dark;
+}
+
+.navbar-submenu__btn--arr {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-bottom: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url('/c/i/submenu_arrow.svg');
+  background-size: $space;
+  transform-origin: center;
+  transform: translateZ(0);
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar-submenu__btn:focus,
+.navbar-submenu__btn:hover,
+.navbar-submenu__btn--active,
+.navbar-submenu__list .navbar-submenu__btn--active {
+  border-bottom-color: $dark-border;
+  opacity: 1;
+  background-color: transparent;
+  color: $font-dark;
+}

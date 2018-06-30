@@ -1,0 +1,420 @@
+//
+// Buttons
+//
+
+.btn-reset {
+  position: relative;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.pagination {
+  padding: $space-2 0;
+}
+.prev,
+.next {
+}
+
+.btn,
+.pagination a,
+input.btn {
+  position: relative;
+  display: inline-block;
+  padding: $space-half $space-2;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  margin: $space-quarter $space-quarter $space-quarter 0;
+  font: normal normal 400 #{$size-1}/ 1 $body-font;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+//
+// Button Colors
+//
+
+// Beige and post pagination
+.btn-beige,
+.btn-beige:visited,
+.pagination a,
+.pagination a:visited {
+  background-color: $beige;
+  color: $font-dark;
+}
+
+.btn-beige-outline,
+.btn-beige-outline:visited {
+  border-color: $beige;
+  color: $beige;
+  background: transparent;
+}
+
+.btn-beige:focus,
+.btn-beige:hover,
+.btn-beige-outline:focus,
+.btn-beige-outline:hover,
+.pagination a:focus,
+.pagination a:hover {
+  background-color: $beige-hover;
+  color: $font-dark;
+}
+
+// Green
+.btn-green,
+.btn-green:visited {
+  background-color: $green;
+  color: $white;
+}
+
+.btn-green-outline,
+.btn-green-outline:visited {
+  border-color: $green;
+  color: $green;
+  background: transparent;
+}
+
+.btn-green:focus,
+.btn-green:hover,
+.btn-green-outline:focus,
+.btn-green-outline:hover {
+  background-color: $green-hover;
+  color: $white;
+}
+
+// Orange
+.btn-orange,
+.btn-orange:visited {
+  background-color: $orange;
+  color: $white;
+}
+
+.btn-orange-outline,
+.btn-orange-outline:visited {
+  border-color: $orange;
+  color: $orange;
+  background: transparent;
+}
+
+.btn-orange:focus,
+.btn-orange:hover,
+.btn-orange-outline:focus,
+.btn-orange-outline:hover {
+  background-color: $orange-hover;
+  color: $white;
+}
+
+// Red
+.btn-red,
+.btn-red:visited {
+  background-color: $red;
+  color: $white;
+}
+
+.btn-red-outline,
+.btn-red-outline:visited {
+  border-color: $red;
+  color: $red;
+  background: transparent;
+}
+
+.btn-red:focus,
+.btn-red:hover,
+.btn-red-outline:focus,
+.btn-red-outline:hover {
+  background-color: $red-hover;
+  color: $white;
+}
+
+// Dark
+.btn-dark,
+.btn-dark:visited,
+input.btn-dark {
+  background-color: $dark;
+  color: $white;
+} // to do
+
+.btn-dark-outline,
+.btn-dark-outline:visited,
+.btn-dark-outline:focus {
+  border-color: $dark;
+  color: $dark;
+  background: transparent;
+}
+
+.btn-dark:focus,
+.btn-dark:hover,
+.btn-dark-outline:hover,
+.btn-dark-outline--active,
+.btn-dark-outline--active:visited,
+input.btn-dark:focus,
+input.btn-dark:hover {
+  background-color: $dark-hover;
+  color: $white;
+} // to do
+
+.btn-dark-outline:hover .i-menu::before,
+.btn-dark-outline:hover .i-menu::after,
+.btn-dark-outline:hover .i-menu {
+  background-color: $white;
+}
+
+// Blue
+.btn-blue,
+.btn-blue:visited,
+input.btn-blue {
+  background-color: $blue;
+  color: $white;
+} // to do
+
+.btn-blue-outline,
+.btn-blue-outline:visited {
+  border-color: $blue;
+  color: $blue;
+  background: transparent;
+}
+
+.btn-blue:focus,
+.btn-blue:hover,
+.btn-blue-outline:focus,
+.btn-blue-outline:hover,
+input.btn-blue:focus,
+input.btn-blue:hover {
+  background-color: $blue-hover;
+  color: $white;
+} // to do
+
+// White
+.btn-white,
+.btn-white:visited {
+  background-color: $white;
+  color: $font-dark;
+}
+
+.btn-white-outline,
+.btn-white-outline:visited {
+  border-color: $white;
+  color: $white;
+  background: transparent;
+}
+
+.btn-white:focus,
+.btn-white:hover,
+.btn-white-outline:focus,
+.btn-white-outline:hover {
+  border-color: $font-dark;
+  background-color: $white;
+  color: $font-dark;
+}
+
+// Black (Navbar)
+.btn-black,
+.btn-black:visited {
+  background-color: $outer-space;
+  color: $gray-on-dark;
+}
+
+.btn-black:focus,
+.btn-black:hover {
+  background-color: $blue;
+  color: $white;
+}
+.btn-black--active {
+  color: $white;
+}
+
+// Facebook
+.btn-fb,
+.btn-fb:visited {
+  background-color: $color-fb;
+  color: $white;
+}
+
+.btn-fb:focus,
+.btn-fb:hover {
+  background-color: $color-fb;
+  color: $white;
+}
+
+//
+// Button options
+//
+
+// Button Nav
+//  tu będzie do usunięcia margin, bo jest w navbar__list
+.btn-nav {
+  padding-left: $space;
+  padding-right: $space;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  font-family: $bariol_reg;
+}
+
+// Size
+.btn-small {
+  padding: $space-quarter $space;
+  font-size: $size-0;
+}
+.btn-s-4 {
+  padding: $space-half $space-4;
+  font-size: $size-1;
+  white-space: normal;
+}
+
+.btn-zapisy {
+  padding: $space $space-2;
+  font-size: $size-1;
+  white-space: normal;
+  vertical-align: top;
+}
+.btn-zapisy + .btn-zapisy {
+  margin-left: $space;
+  @media #{$m770} {
+    margin-left: 0;
+    margin-top: $space;
+  }
+}
+.btn-zapisy-off {
+  opacity: 0.75;
+}
+
+.btn-block {
+  display: block;
+  padding: $space-half $space;
+  width: auto;
+}
+.btn-search {
+  padding: $space-half $space;
+  margin: 0;
+  font-size: $size-1;
+  line-height: normal;
+}
+
+.check {
+  width: auto;
+  margin-bottom: $space-half;
+  margin-top: $space;
+}
+.check + .check {
+  margin-left: $space-half;
+  padding-left: $space;
+  padding-right: $space;
+}
+
+
+.no-select {
+  user-select: none;
+}
+
+//
+// Icons
+//
+
+.btn-icon {
+  width: auto;
+  vertical-align: middle;
+  padding: $space-quarter $space-half;
+  border-color: rgba(255, 255, 255, 0.5);
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media #{$m400} {
+    transform: scale(0.8);
+    margin: -($space * 0.2);
+  }
+}
+.btn-icon:hover,
+.btn-icon:focus {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.btn-icon.btn-beige {
+  border-color: transparent;
+} // to jest hack, pomyśl w przyszłości jak to poprawić
+
+.i-fb {
+  padding-left: 30px;
+  background: url('i/icon_fb.png') no-repeat 0 center;
+}
+.i-fb--small {
+  padding-left: 20px;
+  background-size: $size-0 $size-0;
+}
+
+.i-menu {
+  @include transition;
+  display: inline-block;
+  position: relative;
+  width: 12px;
+  height: 2px;
+  border-radius: 3px;
+  margin-top: -2px;
+  vertical-align: middle;
+  background-color: $dark-hover;
+}
+.i-menu::before {
+  @include transition;
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  border-radius: 3px;
+  background-color: $dark-hover;
+  content: '';
+}
+.i-menu::after {
+  @include transition;
+  display: block;
+  position: absolute;
+  top: -4px;
+  width: 100%;
+  height: 2px;
+  border-radius: 3px;
+  background-color: $dark-hover;
+  content: '';
+}
+
+//
+// ????
+//
+
+a.m {
+  margin: 0 0 $space;
+} // ?????
+
+.top {
+  color: $font-light;
+  padding-left: $space-half;
+  float: right;
+}
+.top:hover,
+.top:focus {
+  color: #000;
+}
+
+// btn file może przerobić na tą samą ideę, jaką ma i-fb
+.btn-file:before {
+  display: inline-block;
+  width: 17px;
+  height: 22px;
+  margin-right: $space-half;
+  vertical-align: top;
+  background: url('/c/i/file.png') no-repeat scroll 0 0;
+  content: '';
+}

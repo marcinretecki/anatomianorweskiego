@@ -1,0 +1,131 @@
+//
+// Scaffolding
+//
+
+// Body
+html {
+  background: $white url('') center center no-repeat scroll;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font: normal normal normal 1.25em/1.25 $body-font;
+  color: $font-dark;
+
+  @media #{$m400} {
+    font-size: 1em;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  zoom: 1;
+  // Kerning options of the future
+  text-rendering: optimizelegibility;
+  -webkit-font-feature-settings: 'kern' 1, 'liga' 1;
+  -moz-font-feature-settings: 'kern' 1, 'liga' 1;
+  font-feature-settings: 'kern' 1, 'liga' 1;
+  font-kerning: normal;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+// Links
+a,
+a:before {
+  color: $blue;
+  background: transparent;
+}
+a,
+a:before,
+a:after,
+.ex i,
+.ex img,
+input,
+div,
+.btn,
+.nav,
+.dropdown-nav,
+button,
+a span,
+.search-icon,
+.form-treningi-label {
+  @include transition;
+}
+a:link {
+}
+a:visited {
+  /* color:$blue-border */
+}
+a:focus,
+a:hover {
+  color: $dark;
+}
+a:active {
+  color: #000;
+  outline: 0;
+}
+
+.a-light {
+  color: $blue-light;
+}
+.a-light:focus,
+.a-light:hover {
+  color: $white;
+}
+.a-white {
+  color: $white;
+}
+.a-white:focus,
+.a-white:hover {
+  color: $white;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.section-green small a,
+.section-orange small a,
+.section-red small a,
+.section-dark small a {
+  color: $white;
+}
+
+// Block elements
+object {
+  margin: $space-half 0 0;
+  padding: 0;
+}
+iframe,
+object {
+  display: block;
+  max-width: 100%;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  margin-bottom: $space;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-21-9 {
+  padding: 0 0 42.85%;
+}

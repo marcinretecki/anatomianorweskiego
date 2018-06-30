@@ -1,0 +1,208 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+/* Main changes */
+@font-face {
+font-family:'bariol_lightlight';
+src:url('http://dziennik.nocnasowa.pl/wp-content/themes/warsztaty-pisania/f/bariol_light-webfont.eot');
+src:url('http://dziennik.nocnasowa.pl/wp-content/themes/warsztaty-pisania/f/bariol_light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('http://dziennik.nocnasowa.pl/wp-content/themes/warsztaty-pisania/f/bariol_light-webfont.woff') format('woff'),
+    url('http://dziennik.nocnasowa.pl/wp-content/themes/warsztaty-pisania/f/bariol_light-webfont.ttf') format('truetype'),
+    url('http://dziennik.nocnasowa.pl/wp-content/themes/warsztaty-pisania/f/bariol_light-webfont.svg#bariol_lightlight') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+
+.logo{float:none;
+  @media screen and (max-width: 440px) {
+    margin-left:-#{$space};
+  }
+}
+.header-content{text-align:center;font-size:0;
+  @media screen and (max-width: 440px) {
+    text-align:left;
+  }
+}
+.header-content a{display:inline-block;border:0;color:#000}
+.header-content .logo{color:$blue;}
+.header-content a:hover,.header-content a:active,.header-content a:focus{background:$blue;color:$white}
+.header-content .logo + a{position:absolute;right:0}
+.header-content .active{background:$dark;color:$white}
+
+.header-trans{opacity:0.95;border-bottom:1px solid $beige-border;background:$white;}
+.header-trans:after{display:none}
+
+.header-content [class*="col-"]{
+  margin-bottom:0;
+}
+
+.section-100{min-height:100%}
+
+#loginform .input{width:100%}
+
+.bottom{background:$beige-hover;border-top:1px solid $beige-border;}
+.bottom .section-content{padding-top:$space-half;padding-bottom:0}
+.bottom p{font-size:12px;margin-bottom:$space-half}
+.logout{float:right;
+  @media #{$m770} {
+    float:none;
+  }
+}
+
+
+/* Wordpress login */
+.login{background:$beige;height:auto;min-height:100%}
+.login label{display:inline}
+.login h1 a{width:auto;height:auto;background:none;text-indent:0;font-size:$size-2;font-family:$body-font;color:#000}
+.login form .forgetmenot{margin-bottom:$space-half !important}
+
+
+/* Panel Sterowania */
+.btn-round{padding:0;border-radius:50%;width:1.5rem;line-height:1.5rem;height:1.5rem;text-align:center;vertical-align:baseline;display:inline-block;margin-left:0.625rem;margin-right:0.625rem}
+
+.special-btn .btn-blue{padding:0.25rem 0.5rem;opacity:0.5;font-size:0.8rem}
+.special-btn .btn-blue:hover{opacity:1}
+
+.numbers {
+  counter-reset: p;
+}
+.numbers p a:before{
+  counter-increment:p;
+  content: counter(p) ". ";
+}
+
+
+/* Chain */
+.nav-chain{position:fixed;left:0;bottom:0;z-index:1000;height:100%;padding-top:$space-2;-webkit-backface-visibility:hidden;
+  @media #{$m400} {
+    padding-top:3rem;
+  }
+}
+.nav-chain ul{margin:0;padding:0;height:100%;}
+.chain-dot{position:relative;padding:0 $space;height:3.33%;margin:0;
+  @media #{$m770} {
+    padding:0 $space-half
+  }
+}
+.chain-dot a{display:block;position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:$white;
+  @media #{$m770} {
+    width:4px;height:4px;margin:-2px 0 0 -2px;
+  }
+}
+.chain-dot-active a{border-color:$blue;background-color:$blue}
+
+
+/* Dziennik */
+.comment-parent{position:relative}
+.f-comment-green{background:$green;color:$white}
+.f-comment{position:relative;padding-top:$space-half;overflow:hidden}
+.f-comment-tick{padding-bottom:$space-half}
+
+.f-comment-child q, .q-rettet{background:$green-light;border-radius:3px;padding:1px 6px;display:inline-block;}
+.f-comment-child q:before{content:"";display:none;}
+.f-comment-child q:after{content:"";display:none;}
+
+.green a{color:$dark}
+
+.f-comment-child{opacity:0;padding-top:0;height:0;margin-bottom:0;
+  transform:translate3d(100%,0,0);
+}
+.f-comment-child p{font-size:$size-0;
+  opacity:0;
+  transition:all 0.4s 0.4s ease;
+}
+
+.f-comment-pushed + .f-comment-child {
+  transform:translate3d(0,0,0);
+  padding-top:0.625rem;
+  margin-bottom:$space-2;
+  opacity:1;
+}
+.f-comment-pushed + .f-comment-child p{
+  opacity:1;
+}
+
+.f-time{font-size:$size-0;font-style:italic;}
+
+.f-comment-note{display:inline-block;padding-left:1.25rem;margin:0;}
+
+.f-push{opacity:0.25;display:block;position:absolute;right:0;bottom:0;width:$space-2;height:$space-2;margin:0;cursor:pointer;background-position:center center;}
+.f-push:hover{opacity:1;}
+.f-comment-pushed .f-push{opacity:1;}
+
+.pad > p:last-child{margin:0;}
+
+
+.comment-parent:first-child .f-push::before{position:absolute;right:100%;width:20rem;bottom:3px;color:$dark-gray;content:"Naciśnij, by otworzyć sprawdzenie \2192";text-align:right;}
+
+
+
+
+/* Update 2016 */
+
+.twoja-list-section{position:fixed;top:0;bottom:0;left:0;width:25%;overflow-y:scroll;background:$white;
+  @media #{$m770}{
+    position:relative;width:auto;overflow:auto;
+  }
+}
+
+.twoja-list{font-size:$size-0;margin:0 0 $space;border-top:0;}
+
+.btn-twoja-list{display:none;
+  @media #{$m770}{
+    display:block;position:fixed;right:0;bottom:0;left:0;border-radius:0;
+  }
+}
+
+.twoja-list li{margin:0;padding:0;list-style:none;}
+.twoja-list a{position:relative;display:block;margin:0;padding:$space-half;color:$dark;text-decoration:none;}
+.twoja-list li + li a{border-top:1px solid $beige;}
+
+.twoja-list a:hover{border-top-color:transparent;background:$blue-hover;color:$white;}
+
+
+
+
+@media print{
+  .print-only{display:block;visibility:visible;}
+  .screen-only{display:none;}
+  html,body{height:auto;margin:0;padding:0;}
+  html{font-size:90%;}
+  h2{font-size:$size-5;}
+
+  .page-break{page-break-after:always;break-after:always}
+
+  .header-main{position:static !important;display:block;}
+  .header-content .col-10 a:last-child{display:none;}
+  .header-trans{opacity:1;border:0;background:$blue !important;}
+  .header-content .logo{color:#fff !important;font-size:$size-2}
+
+  .nav-chain{position:static;height:auto;padding:$space 0 0}
+  .chain-dot{display:inline-block;width:3.33%;padding:0 $space-half}
+  .nav-chain ul{height:auto}
+  .chain-dot a{position:static;margin:0 auto;background:$beige}
+  .chain-dot-active a{background:$blue}
+
+  .section-beige{background:transparent;border:0}
+  .section-content{max-width:100%;width:100%;padding-left:$space-2;padding-right:$space-2}
+
+  .f-time{font-size:$size-2}
+
+  .comment-parent{page-break-after:always;padding-top:$space}
+  .comment-parent:after{content:'.';display:block;clear:both;height:0;visibility:hidden;font-size:0;}
+  .comment-parent .f-comment-tick{width:$col-9;float:left;margin:0;border-radius:0;}
+  .comment-parent .f-comment-child{width:$col-7;float:right;border-radius:3px;opacity:1 !important;height:auto !important;padding-top:$space-half;margin:3.75rem 0 0;transform:translate3d(0,0,0);display:block;}
+  .f-push{display:none}
+  .comment-parent .f-comment-child p{opacity:1}
+
+  .f-comment-child a{color:#fff;}
+  .f-comment-child a:after{content:" [ " attr(href) " ]";}
+
+  .print-last-page{padding-top:24rem}
+
+  .bottom{display:none}
+}
+
+@page {
+  margin: 0mm !important;
+}
