@@ -1,0 +1,83 @@
+//
+//  Layout scss
+//
+
+//  Wrapper keeps the page 100% height
+//  It helps with backgrounds
+.wrapper {
+  height: 100%;
+  position: relative;
+  @include scrolling;
+}
+
+//  Section content keeps the width of the pages
+.section-content {
+  position: relative;
+  width: 1064px;
+  max-width: 100%;
+  padding: $space-4 $space $space-4;
+  margin: 0 auto;
+}
+
+//
+//  NEW layout
+//  remember to put in inside row if it is inside section-content
+//  p-10 is overriding, fix it later, now just repeat here
+//
+.full-width,
+.p-10 .full-width {
+  width: auto;
+  max-width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//
+//  NEW layout
+//  remember to put in inside row if it is inside section-content
+//
+.main-column {
+  width: 35 * $space;
+  max-width: 100%;
+  padding-left: $space;
+  padding-right: $space;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//  if the content should not be as wide as main column but still behaves as a main column
+.main-column--narrow {
+  width: 24 * $space;
+}
+
+//
+//  Narrow column (used for asides)
+//
+.narrow-column {
+  width: 13 * $space;
+  max-width: 50%;
+  padding-left: $space;
+}
+.narrow-column--left {
+  float: left;
+  margin-right: $space;
+  margin-bottom: $space;
+}
+
+.narrow-column--right {
+  float: right;
+  margin-left: $space;
+  margin-bottom: $space;
+}
+
+.max-24 {
+  max-width: 24 * $space;
+  width: auto;
+}
+
+.max-13 {
+  width: 13 * $space;
+  width: auto;
+}

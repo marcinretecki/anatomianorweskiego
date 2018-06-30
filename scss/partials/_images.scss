@@ -1,0 +1,50 @@
+//
+//  Images scss
+//
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+.section-entry img {
+  display: block;
+  margin-bottom: $space;
+}
+figure img {
+  margin-bottom: $space-half;
+}
+img + figcaption {
+  margin: 0;
+  padding: 0;
+  font-size: $size-0;
+  text-align: center;
+  font-style: italic;
+}
+.figure-img {
+  position: relative;
+}
+.caption-left {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  padding-top: $space-half;
+  text-align: right;
+}
+.caption-left:before {
+  position: absolute;
+  top: 0;
+  right: $space;
+  width: 33%;
+  border-top: 1px solid $beige;
+  content: '';
+}
+
+
+.img-auto-height {
+  max-width: 100%;
+  height: auto;
+}

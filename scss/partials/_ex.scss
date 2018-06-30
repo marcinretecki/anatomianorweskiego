@@ -1,0 +1,326 @@
+//
+//  Exercises on the blog
+//
+
+/* cwiczenia */
+.ex {
+  margin-top: $space-4;
+  margin-bottom: $space-4;
+  counter-reset: numbered-field;
+}
+
+//
+//  TO
+//  by było fajne
+//  plus napis, po naciśnięciu, że to jest ćwiczenie dla początkujących, średnio-zaawansowanych albo zaawansowanych
+//
+// .command{position:relative;}
+// .command:before{display:inline-block;position:absolute;left:-($space);top:$size-1 / 4;width:3px;height:$size-1;content:"";}
+// .category-zaczynam .command:before{background:$green}
+// .category-ucze-sie .command:before{background:$orange}
+// .category-rozwijam .command:before{background:$red}
+
+//.ex h3{margin-top:0;font-size:$size-1}
+.ex p {
+}
+.ex i {
+  padding: 0 $space;
+  border-bottom: 1px dotted $gray;
+  color: transparent;
+}
+.ex .vis {
+  color: $font-dark;
+}
+.ex .text {
+  margin: 0;
+  padding: 0;
+}
+.ex .tick {
+  display: none;
+  position: absolute;
+  left: (-$space-2);
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  vertical-align: text-top;
+}
+.ex li {
+  margin-bottom: $space;
+  position: relative;
+  overflow: visible;
+}
+.ex .btn-dark,
+.ex .btn-ex-fb {
+  display: none;
+}
+.ex .btn-ex-fb {
+  padding-top: $space;
+  opacity: 0.5;
+}
+.ex .btn-ex-fb:hover {
+  opacity: 1;
+}
+.ex .btn-ex-fb iframe {
+  margin: 0;
+}
+.ex del {
+  text-decoration: none;
+  @include transition;
+}
+.ex .fixed,
+.ex ins {
+  display: none;
+  color: $red;
+  text-decoration: none;
+}
+.ex figure img + p {
+  padding-top: $space;
+}
+//  ex-checked
+//  if no js, then use :target
+.ex--checked i,
+.ex:target i {
+  color: $font-dark;
+}
+.ex--checked .btn-dark,
+.ex:target .btn-dark {
+  display: inline-block;
+}
+.ex--checked .btn-ex-fb,
+.ex:target .btn-ex-fb {
+  display: block;
+}
+.ex--checked .tick,
+.ex:target .tick {
+  display: block;
+}
+.ex--checked .bug,
+.ex--checked del,
+.ex:target .bug,
+.ex:target del {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.ex--checked .fixed,
+.ex--checked ins,
+.ex:target .fixed,
+.ex:target ins {
+  display: inline;
+}
+.ex img.alignleft {
+  margin-right: $space;
+}
+.ex img.alignright {
+  margin-left: $space;
+}
+
+.ex aside {
+  margin: $space 0;
+  width: auto;
+}
+
+.ex-img-swap {
+  position: relative;
+}
+.ex-img-over {
+  position: absolute;
+  top: 0;
+}
+.ex--checked .ex-img-over,
+.ex:target .ex-img-over {
+  opacity: 0;
+}
+.ex-img-under {
+}
+
+.np {
+  margin-bottom: 0;
+}
+.np + p {
+  padding-left: $space-2;
+  font-style: italic;
+}
+li .np + p {
+  padding-left: $space;
+}
+.con {
+  margin-top: $space;
+  margin-bottom: $space;
+  font-size: $size-3;
+  font-style: italic;
+  text-align: center;
+  color: $dark-gray;
+}
+.con.no-margin {
+  margin-bottom: 0;
+}
+
+.trans {
+  margin-bottom: $space-2;
+}
+
+.symbol {
+  display: inline-block;
+  padding: 0 $space;
+  margin: 0 $space 0.3125rem 0;
+  width: $space-4;
+  background: $beige;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.ex-clue {
+  color: $font-light;
+  font-style: italic;
+}
+
+.ex--nowrap-field .ex-field {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+//
+//  News ex for fill-in exercises
+//
+.ex-field {
+  //  needed for ::before
+  position: relative;
+  //  this removes space made by border
+  //  need to test it globaly next time
+  margin-bottom: -1px;
+}
+//  show the clue or the word to modify
+.ex-field::before {
+  content: '\00a0' attr(data-ns-clue) '\00a0';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  color: $font-light;
+  font-size: $size-0;
+  line-height: $line-1 / 0.75; //  this value comes from size-0
+  @include transition;
+}
+.ex--checked .ex-field::before,
+.ex:target .ex-field::before {
+  opacity: 0;
+  z-index: -1;
+}
+//  use on sup elements
+.count {
+  color: $gray;
+}
+.count::before {
+  counter-increment: numbered-field;
+  content: counter(numbered-field);
+  padding-right: 1px;
+}
+
+/* Rodzina Dialogi */
+.rodzina-block {
+  position: relative;
+  padding: $space-half $space;
+  margin: 0 0 $space 100px;
+  border-radius: 3px;
+  background: $beige;
+  -color: $white;
+  font-style: italic;
+}
+.rodzina-block span {
+  font-style: normal;
+  color: $dark-gray;
+}
+.rodzina-block:before {
+  display: block;
+  position: absolute;
+  top: $space;
+  z-index: 1;
+  right: 100%;
+  border: 0.5rem solid transparent;
+  border-right-color: $beige;
+  content: '';
+}
+.rodzina-right {
+  margin: 0 100px $space 0;
+}
+.rodzina-right:before {
+  right: auto;
+  left: 100%;
+  border-right-color: transparent;
+  border-left-color: $beige;
+  -color: $white;
+}
+
+.rodzina-block:after {
+  position: absolute;
+  left: -105px;
+  top: (-$space-half);
+  z-index: 0;
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-image: url('i/rodzina_dialogi.jpg');
+  content: '';
+}
+.rodzina-right:after {
+  left: auto;
+  right: -105px;
+}
+.rodzina-emma:after {
+  background-position: 0 0;
+}
+.rodzina-mathias:after {
+  background-position: -100px 0;
+}
+.rodzina-andreas:after {
+  background-position: -200px 0;
+}
+.rodzina-amalie:after {
+  background-position: -300px 0;
+}
+.rodzina-arne:after {
+  background-position: -400px 0;
+}
+.rodzina-emil:after {
+  background-position: 0 -100px;
+}
+.rodzina-thea:after {
+  background-position: -100px -100px;
+}
+.rodzina-anders:after {
+  background-position: -200px -100px;
+}
+.rodzina-celine:after {
+  background-position: -300px -100px;
+}
+.rodzina-silje:after {
+  background-position: -400px -100px;
+}
+.rodzina-annie:after {
+  background-position: 0 -200px;
+}
+.rodzina-olav:after {
+  background-position: -100px -200px;
+}
+.rodzina-bjorn:after {
+  background-position: -200px -200px;
+}
+.rodzina-sigrid:after {
+  background-position: -300px -200px;
+}
+.rodzina-torvald:after {
+  background-position: -400px -200px;
+}
+.rodzina-lars:after {
+  background-position: 0 -300px;
+}
+.rodzina-stein:after {
+  background-position: -100px -300px;
+}
+.rodzina-tone:after {
+  background-position: -200px -300px;
+}
+.rodzina-kristin:after {
+  background-position: -300px -300px;
+}

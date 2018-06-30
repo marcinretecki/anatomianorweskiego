@@ -1,0 +1,255 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+/* Main changes */
+@font-face {
+font-family:'bariol_lightlight';
+src:url('http://dziennik.nocnasowa.pl/wp-content/themes/warsztaty-pisania/f/bariol_light-webfont.eot');
+src:url('http://dziennik.nocnasowa.pl/wp-content/themes/warsztaty-pisania/f/bariol_light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('http://dziennik.nocnasowa.pl/wp-content/themes/warsztaty-pisania/f/bariol_light-webfont.woff') format('woff'),
+    url('http://dziennik.nocnasowa.pl/wp-content/themes/warsztaty-pisania/f/bariol_light-webfont.ttf') format('truetype'),
+    url('http://dziennik.nocnasowa.pl/wp-content/themes/warsztaty-pisania/f/bariol_light-webfont.svg#bariol_lightlight') format('svg');
+font-weight:normal;
+font-style:normal;
+}
+
+
+
+.section-100{min-height:100%}
+
+#loginform .input{width:100%}
+
+.bottom{background:$beige-hover;}
+.bottom .section-content{padding-top:$space-half;padding-bottom:0}
+.bottom p{font-size:12px;margin-bottom:$space-half}
+.logout{float:right;
+  @media #{$m770} {
+    float:none;
+  }
+}
+
+
+/* Wordpress login */
+html .login {background:$beige;height:auto;min-height:100%}
+.login #login label{display:inline}
+.login #login h1 a{width:auto;height:auto;background:none;text-indent:0;font-size:$size-2;font-family:$body-font;color:#000}
+.login #login form .forgetmenot{margin-bottom:$space-half !important}
+
+.login .button-primary{position:relative;display:inline-block;padding:$space-half $space-2;border-radius:3px;border:1px solid transparent;margin:$space-quarter $space-quarter $space-quarter 0;
+  font:normal normal 400 #{$size-1}/1 $body-font;text-decoration:none;text-transform:none;text-align:center;white-space:nowrap;background-color:$blue;color:$white;}
+
+
+/* Panel Sterowania */
+.btn-round{padding:0;border-radius:50%;width:1.5rem;line-height:1.5rem;height:1.5rem;text-align:center;vertical-align:baseline;display:inline-block;margin-left:0.625rem;margin-right:0.625rem}
+
+.special-btn .btn-blue{padding:0.25rem 0.5rem;opacity:0.5;font-size:0.8rem}
+.special-btn .btn-blue:hover{opacity:1}
+
+.numbers {
+  counter-reset: p;
+}
+.numbers p a:before{
+  counter-increment:p;
+  content: counter(p) ". ";
+}
+
+
+/* Chain */
+.nav-chain{position:fixed;left:0;bottom:0;z-index:1000;height:100%;padding-top:$space-2;-webkit-backface-visibility:hidden;
+  @media #{$m400} {
+    padding-top:3rem;
+  }
+}
+.nav-chain ul{margin:0;padding:0;height:100%;}
+.chain-dot{position:relative;padding:0 $space;height:3.33%;margin:0;
+  @media #{$m770} {
+    padding:0 $space-half
+  }
+}
+.chain-dot a{display:block;position:absolute;left:50%;top:50%;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:$white;
+  @media #{$m770} {
+    width:4px;height:4px;margin:-2px 0 0 -2px;
+  }
+}
+.chain-dot-active a{border-color:$blue;background-color:$blue}
+
+
+/* Dziennik */
+.comment-parent{position:relative}
+.f-comment-green{background:$green;color:$white}
+.f-comment{position:relative;padding-top:$space-half;overflow:hidden}
+.f-comment-tick{padding-bottom:$space-half}
+
+.f-comment-child q, .q-rettet{background:$green-light;border-radius:3px;padding:1px 6px;display:inline-block;}
+.f-comment-child q:before{content:"";display:none;}
+.f-comment-child q:after{content:"";display:none;}
+
+.green a{color:$dark;}
+
+.f-comment-child{opacity:0;padding-top:0;height:0;margin-bottom:0;
+  transform:translate3d(100%,0,0);
+}
+.f-comment-child p{font-size:$size-0;
+  opacity:0;
+  transition:all 0.4s 0.4s ease;
+}
+
+.f-comment-pushed + .f-comment-child {
+  transform:translate3d(0,0,0);
+  padding-top:0.625rem;
+  margin-bottom:$space-2;
+  opacity:1;
+}
+.f-comment-pushed + .f-comment-child p{
+  opacity:1;
+}
+
+.f-time{font-size:$size-0;font-style:italic;}
+
+.f-comment-note{display:inline-block;padding-left:1.25rem;margin:0;}
+
+.f-push{opacity:0.25;display:block;position:absolute;right:0;bottom:0;width:$space-2;height:$space-2;margin:0;cursor:pointer;background-position:center center;}
+.f-push:hover{opacity:1;}
+.f-comment-pushed .f-push{opacity:1;}
+
+.pad > p:last-child{margin:0;}
+
+
+.comment-parent .f-push::before{right:0;width:$space-2;height:$space-2;margin:0;}
+.comment-parent:first-child .f-push::after{position:absolute;right:125%;width:20rem;bottom:$space-half;color:$dark-gray;content:"Naciśnij, by otworzyć sprawdzenie \2192";text-align:right;}
+
+
+
+/* Forum */
+.header-forum{position:absolute;}
+
+.section-forum{position:relative;background:transparent url('/c/i/wp/warsztaty_pisania.jpg') center center no-repeat;background-attachment:fixed;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;zoom:1;}
+.section-forum-h{color:$white}
+
+.bbp-breadcrumb,.bbp-pagination{color:$white}
+.bbp-breadcrumb a,.bbp-pagination a{color:$blue-light;}
+.bbp-breadcrumb a:hover,.bbp-breadcrumb a:focus,.bbp-pagination a:hover,.bbp-pagination a:focus{color:$white}
+
+#bbpress-forums{margin-bottom:$space-4}
+#bbpress-forums li,.forum-titles{margin:0}
+.bbp-forums,.bbp-topics{margin:0 0 $space;padding:0;border-radius:3px;overflow:hidden;}
+.bbp-forums li,.bbp-topics li,.bbp-replies li{padding:0}
+.bbp-forums > li,.bbp-topics > li{padding:$space-half}
+
+.bbp-header{background:$dark;color:#fff;border-radius:3px 3px 0 0;}
+.forum-titles{font-size:$size-0}
+.bbp-body{background:$white}
+
+.forum-titles,.forum,.topic{overflow:hidden}
+
+.bbp-footer{display:none}
+
+.forum{margin:0;border-bottom:1px solid $beige;padding:$space 0}
+.topic,.reply{margin:0;border-bottom:1px solid $beige;padding:$space-half 0}
+.pad .topic,.pad .reply{padding:0;}
+.forum:last-child,.topic:last-child,.reply:last-child{border:0}
+.bbp-body > ul > li{font-size:$size-0}
+.bbp-topic-permalink,.bbp-forum-title{font-size:$size-1}
+.bbp-topic-meta{margin:0;font-size:$size-0}
+
+#bbpress-forums li:before{display:none}
+.dots li{padding:0 0 0 1.25rem;}
+.dots li:before{display:block !important;}
+
+.bbp-reply-content ol{margin:0 0 2.5rem 2.5rem !important}
+.bbp-reply-content ul{margin:0 0 2.5rem 1.25rem !important}
+.bbp-reply-content li{font-size:$size-1;margin:0 0 0.625rem !important;}
+.bbp-reply-content ul li{padding:0 0 0 1.25rem !important}
+.bbp-reply-content li:before{display:block !important}
+
+.bbp-forum-info, .bbp-topic-title{float:left;width:60%}
+.bbp-forum-topic-count,.bbp-topic-voice-count,.bbp-forum-reply-count,.bbp-topic-reply-count{float:left;width:15%}
+.bbp-forum-freshness,.bbp-topic-freshness{float:left;width:25%}
+
+.bbp-pagination{margin-bottom:$space-2}
+
+legend{font-size:$size-1}
+
+.bbp-topic-form{}
+.bbp-topic-form label{display:inline}
+
+.bbp-form legend,.bbp-form label,.bbp-template-notice{color:$white}
+.bbp-template-notice p{font-size:$size-0}
+.bbp-form input{border:0;padding-left:$space-half}
+
+.wp-editor-wrap{margin-bottom:$space !important;border-radius:3px;overflow:hidden}
+.bbp-the-content-wrapper,.bbp-the-content,.bbp-reply-content{width:auto;margin:0;max-width:100%}
+.wp-editor-area{height:10rem;font-family:$body-font !important;font-size:$size-0 !important;}
+
+.quicktags-toolbar input{width:auto}
+
+#link-selector label{display:inline}
+#wp-link #link-options label span, #wp-link #search-panel label span.search-label{width:auto !important}
+#wp-link-search-toggle,#search-panel{display:none !important}
+
+
+.bbp-pagination-links a,.bbp-pagination-links span{position:relative;display:inline;display:inline-block;padding:0.25rem $space;margin-right:$space-half;border:1px solid transparent;border-radius:3px;
+font:normal normal 400 #{$size-0}/1.1875 $body-font;color:$white;text-shadow:0 1px rgba(0, 0, 0, 0.1);text-decoration:none;text-transform:none;text-align:center;white-space:nowrap;}
+.bbp-pagination-links a,.bbp-pagination-links span{width:auto;vertical-align:middle;padding:0.25rem 0.75rem;background-color:$beige;color:$font-semi-dark !important;background-image:none;}
+.bbp-pagination-links a:hover,.bbp-pagination-links a:focus{background-color:$beige-hover;background-image:none;color:$font-dark !important;}
+.bbp-pagination-links a:focus,.bbp-pagination-links span{border-color:$beige-border;}
+
+.footer-white{color:$white}
+
+
+// Single reply
+.bbp-reply-post-date{float:right;font-size:$size-0}
+
+.bbp-replies{margin:0 0 $space;}
+.bbp-replies .bbp-body{margin:0 0 $space;background:none}
+
+.bbp-reply-content p:last-child{margin-bottom:0}
+
+.bbp-reply-author{border-bottom:1px solid $gray;}
+
+.print-only{display:none;visibility:hidden}
+
+
+@media print{
+  .print-only{display:block;visibility:visible;}
+  .screen-only{display:none;}
+  html,body{height:auto;margin:0;padding:0;}
+  html{font-size:90%;}
+  h2{font-size:$size-5;}
+
+  .page-break{page-break-after:always;break-after:always}
+
+  .header-main{position:static !important;display:block;}
+  .header-content .col-10 a:last-child{display:none;}
+  .header-trans{opacity:1;border:0;background:$blue !important;}
+  .header-content .logo{color:#fff !important;font-size:$size-2}
+
+  .nav-chain{position:static;height:auto;padding:$space 0 0}
+  .chain-dot{display:inline-block;width:3.33%;padding:0 $space-half}
+  .nav-chain ul{height:auto}
+  .chain-dot a{position:static;margin:0 auto;background:$beige}
+  .chain-dot-active a{background:$blue}
+
+  .section-beige{background:transparent;border:0}
+  .section-content{max-width:100%;width:100%;padding-left:$space-2;padding-right:$space-2}
+
+  .f-time{font-size:$size-2}
+
+  .comment-parent{page-break-after:always;padding-top:$space}
+  .comment-parent:after{content:'.';display:block;clear:both;height:0;visibility:hidden;font-size:0;}
+  .comment-parent .f-comment-tick{width:$col-9;float:left;margin:0;border-radius:0;}
+  .comment-parent .f-comment-child{width:$col-7;float:right;border-radius:3px;opacity:1 !important;height:auto !important;padding-top:$space-half;margin:3.75rem 0 0;transform:translate3d(0,0,0);display:block;}
+  .f-push{display:none}
+  .comment-parent .f-comment-child p{opacity:1}
+
+  .f-comment-child a{color:#fff;}
+  .f-comment-child a:after{content:" [ " attr(href) " ]";}
+
+  .print-last-page{padding-top:24rem}
+
+  .bottom{display:none}
+}
+
+@page {
+  margin: 0mm !important;
+}

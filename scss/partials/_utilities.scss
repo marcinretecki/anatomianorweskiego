@@ -1,0 +1,248 @@
+//
+// Utilities
+//
+
+.clear {
+  clear: both;
+}
+
+// Group
+.group {
+}
+.group:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  font-size: 0;
+}
+* html .group {
+  zoom: 1;
+} /*IE6*/
+*:first-child + html .group {
+  zoom: 1;
+} /*IE7*/
+
+.velocity-animating {
+  transition: none !important;
+}
+
+.alignleft {
+  float: left;
+}
+.alignright {
+  float: right;
+}
+.center {
+  display: block;
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.horizon-center {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.relative {
+  position: relative;
+}
+.block {
+  display: block;
+}
+
+.space-0 {
+  margin-bottom: 0;
+}
+.space-half {
+  margin-bottom: $space-half;
+}
+.space {
+  margin-bottom: $space;
+}
+.space-x2,
+.space-2 {
+  margin-bottom: $space-2;
+}
+.space-x4,
+.space-4 {
+  margin-bottom: $space-4;
+}
+.space-x6,
+.space-6 {
+  margin-bottom: $space-6;
+}
+.space-x8,
+.space-8 {
+  margin-bottom: $space-8;
+}
+
+.no-pad,
+.pad-0 {
+  padding: 0;
+}
+.pad {
+  padding: $space;
+}
+.pad-x2,
+.pad-2 {
+  padding: $space-2;
+  @media #{$m400} {
+    padding: $space;
+  }
+}
+.pad-x4,
+.pad-4 {
+  padding: $space-4;
+  @media #{$m770} {
+    padding: $space-2;
+  }
+}
+.pad-1-0 {
+  padding: $space 0;
+}
+.pad-0-1 {
+  padding: 0 $space;
+}
+.pad-2-1 {
+  padding: $space-2 $space;
+}
+.pad-2-4 {
+  padding: $space-2 $space-4;
+  @media #{$m905} {
+    padding: $space $space-2;
+  }
+}
+
+.col-pad-top {
+  padding-top: $space;
+}
+.col-pad-bottom {
+  padding-bottom: $space;
+}
+
+/* FX */
+.cloud-wrap {
+  position: relative;
+  border: 1px solid $gray;
+  border-radius: $space;
+  margin-top: $space;
+  background: $white;
+}
+.cloud-wrap:before {
+  position: absolute;
+  left: 100%;
+  top: 75%;
+  content: '';
+  border-left: 15px solid $gray;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.cloud-wrap:after {
+  position: absolute;
+  left: 100%;
+  top: 75%;
+  margin-left: -1px;
+  content: '';
+  border-left: 15px solid $white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+#cloud {
+  height: 6.6em;
+  transition: all 0.5s ease;
+}
+.cloud-hide {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+}
+.cloud-show {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/*
+ * Spinner
+ * When .btn-spinner is clicked, it's direct child receives a new class "ball-pulse-sync"
+ */
+
+@keyframes ball-pulse-sync {
+  33% {
+    transform: translateY(5px);
+  }
+  66% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.ball-pulse-sync {
+  position: relative;
+  display: inline-block;
+  top: -3px;
+  margin-left: 3px;
+}
+.ball-pulse-sync > div:nth-child(1) {
+  animation: ball-pulse-sync 0.6s -0.14s infinite ease-in-out;
+}
+.ball-pulse-sync > div:nth-child(2) {
+  animation: ball-pulse-sync 0.6s -0.07s infinite ease-in-out;
+}
+.ball-pulse-sync > div:nth-child(3) {
+  animation: ball-pulse-sync 0.6s 0s infinite ease-in-out;
+}
+.ball-pulse-sync > div {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  margin: 0 2px;
+  vertical-align: middle;
+  background-color: #fff;
+  animation-fill-mode: both;
+}
+.ball-pulse-sync-dark > div {
+  background-color: $font-dark;
+}
+
+@keyframes wave-pulse-sync {
+  50% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.wave-pulse-sync {
+  position: relative;
+  display: inline-block;
+}
+.wave-pulse-sync > div:nth-child(1) {
+  animation: wave-pulse-sync 0.9s -0.6s infinite ease-in-out;
+}
+.wave-pulse-sync > div:nth-child(2) {
+  animation: wave-pulse-sync 0.9s -0.3s infinite ease-in-out;
+}
+.wave-pulse-sync > div:nth-child(3) {
+  animation: wave-pulse-sync 0.9s 0s infinite ease-in-out;
+}
+.wave-pulse-sync > div {
+  display: inline-block;
+  width: $space;
+  height: $space;
+  border-radius: 1px 1px 0 0;
+  margin: 0 $space-quarter;
+  vertical-align: middle;
+  background-color: #fff;
+  animation-fill-mode: both;
+  transform-origin: bottom;
+}
+.wave-pulse-sync-dark > div {
+  background-color: $font-dark;
+}

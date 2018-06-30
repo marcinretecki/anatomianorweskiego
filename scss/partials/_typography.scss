@@ -1,0 +1,710 @@
+//
+// Typography
+//
+
+@font-face {
+  font-family: 'bariol_lightlight';
+  src: url('//nocnasowa.pl/c/f/bariol_light-webfont.eot');
+  src: url('//nocnasowa.pl/c/f/bariol_light-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('//nocnasowa.pl/c/f/bariol_light-webfont.woff2') format('woff2'),
+    url('//nocnasowa.pl/c/f/bariol_light-webfont.woff') format('woff'),
+    url('//nocnasowa.pl/c/f/bariol_light-webfont.ttf') format('truetype'),
+    url('//nocnasowa.pl/c/f/bariol_light-webfont.svg#bariol_lightlight')
+      format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bariol_regularregular';
+  src: url('//nocnasowa.pl/c/f/bariol_regula-webfont.eot');
+  src: url('//nocnasowa.pl/c/f/bariol_regula-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('//nocnasowa.pl/c/f/bariol_regula-webfont.woff2') format('woff2'),
+    url('//nocnasowa.pl/c/f/bariol_regula-webfont.woff') format('woff'),
+    url('//nocnasowa.pl/c/f/bariol_regula-webfont.ttf') format('truetype'),
+    url('//nocnasowa.pl/c/f/bariol_regula-webfont.svg#bariol_regularregular')
+      format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+//
+//  Reset
+//
+
+small {
+  font-weight: 400;
+  font-size: $size-0;
+  font-variant: small-caps;
+}
+b,
+strong {
+  font-weight: 700;
+}
+abbr {
+  border: none;
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  text-decoration-color: $gray;
+  font-variant: small-caps;
+  text-transform: uppercase;
+  cursor: help;
+}
+i,
+em,
+.em {
+  font-style: italic;
+}
+q,
+cite {
+}
+u {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+sup {
+  font-size: $size-mini;
+}
+
+p,
+ul,
+ol,
+dl {
+  padding: 0;
+  font-size: $size-1;
+  line-height: $line-1;
+}
+
+ul {
+  margin: 0 0 $space-2 $space;
+  list-style-position: outside;
+  @media #{$m770} {
+    margin-left: 0;
+  }
+}
+ol {
+  margin: 0 0 $space-2 $space;
+  list-style-position: outside;
+}
+li {
+  margin: 0 0 $space-half;
+  padding: 0;
+}
+ol > li {
+  @media #{$m770} {
+    margin-left: $space;
+  }
+}
+ul > li {
+  position: relative;
+  margin-left: (-$space);
+  padding: 0 0 0 $space;
+  list-style: none;
+  @media #{$m770} {
+    margin-left: 0;
+  }
+}
+ul > li:before {
+  content: "\25AA";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.light-dots > li:before {
+  background: $white;
+}
+ol ol {
+  margin-left: $space;
+  margin-bottom: $space;
+  list-style: lower-alpha;
+}
+ul ul {
+  margin-top: $space-half;
+}
+/* ul */.nodots {
+  padding-left: 0;
+}
+/* ul */.nodots li {
+  margin-left: 0;
+}
+/* ul */.nodots li:before {
+  display: none;
+}
+
+
+
+.no-margin + ul li {
+  margin-bottom: 0;
+}
+
+dt {
+  font-weight: 700;
+}
+
+p,
+dl,
+dd {
+  margin: 0 0 $space;
+}
+
+figure {
+  margin: 0 auto $space-2;
+}
+
+
+//
+//  Content Modifiers
+//
+
+.intro {
+  font-size: $size-2;
+  line-height: 1.333;
+}
+
+// to do
+.post-index .index-h {
+  font-size: $size-4;
+}
+.post-index .intro {
+  font-size: $size-1;
+  line-height: $line-1;
+  @media #{$m770} {
+    line-height: 1.5;
+  }
+}
+
+.post-tags {
+  font-size: $size-0;
+  line-height: $space;
+  color: $font-light;
+}
+.post-tags a {
+  color: inherit;
+}
+
+.post-tags--light {
+  color: $gray-on-dark;
+}
+
+
+.capital:first-letter {
+  display: block;
+  float: left;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  font-size: 5rem;
+  line-height: 0.8;
+}
+.plan {
+  margin: 0 0 $space-half;
+  font-weight: 700;
+}
+.plan + ul {
+  margin-bottom: $space-2;
+}
+.no-margin {
+  margin-bottom: 0;
+}
+
+.p-short {
+  line-height: 1.333;
+}
+.p-quote {
+  text-indent: -0.5rem;
+}
+
+
+//  201604
+//  New example format
+//  we are using .post because .col would interefe with padding otherwise
+.post .dl-eg {
+  padding-left: $space-2;
+  margin-top: $space-2;
+  margin-bottom: $space-2;
+}
+.dl-eg dt {
+  font-weight: 400;
+  font-style: italic;
+}
+.dl-eg dd {
+  margin: 0 0 0 $space;
+  font-size: $size-0;
+  color: $font-light;
+}
+.dl-eg dd + dt {
+  margin-top: $space-half;
+}
+.tr {
+  color: $dark-gray;
+} // i don't know why it is here, but i'm using it for color in .con-table and probably other places – bad practice
+
+//
+//  .dl-eg ma problem, gdy wstawimy go w div.row, bo wtedy nie zerują się marginy
+//
+//  give the row margin
+.post .row--dl-eg {
+  margin-top: $space-2;
+  margin-bottom: $space-2;
+}
+//  remove margin from dl-eg if it is in a row
+.post .dl-eg--in-row {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: $space;
+}
+
+// DO POPRAWY
+.note a {
+  color: $white;
+  text-decoration: underline;
+}
+
+.book {
+  margin: 0 0 $space;
+}
+.book p {
+  margin: 0;
+  text-indent: $space;
+}
+.book .capital {
+  text-indent: 0;
+  margin-top: $space;
+}
+
+
+
+
+
+//
+//  Selection
+//
+.p-10 ::-moz-selection {
+  background: $blue;
+  color: $white;
+}
+.p-10 ::selection {
+  background: $blue;
+  color: $white;
+}
+
+//
+//  Quotes
+//
+
+//.quote{position:relative;border-left:$space-half solid $dark;margin:$space-4 auto}
+
+.figure-quote {
+  position: relative;
+  margin-top: $space-2;
+  margin-bottom: $space-2;
+  border-left: 3px solid $green;
+}
+.category-ucze-sie .figure-quote {
+  border-left-color: $orange;
+}
+.category-rozwijam .figure-quote {
+  border-left-color: $red;
+}
+.category-metody .figure-quote {
+  border-left-color: $dark;
+}
+.figure-quote blockquote {
+  margin-left: -3px;
+}
+
+// Tu chyba nie powinno być small caps – przetestuj na stronie
+.figure-quote figcaption {
+  margin: $space-half 0 0 -3px;
+  font-size: $size-0;
+  font-variant: small-caps;
+  font-weight: 400;
+}
+
+.figure-quote .share {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+.figure-quote figcaption + .share {
+  top: auto;
+  bottom: 0;
+}
+
+.figure-quote p:before {
+  content: no-open-quote;
+}
+.figure-quote p:after {
+  content: no-close-quote;
+}
+
+//
+//  Musimy przetestowac, czy to gdzieś nie psuje layoutu
+//
+//
+h2 + .figure-quote,
+h3 + .figure-quote,
+.figure-quote:first-child {
+  margin-top: $space-2;
+
+}
+
+h2 + .figure-quote,
+h3 + .figure-quote {
+  margin-bottom: $space-2;
+}
+
+blockquote {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  background: transparent;
+  font-size: $size-0;
+}
+blockquote p,
+blockquote ul,
+blockquote ol {
+  font-style: italic;
+  font-size: $size-2;
+  line-height: 1.333;
+}
+blockquote p:last-child,
+blockquote p:last-of-type,
+blockquote ul:last-child {
+  margin-bottom: 0;
+}
+
+.long {
+}
+.long p,
+.long ul,
+.long ol {
+  font-size: $size-1;
+}
+
+.bigquote,
+.quote-big {
+  margin-top: $space-2;
+}
+.bigquote p,
+.quote-big p {
+  font-size: $size-3;
+  line-height: 1.25;
+}
+
+.quote-white {
+  color: $white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+}
+.quote-white:before {
+  color: $white;
+}
+
+.note {
+  display: block;
+  margin-bottom: $space;
+  font-size: $size-mini;
+  font-style: italic;
+}
+
+//
+//  HR Dividers and lines
+//
+
+hr {
+  position: relative;
+  height: 0;
+  margin: $space-2 0;
+  padding: 0;
+  border: 1px solid $dark-bright;
+  border-width: 0 0 1px;
+}
+.section-green hr {
+  border-color: $green-light;
+}
+.section-orange hr {
+  border-color: $orange-light;
+}
+.section-red hr {
+  border-color: $red-light;
+}
+.section-dark hr {
+  border-color: $dark-light;
+}
+
+.hr-short {
+  width: $space-8;
+  margin: $space-4 auto;
+  border: 1px solid $dark-bright;
+  border-width: 1px 0 0;
+}
+.hr-short:last-child {
+  margin-bottom: 0;
+}
+.hr-shorter {
+  margin: $space-2 auto;
+}
+
+.divider {
+  display: block;
+  width: $space-4;
+  height: 0.8rem;
+  border: 0;
+  margin: $space-4 auto;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    $green 0%,
+    $green 20%,
+    transparent 20%,
+    transparent 40%,
+    $orange 40%,
+    $orange 60%,
+    transparent 60%,
+    transparent 80%,
+    $red 80%,
+    $red
+  );
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.divider + h2 {
+  margin-top: 0;
+}
+
+//
+// Headers
+//
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  text-decoration: none;
+}
+h1,
+.h1,
+.index-h,
+.section-h-thin,
+.section-h-thin.btn {
+  @include font-bariol-thin;
+
+  margin: 0 0 $space;
+  font-variant: normal;
+  font-style: normal;
+  font-size: $size-5;
+  line-height: 1.041667;
+
+  @media #{$m640} {
+    font-size: $size-4;
+  }
+}
+.section-h-thin {
+  margin: 0 0 $space-half;
+}
+
+// to są nagłówki artykułów na liście na blogu, kategoriach i search
+.index-h,
+.section-h-thin {
+  @media #{$m770} {
+    font-size: $size-4;
+  }
+}
+
+// to jest główny tytuł artykułów
+.entry-title {
+  font-size: $size-6;
+  margin-bottom: $space-4;
+  @media #{$m770} {
+    font-size: $size-5;
+  }
+}
+h2,
+.h2,
+h3,
+.h3,
+.recommends-h {
+  margin: $space-4 0 $space;
+  font-weight: 400;
+  font-variant: normal;
+  font-style: normal;
+  font-size: $size-4;
+  line-height: 1.15;
+  font-family: $body-font;
+}
+h2,
+.h2 {
+  @media #{$m400} {
+    font-size: $size-3;
+  }
+}
+h3,
+.h3 {
+  font-size: $size-2;
+  font-weight: 700;
+}
+h2:first-child,
+.h2:first-child,
+h3:first-child,
+.h3:first-child,
+.recommends-h {
+  margin-top: 0;
+}
+.h2 {
+  margin: 0;
+} // ???????????
+
+h2 + h3 {
+  margin-top: $space-2;
+}
+
+h4,
+.h4 {
+  margin: 0 0 $space-half;
+  font-weight: 700;
+  font-variant: normal;
+  font-style: normal;
+  font-size: $size-0;
+  line-height: 1.15;
+  font-family: $body-font;
+}
+
+h1 a,
+h1 a:visited,
+h2 a,
+h2 a:visited,
+h3 a,
+h3 a:visited,
+h4 a,
+h4 a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.index-h a:hover,
+.index-h a:focus {
+  text-decoration: underline;
+}
+.index-h-white a,
+.index-h-white a:visited,
+.index-h-white a:hover {
+  color: $white;
+}
+
+
+
+
+//
+//  Modificators
+//
+
+
+.normal {
+  font-style: normal;
+  font-variant: normal;
+}
+
+.size-0,
+.small {
+  font-size: $size-0;
+}
+.size-1 {
+  font-size: $size-1;
+  line-height: $line-1;
+}
+.size-2 {
+  font-size: $size-2;
+}
+.size-3 {
+  font-size: $size-3;
+}
+.size-4 {
+  font-size: $size-4;
+}
+.size-5 {
+  font-size: $size-5;
+}
+.size-6 {
+  font-size: $size-6;
+  @media #{$m400} {
+    font-size: $size-5;
+  }
+}
+
+.color-white {
+  color: $white;
+}
+.color-dark {
+  color: $font-dark;
+}
+.color-gray {
+  color: $gray;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.bariol-reg {
+  @include font-bariol-reg;
+}
+.bariol-thin {
+  @include font-bariol-thin;
+}
+
+//
+//  Special markings for letters and words
+//
+.mark {
+  padding: 0 $space-quarter;
+  border-radius: 3px;
+  background: $beige;
+}
+
+.mark--table {
+  background-color: $beige-hover;
+}
+
+
+.err {
+  color: $red;
+}
+
+.text-muted {
+  font-size: $size-0;
+  color: $font-light;
+}
+
+
+//
+//  Text layout
+//
+
+.centered {
+  text-align: center;
+}
+.rightened {
+  text-align: right;
+}
+.leftened {
+  text-align: left !important;
+}
+
+
+
+///
+////    TESTOWE
+////    TRZEBA PRZESTESTOWAĆ NA WSZYSTKIVH POSTACH
+//      Problem z ćwiczeniami, które mają lang="no"
+///
+//p i:lang(no), li i:lang(no), dt i:lang(no){padding:1px 6px;border-radius:3px;background:$beige;}
+
+
+

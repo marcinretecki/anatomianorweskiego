@@ -1,0 +1,426 @@
+/*
+ * Nowe zapisy na Warsztaty
+ */
+
+.warsztaty-list {
+  margin: 0 0 $space;
+  padding: 0;
+  text-align: left;
+}
+.warsztaty-list li::before {
+  display: none;
+}
+.warsztaty-list li {
+  margin: 0;
+  padding: $space 30% $space $space;
+  background: $white;
+  border-radius: 3px;
+  border: 1px solid $white;
+  position: relative;
+  transition: all 0.4s ease;
+  @media #{$m770} {
+    padding-right: $space;
+  }
+}
+.warsztaty-list li:hover {
+  border-color: $beige-border;
+}
+.warsztaty-list li + li {
+  margin-top: $space;
+}
+
+.warsztaty-list h3,
+.warsztaty-list p {
+  margin-bottom: 0;
+  @media #{$m770} {
+    margin-bottom: $space-half;
+  }
+}
+
+.btn-warsztaty-list,
+.btn-warsztaty-list-alt {
+  position: absolute;
+  right: $space;
+  bottom: $space;
+  margin: 0;
+  @media #{$m770} {
+    position: static;
+  }
+}
+.btn-warsztaty-list-alt {
+  right: $space-2;
+  bottom: $space-2;
+  @media #{$m770} {
+    margin-top: $space;
+  }
+}
+
+.warsztaty-list .inactive {
+  opacity: 0.5;
+}
+.warsztaty-list .inactive .btn-warsztaty-list {
+  font-style: italic;
+}
+.warsztaty-list .inactive:hover {
+  border-color: $white;
+}
+
+.warsztaty-zapisy-note {
+  padding-top: $space-half;
+  display: block;
+}
+
+.warsztaty-calendar {
+  position: relative;
+  padding-top: $space;
+  font-size: 0;
+  text-align: center;
+  @media #{$m905} {
+    padding-top: 0;
+    margin-bottom: $space-2;
+    text-align: center;
+  }
+}
+.warsztaty-calendar-line {
+  display: inline-block;
+  border-top: 1px solid $gray-on-dark;
+  padding-top: 3px;
+  @media #{$m905} {
+    border: 0;
+    text-align: left;
+  }
+}
+.warsztaty-calendar-day {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  margin: 1px;
+  text-align: center;
+  line-height: 2em;
+  font-size: $size-0;
+}
+.warsztaty-calendar-day-active {
+  color: #fff;
+  border-radius: 50%;
+}
+.warsztaty-calendar-day-green {
+  background: $green;
+}
+.warsztaty-calendar-day-orange {
+  background: $orange;
+}
+.warsztaty-calendar-day-red {
+  background: $red;
+}
+
+.warsztaty-calendar-month {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -#{$space};
+  font-style: italic;
+  font-size: $size-0;
+  @media #{$m905} {
+    position: static;
+    display: block;
+    border-bottom: 1px solid $gray-on-dark;
+    margin-bottom: 3px;
+  }
+}
+
+.warsztaty-calendar-month
+  + .warsztaty-calendar-day
+  + .warsztaty-calendar-month {
+  margin-left: 3rem;
+  @media #{$m905} {
+    margin-left: 0;
+  }
+}
+
+.warsztaty-calendar-day + .warsztaty-calendar-month {
+  @media #{$m905} {
+    margin-top: $space-half;
+  }
+}
+
+.warsztaty-oslo-form {
+  color: $font-dark;
+}
+.warsztaty-oslo-form label {
+  display: block;
+  margin-bottom: 3px;
+  padding: 0;
+}
+.warsztaty-oslo-form input {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: $space;
+}
+
+// Treningi Liczb i podobne tematy
+
+.trening-liczb-section {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transform: scale(0);
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+.trening-liczb-section-open {
+  transform: scale(1);
+  opacity: 1;
+  z-index: 9999;
+}
+
+//
+//  LOGO
+//
+.nocnasowa {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 200;
+  line-height: 1.3;
+  font-family: $bariol-reg;
+  color: $dark;
+  text-decoration: none;
+}
+.nocnasowa span {
+  color: $blue;
+}
+
+.nocnasowa--img {
+  display: inline-block;
+  width: 111px;
+  height: 23px;
+  background: transparent url('/c/i/logo_nocna_sowa.png') no-repeat center
+    center;
+  background-size: 111px 23px;
+  text-indent: -9999px;
+}
+
+//
+//  Audio used in podcasts post
+//
+.wp-audio-shortcode {
+  border-radius: 3px;
+  border: 1px solid $dark-border;
+}
+.wp-audio-shortcode + h4 {
+  margin-top: $space;
+}
+
+//
+//  Table in position: static;
+//  used in norweskie zaimki dzierżawcze i zwrotne
+//
+.con-table {
+  width: 100%;
+  margin: 0 0 $space-2;
+  overflow: hidden;
+  text-align: left;
+  border-collapse: collapse;
+}
+.con-table td,
+.con-table th {
+  padding: $space-half $space;
+  margin: 0;
+  vertical-align: top;
+}
+.con-table td {
+  font-style: italic;
+}
+.con-table tr {
+  margin: 0;
+}
+.con-table tr + tr {
+  border-top: 1px solid $beige;
+}
+.con-table thead tr {
+  border-bottom: 1px solid $beige-border;
+}
+
+//  usefull for emoji
+// .inline-svg {
+//   position: relative;
+//   top: -3px;
+
+//   display: inline-block;
+//   margin: 0;
+
+//   height: ($size-1 * $line-1);
+//   width: ($size-1 * $line-1);
+
+//   vertical-align: middle;
+//   font-size: inherit;
+// }
+
+.blob-wrapper {
+  display: block;
+  float: left;
+  position: relative;
+
+  width: $space + $space-half;
+  height: $space + $space-half;
+  margin: -#{$space-quarter} #{$space-quarter} -#{$space-half} -#{$space-quarter};
+  vertical-align: middle;
+
+  //  Used by svg
+  -webkit-filter: url('#goo');
+  filter: url('#goo');
+}
+
+.blob {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: $space;
+  height: $space;
+  border-radius: 50%;
+}
+
+.blob--green {
+  fill: $green;
+}
+.blob--orange {
+  fill: $orange;
+}
+.blob--red {
+  fill: $red;
+}
+.blob--dark {
+  fill: $dark;
+}
+.blob--beige {
+  fill: $beige-hover;
+}
+
+.post-tags--light .blob--green {
+  fill: $green-hover;
+}
+.post-tags--light .blob--orange {
+  fill: $orange-hover;
+}
+.post-tags--light .blob--red {
+  fill: $red-hover;
+}
+.post-tags--light .blob--dark {
+  fill: $dark-hover;
+}
+
+.svg-filter {
+  position: absolute;
+  left: -9999rem;
+  bottom: -9999rem;
+}
+
+.blob-data-wrapper {
+  display: none;
+  padding: $space-half $space;
+  margin: #{$space + $space-half} 0 0 -#{$space};
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transform-origin: $space -#{$space + $space-half};
+
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -7px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+
+  font-size: $size-0;
+  line-height: $line-1;
+
+  will-change: transform;
+}
+
+.blob-data-wrapper--open {
+}
+
+.blob-data-wrapper::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: $space;
+  bottom: 100%;
+  margin-bottom: $space-half;
+  margin-left: $space-quarter / 2;
+
+  width: 0;
+  height: 0;
+  border: $space-quarter solid transparent;
+  border-width: 0 $space-quarter $space-quarter $space-quarter;
+  border-bottom-color: $dark;
+}
+
+.top-green.blob-data-wrapper::after {
+  border-bottom-color: $green;
+}
+.top-orange.blob-data-wrapper::after {
+  border-bottom-color: $orange;
+}
+.top-red.blob-data-wrapper::after {
+  border-bottom-color: $red;
+}
+
+//
+//
+//  OLD CODE TO CHECK
+//
+//
+.share {
+  display: inline-block;
+  padding: 0 5px 0 24px;
+  border-radius: 3px;
+  background: $beige url('/c/i/f_logo_29.png') 4px 4px no-repeat;
+  background-size: 16px;
+  text-decoration: none;
+  font: 12px/24px $body-font;
+  opacity: 0.5;
+}
+.share:hover,
+.share:focus {
+  text-decoration: underline;
+  opacity: 1;
+}
+blockquote .share {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 5px;
+}
+.figure-quote:hover .share,
+blockquote:hover .share {
+  opacity: 1;
+}
+
+// Legacy quote author
+.author {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 5px;
+}
+
+.letter .long {
+  margin: $space-2 $space-6;
+}
+.letter .long:before {
+  content: '';
+  display: none;
+}
+
+.section-entry object,
+.section-entry iframe {
+  display: block;
+  margin: 0 auto $space;
+}
