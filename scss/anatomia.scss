@@ -1,0 +1,35 @@
+/*
+Threme Name: Anatomia Norweskiego
+Threme URI: http://anatomianorweskiego.com
+Author: Marcin Retecki
+*/
+
+//  Variables
+@import '../framework_master/scss/partials/variables';
+@import '../framework_master/scss/partials/mixins';
+
+//  Reset
+@import '../framework_master/scss/partials/reset';
+
+//  Core
+@import '../framework_master/scss/partials/scaffolding';
+@import '../framework_master/scss/partials/typography';
+@import '../framework_master/scss/partials/images';
+@import '../framework_master/scss/partials/buttons';
+@import '../framework_master/scss/partials/forms';
+
+//  Layout
+@import '../framework_master/scss/partials/layout';
+@import '../framework_master/scss/partials/grids';
+@import '../framework_master/scss/partials/sections';
+
+@import '../framework_master/scss/partials/navbar';
+@import '../framework_master/scss/partials/ex';
+
+//  Utilities
+@import '../framework_master/scss/partials/utilities';
+
+@import '../framework_master/scss/partials/shame';
+
+//  Media
+@import '../framework_master/scss/partials/media';
