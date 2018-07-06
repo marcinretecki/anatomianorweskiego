@@ -11,6 +11,9 @@
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
+//
+//  Fonts
+//
 @mixin font-bariol-thin {
   font-weight: 200;
   font-family: $bariol;
@@ -21,7 +24,49 @@
   font-family: $bariol-reg;
 }
 
-// trzeba też zrobić mixiny dla wielkości fontów i dodać line-height, żeby był consistent
+@mixin font-body {
+  font-weight: 400;
+  font-family: $body-font;
+}
+
+//  15/20px
+@mixin size-0 {
+  font-size: $size-0;
+  line-height: $space;
+}
+//  20/30px
+@mixin size-1 {
+  font-size: $size-1;
+  line-height: $space * 1.5;
+}
+//  26/40px
+@mixin size-2 {
+  font-size: $size-2;
+  line-height: $space * 2;
+}
+//  36/50px
+@mixin size-3 {
+  font-size: $size-3;
+  line-height: $space * 2.5;
+}
+//  48/60px
+@mixin size-4 {
+  font-size: $size-4;
+  line-height: $space * 3;
+}
+//  64/70px
+@mixin size-5 {
+  font-size: $size-5;
+  line-height: $space * 3.5;
+}
+//  84/90px
+@mixin size-6 {
+  font-size: $size-6;
+  line-height: $space * 4.5;
+}
+
+
+
 
 @mixin scrolling {
   overflow: auto;
@@ -69,3 +114,7 @@
 //      padding: 20px;
 //    }
 //  }
+
+
+
+

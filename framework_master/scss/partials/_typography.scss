@@ -72,9 +72,8 @@ p,
 ul,
 ol,
 dl {
+  @include size-1;
   padding: 0;
-  font-size: $size-1;
-  line-height: $line-1;
 }
 
 ul {
@@ -151,6 +150,128 @@ dd {
 
 figure {
   margin: 0 auto $space-2;
+}
+
+
+//
+// Headers
+//
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  text-decoration: none;
+}
+h1,
+.h1,
+.index-h,
+.section-h-thin,
+.section-h-thin.btn {
+  @include font-bariol-thin;
+  @include size-5;
+
+  margin: 0 0 $space;
+  font-variant: normal;
+  font-style: normal;
+  //font-size: $size-5;
+  //line-height: 1.041667;
+
+  @media #{$m640} {
+    @include size-4;
+  }
+}
+.section-h-thin {
+  margin: 0 0 $space-half;
+}
+
+// to są nagłówki artykułów na liście na blogu, kategoriach i search
+.index-h,
+.section-h-thin {
+  @media #{$m770} {
+    @include size-4;
+  }
+}
+
+// to jest główny tytuł artykułów
+.entry-title {
+  @include size-6;
+  margin-bottom: $space-4;
+  @media #{$m770} {
+    @include size-5;
+  }
+}
+h2,
+.h2,
+h3,
+.h3,
+.recommends-h {
+  @include size-4;
+
+  margin: $space-4 0 $space;
+  font-weight: 400;
+  font-variant: normal;
+  font-style: normal;
+  font-family: $body-font;
+}
+h2,
+.h2 {
+  @media #{$m400} {
+    @include size-3;
+  }
+}
+h3,
+.h3 {
+  @include size-2;
+  font-weight: 700;
+}
+h2:first-child,
+.h2:first-child,
+h3:first-child,
+.h3:first-child,
+.recommends-h {
+  margin-top: 0;
+}
+.h2 {
+  margin: 0;
+} // ???????????
+
+h2 + h3 {
+  margin-top: $space-2;
+}
+
+h4,
+.h4 {
+  @include size-0;
+
+  margin: 0 0 $space-half;
+  font-weight: 700;
+  font-variant: normal;
+  font-style: normal;
+  font-family: $body-font;
+}
+
+h1 a,
+h1 a:visited,
+h2 a,
+h2 a:visited,
+h3 a,
+h3 a:visited,
+h4 a,
+h4 a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.index-h a:hover,
+.index-h a:focus {
+  text-decoration: underline;
+}
+.index-h-white a,
+.index-h-white a:visited,
+.index-h-white a:hover {
+  color: $white;
 }
 
 
@@ -474,125 +595,7 @@ hr {
   margin-top: 0;
 }
 
-//
-// Headers
-//
 
-h1,
-h2,
-h3,
-h4 {
-  padding: 0;
-  text-decoration: none;
-}
-h1,
-.h1,
-.index-h,
-.section-h-thin,
-.section-h-thin.btn {
-  @include font-bariol-thin;
-
-  margin: 0 0 $space;
-  font-variant: normal;
-  font-style: normal;
-  font-size: $size-5;
-  line-height: 1.041667;
-
-  @media #{$m640} {
-    font-size: $size-4;
-  }
-}
-.section-h-thin {
-  margin: 0 0 $space-half;
-}
-
-// to są nagłówki artykułów na liście na blogu, kategoriach i search
-.index-h,
-.section-h-thin {
-  @media #{$m770} {
-    font-size: $size-4;
-  }
-}
-
-// to jest główny tytuł artykułów
-.entry-title {
-  font-size: $size-6;
-  margin-bottom: $space-4;
-  @media #{$m770} {
-    font-size: $size-5;
-  }
-}
-h2,
-.h2,
-h3,
-.h3,
-.recommends-h {
-  margin: $space-4 0 $space;
-  font-weight: 400;
-  font-variant: normal;
-  font-style: normal;
-  font-size: $size-4;
-  line-height: 1.15;
-  font-family: $body-font;
-}
-h2,
-.h2 {
-  @media #{$m400} {
-    font-size: $size-3;
-  }
-}
-h3,
-.h3 {
-  font-size: $size-2;
-  font-weight: 700;
-}
-h2:first-child,
-.h2:first-child,
-h3:first-child,
-.h3:first-child,
-.recommends-h {
-  margin-top: 0;
-}
-.h2 {
-  margin: 0;
-} // ???????????
-
-h2 + h3 {
-  margin-top: $space-2;
-}
-
-h4,
-.h4 {
-  margin: 0 0 $space-half;
-  font-weight: 700;
-  font-variant: normal;
-  font-style: normal;
-  font-size: $size-0;
-  line-height: 1.15;
-  font-family: $body-font;
-}
-
-h1 a,
-h1 a:visited,
-h2 a,
-h2 a:visited,
-h3 a,
-h3 a:visited,
-h4 a,
-h4 a:visited {
-  text-decoration: none;
-  color: #000;
-}
-
-.index-h a:hover,
-.index-h a:focus {
-  text-decoration: underline;
-}
-.index-h-white a,
-.index-h-white a:visited,
-.index-h-white a:hover {
-  color: $white;
-}
 
 
 
@@ -609,28 +612,27 @@ h4 a:visited {
 
 .size-0,
 .small {
-  font-size: $size-0;
+  @include size-0;
 }
 .size-1 {
-  font-size: $size-1;
-  line-height: $line-1;
+  @include size-1;
 }
 .size-2 {
-  font-size: $size-2;
+  @include size-2;
 }
 .size-3 {
-  font-size: $size-3;
+  @include size-3;
 }
 .size-4 {
-  font-size: $size-4;
+  @include size-4;
 }
 .size-5 {
-  font-size: $size-5;
+  @include size-5;
 }
 .size-6 {
-  font-size: $size-6;
+  @include size-6;
   @media #{$m400} {
-    font-size: $size-5;
+    @include size-5;
   }
 }
 
