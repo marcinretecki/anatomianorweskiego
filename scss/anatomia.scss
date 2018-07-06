@@ -33,3 +33,127 @@ Author: Marcin Retecki
 
 //  Media
 @import '../framework_master/scss/partials/media';
+
+//
+//  Top Section
+//
+.girl {
+  width: 100%;
+  height: 600px;
+  border: 3px solid white;
+  border-radius: 25%;
+
+  @include for-tablet-landscape-up {
+    float: right;
+    height: 800px;
+    width: 600px;
+  }
+}
+
+.anatomia-title {
+  text-align: center;
+  padding-top: $space-2;
+
+  @include for-tablet-landscape-up {
+    text-align: left;
+  }
+}
+
+//
+//  Anatomia to
+//
+.anatomia-main-points {
+}
+.anatomia-main-points__item {
+  position: relative;
+  padding-left: $space-2;
+}
+.anatomia-main-points__item::before {
+  content: '!';
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  font-size: $size-2;
+  width: $space-2;
+  text-align: center;
+}
+.anatomia-main-points__item + .anatomia-main-points__item {
+  margin-top: $space-2;
+}
+
+//
+//  Opinie
+//
+.anatomia-opinie {
+}
+
+.anatomia-opinie__item {
+  width: 34rem;
+  max-width: 100%;
+  padding: $space;
+  margin-left: auto;
+  margin-right: auto;
+}
+.anatomia-opinie__block {
+  position: relative;
+  margin-right: ($space-6 - $space);
+  padding: $space-half;
+  border-radius: 3px;
+  background: $beige;
+}
+.anatomia-opinie__block::before {
+  display: block;
+  position: absolute;
+  top: $space-2;
+  left: 100%;
+  border: $space-half solid transparent;
+  border-left-color: $beige;
+  content: '';
+}
+.anatomia-opinie__img {
+  float: right;
+  display: block;
+  border-radius: 3px;
+  width: $space-4;
+}
+.anatomia-opinie__text {
+  font-size: $space;
+  margin: 0;
+}
+
+//
+//  Spis treści
+//
+.anatomia-spis {
+}
+.anatomia-spis__pl {
+  font-size: $size-0;
+  color: $gray-on-dark;
+}
+
+//
+//  Zamówienia
+//
+.anatomia-order {
+}
+.anatomia-order__item {
+  margin-bottom: $space-2;
+
+  @include for-tablet-landscape-up {
+    float: left;
+    width: 33.33%;
+    padding: 0 $space;
+  }
+}
+.anatomia-order__item:hover {
+}
+.anatomia-order__text {
+  border-radius: 3px 3px 0 0;
+  text-align: center;
+}
+.anatomia-order__btn {
+  margin: 0;
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}

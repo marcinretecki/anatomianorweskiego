@@ -23,6 +23,13 @@
 		"oAP": "\/anatomianorweskiego.sublime-project",
 		"oF": 0
 		},
+	"\/build\/.htaccess": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/.htaccess",
+		"oF": 0
+		},
 	"\/build\/anatomia.css": {
 		"aP": 1,
 		"bl": 0,
@@ -33,11 +40,25 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"\/build\/google1d1a1ebbc4f7e1ae.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/google1d1a1ebbc4f7e1ae.html",
+		"oF": 0
+		},
 	"\/build\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/build\/index.html",
+		"oF": 0
+		},
+	"\/build\/test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/test.html",
 		"oF": 0
 		},
 	"\/framework_master\/.gitignore": {
@@ -307,6 +328,13 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/google1d1a1ebbc4f7e1ae.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/google1d1a1ebbc4f7e1ae.html",
+		"oF": 2
+		},
 	"\/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -326,6 +354,13 @@
 		"oF": 2,
 		"oS": 3,
 		"uL": 1
+		},
+	"\/test.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/test.html",
+		"oF": 2
 		}
 	},
 "hooks": [
