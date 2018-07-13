@@ -1,0 +1,184 @@
+//
+//  Stripe
+//
+
+.stripe-form-wrapper {
+}
+
+//
+//  General
+//
+
+.label--stripe {
+  @include size-1;
+  display: block;
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+.input--stripe {
+  display: block;
+  padding: $space-half $space;
+  border: 1px solid $beige-border;
+  border-radius: 3px;
+  line-height: 1.1875;
+  background: $white;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: $space;
+}
+
+.input--stripe--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.input--stripe--invalid {
+  border-color: #fa755a;
+}
+
+.input--stripe--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+
+//
+//  Radio input
+//
+.radio-option {
+}
+
+.radio-option__radio {
+  display: none;
+}
+
+.radio-option__label::before {
+  content: '';
+  display: inline-block;
+  padding: $space;
+  border: 1px solid $gray;
+  background: $white;
+  vertical-align: middle;
+}
+
+.radio-option__radio:checked + .radio-option__label::before {
+  content: '';
+  border: 1px solid $green-border;
+  background: $green;
+}
+
+.radio-option__price {
+}
+
+
+//
+//  Sections
+//
+
+.stripe-form__section {
+  margin-bottom: $space;
+}
+
+.stripe-form__section + .stripe-form__section {
+  padding-top: $space;
+  border-top: 1px solid $gray;
+}
+
+//
+//  Bag
+//
+.stripe-form__section--bag {
+}
+
+// ul
+.bag-list {
+  margin: 0;
+}
+// li
+.bag-item {
+  position: relative;
+  padding: $space 0;
+  margin: 0;
+}
+.bag-item + .bag-item {
+  border-top: 1px solid $gray;
+}
+
+.bag-item::before {
+  content: '';
+}
+
+.bag-item__img {
+  float: left;
+  display: block;
+  width: $space-4;
+  height: $space-4;
+  background: #000;
+}
+
+.bag-item__title {
+  display: inline-block;
+  padding-left: $space-2;
+}
+
+.bag-item__price {
+  float: right;
+}
+
+//
+//  Buyer
+//
+.stripe-form__section--buyer {
+}
+
+//
+//  Shipping
+//
+.stripe-form__section--shipping-options {
+}
+
+.shipping-options {
+}
+
+.shipping-option {
+}
+
+
+
+//
+//  Shipping to other addres
+//
+.stripe-form__section--shipping-address {
+}
+.shipping-address-options {
+}
+.other-shipping-address {
+}
+
+//
+//  Payment
+//
+.stripe-form__section--payment {
+}
+
+.payment-options {
+}
+
+.payment-option {
+}
+.payment-option__card {
+}
+
+.card-payment {
+}
+
+.card-payment__h {
+  position: relative;
+}
+.card-payment__h::before {
+  content: '[]';
+  display: inline-block;
+  padding-right: $space-half;
+}
+
+.bank-payment {
+}
