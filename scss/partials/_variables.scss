@@ -2,13 +2,9 @@
 // Variables
 //
 
-//
-// Media queries
-//
-$m905: 'screen and (max-width: 905px)';
-$m770: 'screen and (max-width: 770px)';
-$m640: 'screen and (max-width: 640px)';
-$m400: 'screen and (max-width: 400px)';
+//  Section width
+$section-width: 1040px;
+$real-section-width-rem: (1000rem / 20);
 
 //
 // 16-column grid
@@ -82,9 +78,9 @@ $font-semi-dark: #171f26;
 //
 // Typography and spacing
 //
-$bariol: 'bariol_lightlight', 'Gill Sans', 'Gill Sans MT', Helvetica, Arial,
+$bariol: 'Bariol Light', 'bariol_lightlight', 'Gill Sans', 'Gill Sans MT', Helvetica, Arial,
   'Nimbus Sans L', Roboto, sans-serif;
-$bariol-reg: 'bariol_regularregular', 'Gill Sans', 'Gill Sans MT', Helvetica,
+$bariol-reg: 'Bariol Regular', 'bariol_regularregular', 'Gill Sans', 'Gill Sans MT', Helvetica,
   Arial, 'Nimbus Sans L', Roboto, sans-serif;
 $body-font: 'Iowan Old Style', 'Book Antiqua', 'Palatino Linotype', 'Palatino',
   'URW Palladio L', 'Palatino LT STD', 'Droid Serif', 'Georgia', serif;
@@ -100,7 +96,10 @@ $size-5: 3.2rem;
 $size-6: 4.2rem;
 
 $line-0: 1.25;
-$line-1: 1.6;
+$line-1: 1.5;
+
+
+
 
 //
 // Spacing
@@ -115,3 +114,15 @@ $space-3: 3 * $space;
 $space-4: 4 * $space;
 $space-6: 6 * $space;
 $space-8: 8 * $space;
+
+
+
+
+//
+//  LEGACY
+//  Media queries
+//
+$m905: 'screen and (max-width: 905px)';
+$m770: 'screen and (max-width: 770px)';
+$m640: 'screen and (max-width: 640px)';
+$m400: 'screen and (max-width: 400px)';
