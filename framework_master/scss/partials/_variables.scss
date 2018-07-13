@@ -2,13 +2,9 @@
 // Variables
 //
 
-//
-// Media queries
-//
-$m905: 'screen and (max-width: 905px)';
-$m770: 'screen and (max-width: 770px)';
-$m640: 'screen and (max-width: 640px)';
-$m400: 'screen and (max-width: 400px)';
+//  Section width
+$section-width: 1040px;
+$real-section-width-rem: (1000rem / 20);
 
 //
 // 16-column grid
@@ -118,3 +114,15 @@ $space-3: 3 * $space;
 $space-4: 4 * $space;
 $space-6: 6 * $space;
 $space-8: 8 * $space;
+
+
+
+
+//
+//  LEGACY
+//  Media queries
+//
+$m905: 'screen and (max-width: 905px)';
+$m770: 'screen and (max-width: 770px)';
+$m640: 'screen and (max-width: 640px)';
+$m400: 'screen and (max-width: 400px)';

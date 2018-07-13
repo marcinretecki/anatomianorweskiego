@@ -44,15 +44,17 @@
   font-size: $size-2;
   line-height: $space * 2;
 }
-//  36/50px
+//  Below used for heddings
+//  Therefore smaller line-height
+//  36/40px
 @mixin size-3 {
   font-size: $size-3;
-  line-height: $space * 2.5;
+  line-height: $space * 2;
 }
-//  48/60px
+//  48/50px
 @mixin size-4 {
   font-size: $size-4;
-  line-height: $space * 3;
+  line-height: $space * 2.5;
 }
 //  64/70px
 @mixin size-5 {

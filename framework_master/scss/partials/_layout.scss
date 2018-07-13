@@ -13,7 +13,7 @@
 //  Section content keeps the width of the pages
 .section-content {
   position: relative;
-  width: 1064px;
+  width: $section-width;
   max-width: 100%;
   padding: $space-4 $space $space-4;
   margin: 0 auto;
@@ -81,3 +81,8 @@
   width: 13 * $space;
   width: auto;
 }
+
+//
+//  Common layouts
+//
+//  we need col-3 alternative

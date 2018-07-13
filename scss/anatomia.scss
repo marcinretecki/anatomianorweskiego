@@ -34,52 +34,135 @@ Author: Marcin Retecki
 //  Media
 @import '../framework_master/scss/partials/media';
 
+
 //
-//  Top Section
+//  Nav
 //
-.girl {
-  width: 100%;
-  height: 600px;
-  border: 3px solid white;
-  border-radius: 25%;
+
+
+/*
+  musimy przekształcić normalny navbar na tablet-portrait-up
+  wtedy będzie łatwiej go themować w zależności od kontentu
+ */
+.navbar--anatomia {
+
+  display: none;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  transform: translate(0, -150%);
 
   @include for-tablet-landscape-up {
-    float: right;
-    height: 800px;
-    width: 600px;
+    display: inline-block;
+    position: static;
+    transform: translate(0, 0);
+    z-index: 0;
+  }
+}
+.navbar--anatomia .btn-nav {
+  @include for-tablet-portrait-up {
+    display: block;
+    padding-top: $space;
+    padding-bottom: $space;
+    text-align: left;
+  }
+  @include for-tablet-landscape-up {
+    display: inline-block;;
+    padding-top: $space-half;
+    padding-bottom: $space-half;
+    text-align: center;
+  }
+}
+//  when the menu hides, buttons change
+.section-nav__toggle--anatomia {
+  display: block;
+  //padding-top: $space;
+  //padding-bottom: $space;
+  text-align: left;
+
+  @include for-tablet-landscape-up {
+    display: none;
   }
 }
 
+.btn-nav--koszyk {
+  padding: 0 $space;
+  padding-top: $space-quarter;
+  padding-bottom: $space-quarter;
+  margin: $space-quarter;
+  border-radius: 3px;
+}
+
+//
+//  Top Section
+//
 .anatomia-title {
   text-align: center;
-  padding-top: $space-2;
 
   @include for-tablet-landscape-up {
-    text-align: left;
   }
+}
+.anatomia-title__h {
+  @include size-5;
+
+  @include for-tablet-landscape-up {
+    @include size-6;
+    margin-bottom: $space;
+  }
+}
+
+.girl {
+  width: 100%;
+  border: 3px solid white;
+  border-radius: 25%;
+
+  padding-bottom:150%;
 }
 
 //
 //  Anatomia to
 //
 .anatomia-main-points {
+  @include for-tablet-landscape-up {
+    margin-left:-($space-2);
+  }
 }
 .anatomia-main-points__item {
   position: relative;
-  padding-left: $space-2;
+  @include for-tablet-landscape-up {
+    float: left;
+    width: 50%;
+  }
 }
-.anatomia-main-points__item::before {
-  content: '!';
+
+.anatomia-main-points__item:nth-child(2) {
+  margin-top: $space;
+  @include for-tablet-landscape-up {
+    margin-top: 0;
+  }
+}
+.anatomia-main-points__item:nth-child(n + 3) {
+  margin-top: $space;
+}
+
+
+.anatomia-main-points__item__learn {
+  position: relative;
+  margin: 0 0 0 $space-2;
+}
+.anatomia-main-points__item__learn::before {
+  display: inline-block;
   position: absolute;
-  display: block;
-  left: 0;
+  right: 100%;
   top: 0;
-  font-size: $size-2;
-  width: $space-2;
-  text-align: center;
-}
-.anatomia-main-points__item + .anatomia-main-points__item {
-  margin-top: $space-2;
+  width: $size-1;
+  height: $size-1 * $line-1;
+  margin-right: $space-half;
+  background: transparent url('anatomia_tick.svg') no-repeat center center;
+  background-size: $size-1;
+  content: '';
 }
 
 //
@@ -111,6 +194,7 @@ Author: Marcin Retecki
   border-left-color: $beige;
   content: '';
 }
+
 .anatomia-opinie__img {
   float: right;
   display: block;
@@ -121,14 +205,40 @@ Author: Marcin Retecki
   font-size: $space;
   margin: 0;
 }
+.anatomia-order__one-book {
+  margin-bottom: $space-half;
+
+  @include for-tablet-landscape-up {
+    margin-bottom: ($space-2 + $space-half);
+  }
+}
 
 //
 //  Spis treści
 //
 .anatomia-spis {
 }
+.anatomia-spis-columns {
+  column-width: 13 * $space;
+  column-gap: $space;
+}
+.anatomia-spis-columns__item {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.anatomia-spis-ul {
+  @include size-0;
+  margin: 0 0 $space $space-half;
+}
+.anatomia-spis-ul > li {
+  margin: 0;
+  padding-left: $space-half
+}
+.anatomia-spis-ul > li::before {
+  content: "\2043";
+}
 .anatomia-spis__pl {
-  font-size: $size-0;
+  font-size: $size-mini;
   color: $gray-on-dark;
 }
 
@@ -137,23 +247,36 @@ Author: Marcin Retecki
 //
 .anatomia-order {
 }
-.anatomia-order__item {
+.anatomia-order__item-wrap {
   margin-bottom: $space-2;
-
   @include for-tablet-landscape-up {
     float: left;
     width: 33.33%;
     padding: 0 $space;
   }
 }
-.anatomia-order__item:hover {
+.anatomia-order__item {
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 3px 6px   rgba(0,0,0,0.16), 0 3px 6px   rgba(0,0,0,0.23);
 }
+.anatomia-order__item:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px   rgba(0,0,0,0.23);
+}
+
 .anatomia-order__text {
   border-radius: 3px 3px 0 0;
   text-align: center;
 }
+
 .anatomia-order__btn {
   margin: 0;
   width: 100%;
   border-radius: 0 0 3px 3px;
+  padding: $space;
+}
+
+
+.anatomia-faq__h3 {
+  margin: $space-2 0 0;
 }
