@@ -459,13 +459,11 @@ input[type='submit']:hover, input[type='submit']:focus, .btn-input:hover, .btn-i
 
 input[type='submit']:active, .btn-input:active { position: relative; top: 1px; left: 1px; }
 
-input[type='checkbox'], input[type='radio'] { width: auto; display: inline; margin: 0; padding: 0; }
+input[type='checkbox'] { width: auto; display: inline; margin: 0; padding: 0; }
 
 input[type='image'] { width: auto; border: 0; background: none; }
 
 label { width: auto; cursor: pointer; }
-
-label input[type='radio'] { margin-right: 0.5rem; }
 
 .form-kursy { margin-left: 3.75rem; padding-left: 2rem; }
 
@@ -1607,6 +1605,14 @@ blockquote .share { display: block; position: absolute; top: 100%; right: 0; mar
   article:before { content: 'NocnaSowa.pl'; font: 1.8rem "Bariol Light", "bariol_lightlight", "Gill Sans", "Gill Sans MT", Helvetica, Arial, "Nimbus Sans L", Roboto, sans-serif; display: block; width: 100%; text-align: center; margin-bottom: 2rem; }
   article:after { content: attr(data-title); font: 1.3rem "Iowan Old Style", "Book Antiqua", "Palatino Linotype", "Palatino", "URW Palladio L", "Palatino LT STD", "Droid Serif", "Georgia", serif; display: block; width: 100%; text-align: center; } }
 
+a, a:before { color: #c53727; }
+
+a:visited { /* color:$blue-border */ }
+
+a:focus, a:hover { color: #35424c; }
+
+a:active { color: #000; outline: 0; }
+
 /* musimy przekształcić normalny navbar na tablet-portrait-up wtedy będzie łatwiej go themować w zależności od kontentu */
 .navbar--anatomia { display: none; z-index: -1; position: absolute; left: 0; right: 0; top: 100%; -webkit-transform: translate(0, -150%); -ms-transform: translate(0, -150%); transform: translate(0, -150%); }
 
@@ -1622,11 +1628,23 @@ blockquote .share { display: block; position: absolute; top: 100%; right: 0; mar
 
 .btn-nav--koszyk { padding: 0 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; margin: 0.25rem; border-radius: 3px; }
 
+.btn-nav--koszyk:focus, .btn-nav--koszyk:hover, .btn-black:focus, .btn-black:hover { background-color: #c53727; color: #fff; }
+
+.red-bottom { border-bottom: 3px solid #b0281a; }
+
 .anatomia-title { text-align: center; }
 
 .anatomia-title__h { font-size: 3.2rem; line-height: 3.5rem; }
 
 @media (min-width: 900px) { .anatomia-title__h { font-size: 4.2rem; line-height: 4.5rem; margin-bottom: 1rem; } }
+
+.anatomia-title__h { font-size: 3.2rem; line-height: 3.5rem; }
+
+@media (min-width: 900px) { .anatomia-title__h { font-size: 4.2rem; line-height: 4.5rem; margin-bottom: 1rem; } }
+
+.anatomia-title__p { font-size: 1.3rem; line-height: 2rem; margin-bottom: 0; font-style: italic; }
+
+@media (min-width: 900px) { .anatomia-title__p { font-size: 1.8rem; line-height: 2rem; } }
 
 .girl { width: 100%; border: 3px solid white; border-radius: 25%; padding-bottom: 150%; }
 
@@ -1644,7 +1662,7 @@ blockquote .share { display: block; position: absolute; top: 100%; right: 0; mar
 
 .anatomia-main-points__item__learn { position: relative; margin: 0 0 0 2rem; }
 
-.anatomia-main-points__item__learn::before { display: inline-block; position: absolute; right: 100%; top: 0; width: 1rem; height: 1.5rem; margin-right: 0.5rem; background: transparent url("anatomia_tick.svg") no-repeat center center; background-size: 1rem; content: ''; }
+.anatomia-main-points__item__learn::before { font-size: 1rem; line-height: 1.5rem; display: inline-block; position: absolute; right: 100%; top: 0; width: 1rem; height: 1.5rem; content: '\2022'; color: #dd4b39; }
 
 .anatomia-opinie__item { width: 34rem; max-width: 100%; padding: 1rem; margin-left: auto; margin-right: auto; }
 
@@ -1660,6 +1678,8 @@ blockquote .share { display: block; position: absolute; top: 100%; right: 0; mar
 
 @media (min-width: 900px) { .anatomia-order__one-book { margin-bottom: 2.5rem; } }
 
+.anatomia-order__cards { width: 8rem; height: auto; }
+
 .anatomia-spis-columns { -webkit-column-width: 13rem; column-width: 13rem; -webkit-column-gap: 1rem; column-gap: 1rem; }
 
 .anatomia-spis-columns__item { page-break-inside: avoid; -webkit-column-break-inside: avoid; break-inside: avoid; }
@@ -1668,7 +1688,7 @@ blockquote .share { display: block; position: absolute; top: 100%; right: 0; mar
 
 .anatomia-spis-ul > li { margin: 0; padding-left: 0.5rem; }
 
-.anatomia-spis-ul > li::before { content: "\2043"; }
+.anatomia-spis-ul > li::before { color: rgba(255, 255, 255, 0.7); content: "\2043"; }
 
 .anatomia-spis__pl { font-size: 0.6rem; color: rgba(255, 255, 255, 0.7); }
 
@@ -1676,7 +1696,7 @@ blockquote .share { display: block; position: absolute; top: 100%; right: 0; mar
 
 @media (min-width: 900px) { .anatomia-order__item-wrap { float: left; width: 33.33%; padding: 0 1rem; } }
 
-.anatomia-order__item { border-radius: 3px; overflow: hidden; -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+.anatomia-order__item { border-radius: 3px; overflow: hidden; -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); cursor: pointer; }
 
 .anatomia-order__item:hover { -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
@@ -1684,4 +1704,22 @@ blockquote .share { display: block; position: absolute; top: 100%; right: 0; mar
 
 .anatomia-order__btn { margin: 0; width: 100%; border-radius: 0 0 3px 3px; padding: 1rem; }
 
+@media (min-width: 900px) { .anatomia-order__btn { padding: 1rem; } }
+
 .anatomia-faq__h3 { margin: 2rem 0 0; }
+
+.section-bag { position: absolute; top: 2.25rem; right: 0.25rem; z-index: 1; opacity: 0; display: none; width: 50%; max-width: 16rem; padding: 0; border-radius: 3px; overflow: hidden; -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); -webkit-transition: none; -o-transition: none; transition: none; }
+
+.bag-item { font-size: 0.75rem; line-height: 1rem; position: relative; display: none; padding: 0.5rem 0.25rem 0.5rem; margin: 0; cursor: pointer; -webkit-transition: none; -o-transition: none; transition: none; }
+
+.bag-item + .bag-item { border-top: 1px solid #616b73; }
+
+.bag-item__title { display: inline-block; padding: 0 0.5rem; }
+
+.bag-item__price { float: right; }
+
+.bag-item__remove { font-size: 0.75rem; line-height: 1rem; position: absolute; right: 0; top: 0; }
+
+.section-bag__sum { font-size: 0.75rem; line-height: 1rem; padding: 0.25rem; }
+
+.section-bag__link { font-size: 0.75rem; line-height: 1rem; margin: 0; width: 100%; border-radius: 0; }

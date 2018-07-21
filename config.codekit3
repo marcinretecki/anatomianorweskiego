@@ -26,9 +26,20 @@
 	"\/build\/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/.htaccess",
-		"oF": 0
+		"oF": 1
+		},
+	"\/build\/anatomia-norweskiego-fb.png": {
+		"ft": 32768,
+		"iS": 54376,
+		"oA": 1,
+		"oAP": "\/build\/anatomia-norweskiego-fb.png",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/build\/anatomia.css": {
 		"aP": 1,
@@ -43,12 +54,85 @@
 	"\/build\/anatomia_tick.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/build\/anatomia_tick.svg",
-		"oF": 0,
+		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/build\/android-icon-192x192.png": {
+		"ft": 32768,
+		"iS": 4870,
+		"oA": 1,
+		"oAP": "\/build\/android-icon-192x192.png",
+		"oF": 1,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/build\/apple-icon-152x152.png": {
+		"ft": 32768,
+		"iS": 3555,
+		"oA": 1,
+		"oAP": "\/build\/apple-icon-152x152.png",
+		"oF": 1,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/build\/apple-icon-180x180.png": {
+		"ft": 32768,
+		"iS": 4752,
+		"oA": 1,
+		"oAP": "\/build\/apple-icon-180x180.png",
+		"oF": 1,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/build\/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 414,
+		"oA": 1,
+		"oAP": "\/build\/favicon-16x16.png",
+		"oF": 1,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/build\/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 924,
+		"oA": 1,
+		"oAP": "\/build\/favicon-32x32.png",
+		"oF": 1,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/build\/favicon-96x96.png": {
+		"ft": 32768,
+		"iS": 2163,
+		"oA": 1,
+		"oAP": "\/build\/favicon-96x96.png",
+		"oF": 1,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/build\/favicon.ico": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/build\/favicon.ico",
+		"oF": 0
 		},
 	"\/build\/google1d1a1ebbc4f7e1ae.html": {
 		"cB": 0,
@@ -60,9 +144,19 @@
 	"\/build\/index.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/build\/index.html",
-		"oF": 0
+		"oF": 1
+		},
+	"\/build\/j-anatomia-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/j-anatomia-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/build\/test.html": {
 		"cB": 0,
@@ -169,6 +263,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/framework_master\/scss\/partials\/_layout.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_layout.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/framework_master\/scss\/partials\/_media.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -260,6 +367,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/framework_master\/scss\/partials\/_stripe.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_stripe.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/framework_master\/scss\/partials\/_typography.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -337,7 +457,24 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/build\/index.html",
-		"oF": 3
+		"oF": 2
+		},
+	"\/js\/j-anatomia.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 0,
+		"oAP": "\/build\/j-anatomia-min.js",
+		"oF": 2,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/opinie.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/opinie.html",
+		"oF": 1
 		},
 	"\/scss\/anatomia.scss": {
 		"aP": 1,
@@ -2184,7 +2321,7 @@
 		"autoOutputPathStyle": 1,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 3,
+		"syntaxCheckerStyle": 1,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {

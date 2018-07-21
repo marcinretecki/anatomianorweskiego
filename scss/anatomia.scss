@@ -35,6 +35,37 @@ Author: Marcin Retecki
 @import '../framework_master/scss/partials/media';
 
 
+
+
+
+
+//
+//  Links
+//
+a,
+a:before {
+  color: $red-hover;
+}
+a:link {
+}
+a:visited {
+  /* color:$blue-border */
+}
+a:focus,
+a:hover {
+  color: $dark;
+}
+a:active {
+  color: #000;
+  outline: 0;
+}
+
+
+
+
+
+
+
 //
 //  Nav
 //
@@ -95,9 +126,20 @@ Author: Marcin Retecki
   border-radius: 3px;
 }
 
+.btn-nav--koszyk:focus,
+.btn-nav--koszyk:hover,
+.btn-black:focus,
+.btn-black:hover {
+  background-color: $red-hover;
+  color: $white;
+}
+
 //
 //  Top Section
 //
+.red-bottom {
+  border-bottom: 3px solid $red-border;
+}
 .anatomia-title {
   text-align: center;
 
@@ -113,6 +155,26 @@ Author: Marcin Retecki
   }
 }
 
+.anatomia-title__h {
+  @include size-5;
+
+  @include for-tablet-landscape-up {
+    @include size-6;
+    margin-bottom: $space;
+  }
+}
+
+.anatomia-title__p {
+  @include size-2;
+  margin-bottom: 0;
+  font-style: italic;
+
+  @include for-tablet-landscape-up {
+    @include size-3;
+
+  }
+}
+
 .girl {
   width: 100%;
   border: 3px solid white;
@@ -120,6 +182,9 @@ Author: Marcin Retecki
 
   padding-bottom:150%;
 }
+
+
+
 
 //
 //  Anatomia to
@@ -153,16 +218,15 @@ Author: Marcin Retecki
   margin: 0 0 0 $space-2;
 }
 .anatomia-main-points__item__learn::before {
+  @include size-1;
   display: inline-block;
   position: absolute;
   right: 100%;
   top: 0;
   width: $size-1;
   height: $size-1 * $line-1;
-  margin-right: $space-half;
-  background: transparent url('anatomia_tick.svg') no-repeat center center;
-  background-size: $size-1;
-  content: '';
+  content: '\2022';
+  color: $red;
 }
 
 //
@@ -213,6 +277,11 @@ Author: Marcin Retecki
   }
 }
 
+.anatomia-order__cards {
+  width: $space-8;
+  height: auto;
+}
+
 //
 //  Spis treści
 //
@@ -235,6 +304,7 @@ Author: Marcin Retecki
   padding-left: $space-half
 }
 .anatomia-spis-ul > li::before {
+  color: $gray-on-dark;
   content: "\2043";
 }
 .anatomia-spis__pl {
@@ -259,6 +329,8 @@ Author: Marcin Retecki
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 3px 6px   rgba(0,0,0,0.16), 0 3px 6px   rgba(0,0,0,0.23);
+
+  cursor: pointer;
 }
 .anatomia-order__item:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px   rgba(0,0,0,0.23);
@@ -274,9 +346,83 @@ Author: Marcin Retecki
   width: 100%;
   border-radius: 0 0 3px 3px;
   padding: $space;
+  //background: $red-hover;
+  @include for-tablet-landscape-up {
+    padding: $space;
+  }
 }
 
 
 .anatomia-faq__h3 {
   margin: $space-2 0 0;
+}
+
+
+
+//
+//  Koszyk
+//
+.section-bag {
+  position: absolute;
+  top: $space-2 + $space-quarter;
+  right: $space-quarter;
+  z-index: 1;
+  opacity: 0;
+  display: none;
+
+  width: 50%;
+  max-width: $space * 16;
+  padding: 0;
+  border-radius: 3px;
+  overflow: hidden;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px   rgba(0,0,0,0.23);
+  transition: none;
+}
+
+
+//  Bag
+.bag-item {
+  @include size-0;
+  position: relative;
+
+  display: none;
+
+  padding: $space-half $space-quarter $space-half;
+  margin: 0;
+
+  cursor: pointer;
+  transition: none;
+}
+
+.bag-item + .bag-item {
+  border-top: 1px solid $dark-light;
+}
+
+.bag-item__title {
+  display: inline-block;
+  padding: 0 $space-half;
+}
+
+.bag-item__price {
+  float: right;
+}
+
+.bag-item__remove {
+  @include size-0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.section-bag__sum {
+  @include size-0;
+  padding: $space-quarter;
+}
+
+.section-bag__link {
+  @include size-0;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
 }
