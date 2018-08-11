@@ -148,6 +148,10 @@ dd {
   margin: 0 0 $space;
 }
 
+.dl-faq dd + dt {
+  margin-top: $space-2;
+}
+
 figure {
   margin: 0 auto $space-2;
 }
@@ -281,19 +285,15 @@ h4 a:visited {
 
 .intro {
   font-size: $size-2;
-  line-height: 1.333;
+  line-height: 1.75rem;
 }
 
 // to do
 .post-index .index-h {
-  font-size: $size-4;
+  @include size-4;
 }
 .post-index .intro {
-  font-size: $size-1;
-  line-height: $line-1;
-  @media #{$m770} {
-    line-height: 1.5;
-  }
+  @include size-1;
 }
 
 .post-tags {
@@ -330,7 +330,7 @@ h4 a:visited {
 }
 
 .p-short {
-  line-height: 1.333;
+
 }
 .p-quote {
   text-indent: -0.5rem;
@@ -488,7 +488,7 @@ blockquote ul,
 blockquote ol {
   font-style: italic;
   font-size: $size-2;
-  line-height: 1.333;
+  line-height: 1.25;
 }
 blockquote p:last-child,
 blockquote p:last-of-type,
@@ -680,7 +680,7 @@ hr {
 }
 
 .text-muted {
-  font-size: $size-0;
+  @include size-0;
   color: $font-light;
 }
 
