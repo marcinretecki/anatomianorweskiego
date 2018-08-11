@@ -1,0 +1,1027 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"space-",
+				"space-half"
+			],
+			[
+				"ms",
+				"msg_start"
+			],
+			[
+				"order",
+				"orderConfirm"
+			],
+			[
+				"tra",
+				"translateY"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"event",
+				"eventTarget"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"meta",
+				"meta_group"
+			],
+			[
+				"meta_group",
+				"meta_group_key"
+			],
+			[
+				"ordre",
+				"ordre_post_id"
+			],
+			[
+				"source",
+				"source_id"
+			],
+			[
+				"prep",
+				"prepared_order"
+			],
+			[
+				"form",
+				"form_sum"
+			],
+			[
+				"class",
+				"classList"
+			],
+			[
+				"check",
+				"checked"
+			],
+			[
+				"bag_",
+				"bag_string"
+			],
+			[
+				"bag_s",
+				"bag_string_to_array"
+			],
+			[
+				"prepare_",
+				"prepare_bag_array"
+			],
+			[
+				"payment",
+				"paymentOption"
+			],
+			[
+				"shippingP",
+				"shippingPriceEl"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"show",
+				"show_bag"
+			],
+			[
+				"is_ca",
+				"is_category"
+			],
+			[
+				"wrong",
+				"wrongNo"
+			],
+			[
+				"inn",
+				"innerHTML"
+			],
+			[
+				"resta",
+				"restartBtn"
+			],
+			[
+				"add",
+				"addPoints"
+			],
+			[
+				"Inner",
+				"innerHTML"
+			],
+			[
+				"translate",
+				"translateY"
+			],
+			[
+				"przep-",
+				"przep-close"
+			],
+			[
+				"sho",
+				"showDebugMsg"
+			],
+			[
+				"deb",
+				"showDebugMsg"
+			],
+			[
+				"max",
+				"maxPoints"
+			],
+			[
+				"de",
+				"showDebugMsg"
+			],
+			[
+				"points",
+				"pointsEl"
+			],
+			[
+				"firs",
+				"firstChild"
+			],
+			[
+				"background",
+				"background"
+			],
+			[
+				"tr",
+				"trapArr"
+			],
+			[
+				"top",
+				"top-field"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"qu",
+				"questionText"
+			],
+			[
+				"bo",
+				"bottomField"
+			],
+			[
+				"svg",
+				"svgObject"
+			],
+			[
+				"do",
+				"document"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"parent",
+				"parentArray"
+			],
+			[
+				"pa",
+				"parentArray"
+			],
+			[
+				"first",
+				"firstLine"
+			],
+			[
+				"appen",
+				"appendChild"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"level",
+				"levelParent"
+			],
+			[
+				"ap",
+				"appendChild"
+			],
+			[
+				"cre",
+				"createElement"
+			],
+			[
+				"start",
+				"start-1"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"create",
+				"createElement"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"app",
+				"appendChild"
+			],
+			[
+				"kur",
+				"kursArray"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"font-",
+				"font-style"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"clock",
+				"clockTwo"
+			],
+			[
+				"popupp",
+				"popuppoll-q"
+			],
+			[
+				"pop",
+				"popup_cookie"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"ucze",
+				"ucze-sie"
+			],
+			[
+				"html",
+				"htmlentities"
+			],
+			[
+				"po",
+				"pointer"
+			],
+			[
+				"group",
+				"group_id"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"pri",
+				"print_r"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"space",
+				"space-x6"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"nav",
+				"nav-kursy-ul"
+			],
+			[
+				"konw",
+				"Konwersatoria"
+			],
+			[
+				"cla",
+				"className"
+			],
+			[
+				"ent",
+				"entry-wide"
+			],
+			[
+				"add_",
+				"add_shortcode"
+			],
+			[
+				"tran",
+				"translate"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"fire",
+				"firefox"
+			],
+			[
+				"transition",
+				"TransitionTimingFunction"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"p",
+				"p\tpadding"
+			],
+			[
+				"backgo",
+				"background"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"firt",
+				"first-child"
+			],
+			[
+				"ale",
+				"alert"
+			],
+			[
+				"bott",
+				"text-bottom"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"DO",
+				"DOCUMENT_ROOT"
+			],
+			[
+				"border-",
+				"border-radius"
+			],
+			[
+				"background-",
+				"background-position"
+			],
+			[
+				"1em",
+				"1em"
+			],
+			[
+				"aside",
+				"aside-main"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"sec",
+				"section-front-3"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"sect",
+				"section-front-4"
+			],
+			[
+				"moz",
+				"moz-linear-gradient"
+			],
+			[
+				"aside-",
+				"aside-h"
+			],
+			[
+				"front",
+				"front-alt-3"
+			],
+			[
+				"levels",
+				"levels-h-alt"
+			],
+			[
+				"section-front-",
+				"section-front-2-alt"
+			],
+			[
+				"rozwijam",
+				"rozwijam"
+			],
+			[
+				"ul",
+				"ul\tUnordered List"
+			],
+			[
+				"a",
+				"a\tAnchor Link"
+			],
+			[
+				"id",
+				"id"
+			],
+			[
+				"port",
+				"portfolio"
+			],
+			[
+				"php",
+				"php\tphp-<?"
+			],
+			[
+				"p-nav",
+				"p-nav"
+			],
+			[
+				"prev",
+				"prev"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"c-",
+				"c-big"
+			],
+			[
+				"right",
+				"right"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"vi",
+				"visible"
+			],
+			[
+				"15px",
+				"15px"
+			],
+			[
+				"left",
+				"left"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "scss/anatomia.scss",
+			"settings":
+			{
+				"buffer_size": 7059,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test.html",
+			"settings":
+			{
+				"buffer_size": 23177,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 23231,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"js",
+				"JsPrettier: Format Code"
+			],
+			[
+				"",
+				"Arithmetic"
+			],
+			[
+				"pret",
+				"JsPrettier: Format Code"
+			],
+			[
+				"jspr",
+				"JsPrettier: Format Code"
+			],
+			[
+				"prett",
+				"JsPrettier: Format Code"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"standa",
+				"Standard Format: Format current file"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"hint",
+				"JSHint: Clear Annotations"
+			],
+			[
+				"hi",
+				"JSHint"
+			],
+			[
+				"jshin",
+				"JSHint: Set Linting Preferences"
+			],
+			[
+				"jsh",
+				"JSHint"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"pak",
+				"Package Control: Install Package"
+			],
+			[
+				"Space",
+				"Package Control: List Packages"
+			],
+			[
+				"Pack",
+				"Package Control: List Packages"
+			],
+			[
+				"packe",
+				"Package Control: List Packages"
+			],
+			[
+				"Snippet: ",
+				"Snippet: basic html"
+			],
+			[
+				"pck",
+				"Package Control: Remove Package"
+			],
+			[
+				"insl",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 436.0
+	},
+	"console":
+	{
+		"height": 256.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/scss"
+	],
+	"file_history":
+	[
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop-checkout.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-products.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/index.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/js/j.js",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_typography.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-crud.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/includes/loop-the-post.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop-all-orders.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/warsztaty-oslo.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/warsztaty-faq.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/functions/warsztaty-functions.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/includes/header.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/functions.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/stripe-functions.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-order-info.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-emails.php",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/js/j-anatomia.js",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/index.html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/build/index.html",
+		"/Users/marcinretecki/Sites/nocnasowa/livecopy/.htaccess",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/js/j-checkout.js",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-redirects.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-init.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop-order.php",
+		"/Users/marcinretecki/Sites/nocnasowa/livecopy/env-keys.php",
+		"/Users/marcinretecki/Sites/nocnasowa/live/env-keys.php",
+		"/Users/marcinretecki/Sites/nocnasowa/livecopy/env_keys.php",
+		"/Users/marcinretecki/Sites/nocnasowa/livecopy/env_vars.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-test-data.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop-hook.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-views.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/includes/shop-order-info.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-functions.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/functions/stripe-functions.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/functions/shop-functions.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/functions/shop-products.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/functions/products.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Design/Newsletter/NocnaSowa-Mail-Receipt-v1.html",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/functions/emails.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Design/Newsletter/NocnaSowa-Mail-Minimal-v1-9.html",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/includes/footer-minimal.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_variables.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/scss/s.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_sections.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_layout.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_grids.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_mixins.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_forms.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_shame.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_buttons.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/warsztaty-oslo-form.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/single.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop-order-info.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/warsztaty-treningi.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/includes/footer.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/js/j-przepytywanie.js",
+		"/Users/marcinretecki/Sites/nocnasowa/Design - posts and pages/Zaczynam/Przepytywanie/przepytywanie.html",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/assets/asset-przepisy-kulinarne-po-norwesku.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/test.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_utilities.scss",
+		"/Users/marcinretecki/Library/Application Support/Sublime Text 3/Packages/JsPrettier/JsPrettier.sublime-settings",
+		"/Users/marcinretecki/Sites/nocnasowa/Design - posts and pages/Artykuły/Jezykowa Inteligencja/inteligencja.html",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework Las Theme/js/_j-las-audio-test.js",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework Las Theme/js/_j-las-word-quiz.js",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework Las Theme/js/_j-las-helper.js",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/js/_j-helpers.js",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_images.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_reset.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/posts-word-count.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/all-posts-testing.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/build/s.css",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/includes/header-warsztaty-oslo.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Design - posts and pages/Artykuły/Jezykowa Inteligencja/sieci_wiedzy.svg",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/js/j-chat.js",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/functions/chat-bot-rzeczownik-data.php",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_media.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_ex.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_navbar.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/partials/_scaffolding.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Design - posts and pages/Artykuły/Jezykowa Inteligencja/zmiany_sieci_wiedzy.svg",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/pisanie.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/norweskagramatyka.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/framework_master/scss/twoja.scss",
+		"/Users/marcinretecki/Library/Application Support/Sublime Text 3/Packages/User/JsPrettier.sublime-settings",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/search.php",
+		"/Users/marcinretecki/Library/Application Support/Sublime Text 3/Packages/User/StandardFormat.sublime-settings",
+		"/Users/marcinretecki/Library/Application Support/Sublime Text 3/Packages/StandardFormat/StandardFormat.sublime-settings",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/s.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/live/.htaccess",
+		"/Users/marcinretecki/Library/Application Support/Sublime Text 2/Packages/Language - English/README_en_US.txt",
+		"/Users/marcinretecki/Library/Application Support/Sublime Text 2/Packages/Language - English/en_US.aff",
+		"/Users/marcinretecki/Library/Application Support/Sublime Text 2/Packages/Language - English/en_US.dic",
+		"/Users/marcinretecki/Library/Application Support/Sublime Text 2/Packages/Language - Mysteriet/mysteriet.aff",
+		"/Users/marcinretecki/Library/Application Support/Sublime Text 2/Packages/Mysteriet/mysteriet.dic",
+		"/Users/marcinretecki/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-12.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/hoyre/h-2.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/hoyre/h-4.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/hoyre/h-6.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/hoyre/h-3.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/foran/f-2.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/hoyre/h-5.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/all-posts.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/ideer.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/kart.html",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/start-1.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-10.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-7.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-8.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-11.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-2.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-13.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-14.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-4.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-15.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-9.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/midpoint/mid-140.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-3.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-5.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-6.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/Gruntfile.js",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/package.json",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/midpoint/140.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/1.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/dora-til-venstre.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/dora-foran.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/index.md",
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/dora-til-hoyre.md"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 112.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "scss/anatomia.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 7059,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								290
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 1,
+					"file": "test.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12862,
+								12851
+							]
+						],
+						"settings":
+						{
+							"SL.139.region_keys":
+							[
+							],
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3468.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 23231,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								23231
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.309439528024,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 266.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "anatomianorweskiego.sublime-project",
+	"replace":
+	{
+		"height": 82.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 225.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

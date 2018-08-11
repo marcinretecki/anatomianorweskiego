@@ -12,16 +12,23 @@
 	"\/.gitattributes": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/.gitattributes",
-		"oF": 0
+		"oF": 1
 		},
 	"\/anatomianorweskiego.sublime-project": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/anatomianorweskiego.sublime-project",
-		"oF": 0
+		"oF": 1
+		},
+	"\/anatomianorweskiego.sublime-workspace": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/anatomianorweskiego.sublime-workspace",
+		"oF": 1
 		},
 	"\/build\/.htaccess": {
 		"cB": 0,
@@ -96,12 +103,12 @@
 		},
 	"\/build\/favicon-16x16.png": {
 		"ft": 32768,
-		"iS": 414,
-		"oA": 1,
+		"iS": 495,
+		"oA": 0,
 		"oAP": "\/build\/favicon-16x16.png",
-		"oF": 1,
-		"oIPL": 1,
-		"opt": 1,
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -158,6 +165,28 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/build\/marcin_anatomia_norweskiego_800.jpg": {
+		"ft": 16384,
+		"iS": 52428,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/marcin_anatomia_norweskiego_800.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/build\/marta_anatomia_norweskiego_800.jpg": {
+		"ft": 16384,
+		"iS": 53074,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/marta_anatomia_norweskiego_800.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/build\/test.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -168,9 +197,9 @@
 	"\/framework_master\/.gitignore": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/framework_master\/.gitignore",
-		"oF": 0
+		"oF": 1
 		},
 	"\/framework_master\/scss\/ie.scss": {
 		"aP": 1,
@@ -450,7 +479,7 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/build\/google1d1a1ebbc4f7e1ae.html",
-		"oF": 2
+		"oF": 3
 		},
 	"\/index.html": {
 		"cB": 0,
