@@ -342,7 +342,7 @@ h4 a:visited {
 //  we are using .post because .col would interefe with padding otherwise
 .post .dl-eg {
   padding-left: $space-2;
-  margin-top: $space-2;
+  margin-top: $space;
   margin-bottom: $space-2;
 }
 .dl-eg dt {
@@ -366,7 +366,7 @@ h4 a:visited {
 //
 //  give the row margin
 .post .row--dl-eg {
-  margin-top: $space-2;
+  margin-top: $space;
   margin-bottom: $space-2;
 }
 //  remove margin from dl-eg if it is in a row

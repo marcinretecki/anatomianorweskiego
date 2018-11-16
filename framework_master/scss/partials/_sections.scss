@@ -1075,6 +1075,74 @@
   }
 }
 
+//
+//  Aside Bottom
+//  Przedsprzedaż Anatomii
+//
+.section-aside-anatomia-presale {
+
+}
+.section-aside-anatomia-presale__cover {
+  float: right;
+  width: 50%;
+  padding-left: $space;
+  margin-right: -#{$space-half};
+}
+.section-aside-anatomia-presale__cover-img {
+
+
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+
+  @include for-tablet-portrait-up {
+
+    max-height: 400px !important;
+    width: auto;
+  }
+
+}
+.section-aside-anatomia-presale__title {
+
+  width: 50%;
+  padding-top: $space;
+  padding-bottom: $space-2;
+
+  @include for-tablet-portrait-up {
+    width: auto;
+    padding-top: $space-3;
+    padding-bottom: $space-2;
+  }
+}
+.section-aside-anatomia-presale__title-svg {
+
+  width: 100%;
+  height: auto;
+
+  @include for-tablet-portrait-up {
+
+    //  width should come from image
+    width: 271px;
+  }
+
+}
+
+.section-aside-anatomia-presale__btn {
+  margin: 0;
+  padding: $space-half $space;
+
+  @include for-tablet-portrait-up {
+    padding: $space-half $space-2;
+  }
+}
+.section-aside-anatomia-presale__btn-span {
+  display: none;
+  @include for-tablet-portrait-up {
+    display: inline;
+  }
+}
+
+
 /* About */
 .about-top {
   position: relative;
