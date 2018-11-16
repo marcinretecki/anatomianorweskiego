@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600px" height="1500px" viewBox="0 0 1600 1500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="50%" id="radialGradient">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="50%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <circle id="path-2" cx="653" cy="522" r="147" fill="url(#radialGradient)"></circle>
+        <circle id="path-4" cx="800.5" cy="241.5" r="133.5" fill="url(#radialGradient)"></circle>
+        <circle id="path-6" cx="947.5" cy="470.5" r="147.5" fill="url(#radialGradient)"></circle>
+        <circle id="path-8" cx="800.5" cy="484.5" r="133.5" fill="url(#radialGradient)"></circle>
+        <circle id="path-10" cx="826.5" cy="806.5" r="133.5" fill="url(#radialGradient)"></circle>
+        <circle id="path-12" cx="475" cy="1289" r="269" fill="url(#radialGradient)"></circle>
+        <circle id="path-15" cx="827" cy="977" r="227" fill="url(#radialGradient)"></circle>
+        <circle id="path-17" cx="1026" cy="1308" r="268" fill="url(#radialGradient)"></circle>
+        <circle id="path-19" cx="800" cy="618" r="100" fill="url(#radialGradient)"></circle>
+        <circle id="path-21" cx="320.5" cy="1135.5" r="172.5" fill="url(#radialGradient)"></circle>
+        <circle id="path-23" cx="1378.5" cy="1308.5" r="172.5" fill="url(#radialGradient)"></circle>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <image xlink:href="website_cover_01.jpg" x="0" y="0" width="1600" height="1500"></image>
+
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="Mask" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+        <image mask="url(#mask-3)" xlink:href="website_cover_02.jpg" x="0" y="0" width="1600" height="1500"></image>
+
+        <mask id="mask-5" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <use id="Mask-Copy" fill="url(#radialGradient-1)" xlink:href="#path-4"></use>
+        <image xlink:href="website_cover_02.jpg" mask="url(#mask-5)" x="0" y="0" width="1600" height="1500"></image>
+
+        <mask id="mask-7" fill="white">
+            <use xlink:href="#path-6"></use>
+        </mask>
+        <use id="Mask-Copy-2" fill="url(#radialGradient-1)" xlink:href="#path-6"></use>
+        <image xlink:href="website_cover_02.jpg" mask="url(#mask-7)" x="0" y="0" width="1600" height="1500"></image>
+
+        <mask id="mask-9" fill="white">
+            <use xlink:href="#path-8"></use>
+        </mask>
+        <use id="Mask-Copy-3" fill="url(#radialGradient-1)" xlink:href="#path-8"></use>
+        <image xlink:href="website_cover_02.jpg" mask="url(#mask-9)" x="0" y="0" width="1600" height="1500"></image>
+
+        <mask id="mask-11" fill="white">
+            <use xlink:href="#path-10"></use>
+        </mask>
+        <use id="Mask-Copy-4" fill="url(#radialGradient-1)" xlink:href="#path-10"></use>
+        <image xlink:href="website_cover_02.jpg" mask="url(#mask-11)" x="0" y="0" width="1600" height="1500"></image>
+
+        <mask id="mask-13" fill="white">
+            <use xlink:href="#path-12"></use>
+        </mask>
+        <use id="Mask-Copy-5" fill="url(#radialGradient-1)" xlink:href="#path-12"></use>
+        <image xlink:href="website_cover_02.jpg" mask="url(#mask-13)" x="0" y="0" width="1600" height="1500"></image>
+
+        <mask id="mask-16" fill="white">
+            <use xlink:href="#path-15"></use>
+        </mask>
+        <use id="Mask-Copy-6" fill="url(#radialGradient-14)" xlink:href="#path-15"></use>
+        <image xlink:href="website_cover_02.jpg" mask="url(#mask-16)" x="0" y="0" width="1600" height="1500"></image>
+
+        <mask id="mask-18" fill="white">
+            <use xlink:href="#path-17"></use>
+        </mask>
+        <use id="Mask-Copy-7" fill="url(#radialGradient-14)" xlink:href="#path-17"></use>
+        <image xlink:href="website_cover_02.jpg" mask="url(#mask-18)" x="0" y="0" width="1600" height="1500"></image>
+
+        <mask id="mask-20" fill="white">
+            <use xlink:href="#path-19"></use>
+        </mask>
+        <use id="Mask-Copy-8" fill="url(#radialGradient-14)" xlink:href="#path-19"></use>
+        <image xlink:href="website_cover_02.jpg" mask="url(#mask-20)" x="0" y="0" width="1600" height="1500"></image>
+
+        <mask id="mask-22" fill="white">
+            <use xlink:href="#path-21"></use>
+        </mask>
+        <use id="Mask-Copy-9" fill="url(#radialGradient-14)" xlink:href="#path-21"></use>
+        <image xlink:href="website_cover_02.jpg" mask="url(#mask-22)" x="0" y="0" width="1600" height="1500"></image>
+
+        <mask id="mask-24" fill="white">
+            <use xlink:href="#path-23"></use>
+        </mask>
+        <use id="Mask-Copy-10" fill="url(#radialGradient-14)" xlink:href="#path-23"></use>
+        <image xlink:href="website_cover_02.jpg" mask="url(#mask-24)" x="0" y="0" width="1600" height="1500"></image>
+    </g>
+
+</svg>
