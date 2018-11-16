@@ -7,8 +7,12 @@ RewriteEngine on
 RewriteRule ^(j|c)/(.+)\.(.+)\.(js|css)$ $1/$2.$4 [L]
 </IfModule>
 
-
-
+# Force non-www:
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.anatomianorweskiego\.com [NC]
+RewriteRule ^(.*)$ http://anatomianorweskiego.com/$1 [L,R=301]
+</IfModule>
 
 
 # ----------------------------------------------------------------------

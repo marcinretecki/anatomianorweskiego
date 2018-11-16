@@ -44,27 +44,43 @@ Author: Marcin Retecki
 //
 a,
 a:before {
-  color: $red-hover;
+  color: $anatomia-green;
 }
 a:link {
 }
 a:visited {
-  /* color:$blue-border */
+  color: $anatomia-green;
 }
 a:focus,
 a:hover {
   color: $dark;
 }
 a:active {
-  color: #000;
+  color: $dark;
   outline: 0;
 }
 
 
 
+//
+//  SVG
+//
+.anatomia-svg {
+  display: block;
+  height: auto;
+  padding: 0;
+  margin: 0 auto -1px;
+
+  touch-action: manipulation;
+}
 
 
-
+//
+//  Section modifier
+//
+.anatomia-green-bottom {
+  border-bottom: 3px solid $anatomia-green;
+}
 
 //
 //  Nav
@@ -130,38 +146,53 @@ a:active {
 .btn-nav--koszyk:hover,
 .btn-black:focus,
 .btn-black:hover {
-  background-color: $red-hover;
+  background-color: $anatomia-green;
   color: $white;
 }
 
 //
 //  Top Section
 //
-.red-bottom {
-  border-bottom: 3px solid $red-border;
+.anatomia-title-wrapper {
+  width: 35 * $space;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: $space-6;
+
+  @include for-tablet-landscape-up {
+    padding-top: $space-8;
+  }
 }
 .anatomia-title {
   text-align: center;
 
+  padding-bottom: $space-2;
+
   @include for-tablet-landscape-up {
+    padding-bottom: $space-4;
   }
 }
 .anatomia-title__h {
   @include size-5;
+  margin-bottom: $space;
 
   @include for-tablet-landscape-up {
     @include size-6;
-    margin-bottom: $space;
+    margin-bottom: $space-2;
   }
+
+
 }
 
-.anatomia-title__h {
-  @include size-5;
+.anatomia-title__h-hide {
+  font: 0/0 a;
+  color: transparent;
+}
 
-  @include for-tablet-landscape-up {
-    @include size-6;
-    margin-bottom: $space;
-  }
+.anatomia-title__h-replace {
+  //  width from file
+  width: 407px;
+  max-width: 100%;
 }
 
 .anatomia-title__p {
@@ -170,17 +201,17 @@ a:active {
   font-style: italic;
 
   @include for-tablet-landscape-up {
-    @include size-3;
+    //@include size-3;
 
   }
 }
 
-.girl {
-  width: 100%;
-  border: 3px solid white;
-  border-radius: 25%;
 
-  padding-bottom:150%;
+.anatomia-cover-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+
+  overflow: hidden;
 }
 
 
@@ -226,7 +257,7 @@ a:active {
   width: $size-1;
   height: $size-1 * $line-1;
   content: '\2022';
-  color: $red;
+  color: $green-light;
 }
 
 //
@@ -356,7 +387,7 @@ a:active {
   width: 100%;
   border-radius: 0 0 3px 3px;
   padding: $space;
-  //background: $red-hover;
+  background: $anatomia-green;
   @include for-tablet-landscape-up {
     padding: $space;
   }
@@ -430,9 +461,20 @@ a:active {
   padding: $space-quarter;
 }
 
-.section-bag__link {
+.section-bag__link,
+.section-bag__link:visited {
   @include size-0;
   margin: 0;
   width: 100%;
   border-radius: 0;
+  //color: #fff;
+  //background: $anatomia-green;
+}
+.section-bag__link:focus,
+.section-bag__link:hover {
+  //color: #fff;
+}
+.section-bag__link:active {
+  //background: $dark;
+  //color: #fff;
 }

@@ -27,7 +27,8 @@
     title: 'Anatomia norweskiego',
     bundle: 'książka',
     bundleCount: 1,
-    price: 299,
+    // price: 299,
+    price: 399,
   };
 
   products['AN-5'] = {
@@ -35,7 +36,8 @@
     title: 'Anatomia norweskiego',
     bundle: '5 książek + 1 sztuka gratis',
     bundleCount: 6,
-    price: 1495,
+    // price: 1495,
+    price: 1995,
   };
 
   products['AN-12'] = {
@@ -43,7 +45,8 @@
     title: 'Anatomia norweskiego',
     bundle: '12 książek + 3 sztuki gratis',
     bundleCount: 15,
-    price: 3585,
+    // price: 3585,
+    price: 4785,
   };
 
   var bag = [];
@@ -338,6 +341,145 @@
     },
     false
   );
+
+
+
+
+
+
+  function anCoverAnimate() {
+
+    var svg = document.getElementById('an-website-cover');
+    var maskEl = svg.getElementById('mask-chick');
+    var revealEl = svg.getElementById('an-reveal');
+
+    var circle1 = svg.getElementById('circle-1');
+
+    var clickNo = 0;
+
+
+    //  animate
+    function animateMask( c ) {
+      Velocity(c, {opacity: 1}, {duration: 150, easing: "easeInCubic"});
+      Velocity(c, {opacity: 0}, {duration: 7000, easing: "easeOutSine",
+        complete: function() {
+          maskEl.removeChild(c);
+        },
+      });
+    }
+
+    function reveal() {
+      Velocity(revealEl, 'stop');
+      Velocity(revealEl, {opacity: 1}, {duration: 450, easing: "easeInCubic"});
+      Velocity(revealEl, {opacity: 0}, {duration: 7000, delay: 450, easing: "easeOutSine"});
+    }
+
+
+    //  return new circle
+    function createNewCircle( coords ) {
+
+      var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      circle.setAttribute('r', 150);
+      circle.setAttribute('cx', coords.x);
+      circle.setAttribute('cy', coords.y);
+      circle.setAttribute('opacity', 0);
+      circle.setAttribute('fill', 'url(#radialGradient)');
+
+
+      //  <circle id="circle-1" cx="653" cy="522" r="147" opacity="0" fill="url(#radialGradient)"></circle>
+
+      maskEl.appendChild(circle);
+
+      return circle;
+
+    }
+
+
+    function handleClicks(event) {
+
+      showDebugMsg(event);
+
+      var coords = getCoords(event);
+
+      var circle = createNewCircle( coords );
+
+      animateMask(circle);
+
+      clickNo += 1;
+
+      if (clickNo > 10 ) {
+        reveal();
+        clickNo = 0;
+
+        try {
+          ga('send', 'event', 'Cover', 'Anatomy Click', 'Reveal');
+        } catch (err) {}
+      }
+
+      var label = 'X: ' + Math.floor(coords.x) + '; Y: ' + Math.floor(coords.y);
+
+      try {
+        ga('send', 'event', 'Cover', 'Anatomy Click', label);
+      } catch (err) {}
+    }
+
+    //  add event listener
+    svg.addEventListener('click', function(event) {
+      handleClicks(event);
+      event.stopPropagation();
+    });
+
+
+    //  coordinates
+    var pt = svg.createSVGPoint();  // Created once for document
+
+    //  return obj
+    function getCoords(event) {
+        pt.x = event.clientX;
+        pt.y = event.clientY;
+
+        // The cursor point, translated into svg coordinates
+        var cursorpt =  pt.matrixTransform(svg.getScreenCTM().inverse());
+
+        return {
+          x: cursorpt.x,
+          y: cursorpt.y,
+        };
+    }
+
+
+
+
+    //  instantiate the scrollama
+    var scroller = scrollama();
+
+    // setup the instance, pass callback functions
+    scroller
+      .setup({
+        step: '.step', // required - class name of trigger steps
+        offset: 0.5,
+      })
+      .onStepEnter(function() { animateMask(circle1); });
+
+  }
+
+
+  window.addEventListener('load', function() {
+
+    // Gumshoe
+    // track sections so user knows where he is
+    //
+    gumshoe.init({
+      activeClass: 'btn-black--active',
+      selector: '#header-anatomia a',
+      offset: 200
+    });
+
+
+    anCoverAnimate();
+
+
+  }, false);
+
+
 })();
-
-

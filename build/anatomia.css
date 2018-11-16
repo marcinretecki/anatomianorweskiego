@@ -119,6 +119,8 @@ dt { font-weight: 700; }
 
 p, dl, dd { margin: 0 0 1rem; }
 
+.dl-faq dd + dt { margin-top: 2rem; }
+
 figure { margin: 0 auto 2rem; }
 
 h1, h2, h3, h4 { padding: 0; text-decoration: none; }
@@ -155,13 +157,11 @@ h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited {
 
 .index-h-white a, .index-h-white a:visited, .index-h-white a:hover { color: #fff; }
 
-.intro { font-size: 1.3rem; line-height: 1.333; }
+.intro { font-size: 1.3rem; line-height: 1.75rem; }
 
-.post-index .index-h { font-size: 2.4rem; }
+.post-index .index-h { font-size: 2.4rem; line-height: 2.5rem; }
 
-.post-index .intro { font-size: 1rem; line-height: 1.5; }
-
-@media screen and (max-width: 770px) { .post-index .intro { line-height: 1.5; } }
+.post-index .intro { font-size: 1rem; line-height: 1.5rem; }
 
 .post-tags { font-size: 0.75rem; line-height: 1rem; color: #616b73; }
 
@@ -176,8 +176,6 @@ h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited {
 .plan + ul { margin-bottom: 2rem; }
 
 .no-margin { margin-bottom: 0; }
-
-.p-short { line-height: 1.333; }
 
 .p-quote { text-indent: -0.5rem; }
 
@@ -233,7 +231,7 @@ h2 + .figure-quote, h3 + .figure-quote { margin-bottom: 2rem; }
 
 blockquote { position: relative; z-index: 2; margin: 0; background: transparent; font-size: 0.75rem; }
 
-blockquote p, blockquote ul, blockquote ol { font-style: italic; font-size: 1.3rem; line-height: 1.333; }
+blockquote p, blockquote ul, blockquote ol { font-style: italic; font-size: 1.3rem; line-height: 1.25; }
 
 blockquote p:last-child, blockquote p:last-of-type, blockquote ul:last-child { margin-bottom: 0; }
 
@@ -307,7 +305,7 @@ hr { position: relative; height: 0; margin: 2rem 0; padding: 0; border: 1px soli
 
 .err { color: #dd4b39; }
 
-.text-muted { font-size: 0.75rem; color: #616b73; }
+.text-muted { font-size: 0.75rem; line-height: 1rem; color: #616b73; }
 
 .centered { text-align: center; }
 
@@ -1605,13 +1603,17 @@ blockquote .share { display: block; position: absolute; top: 100%; right: 0; mar
   article:before { content: 'NocnaSowa.pl'; font: 1.8rem "Bariol Light", "bariol_lightlight", "Gill Sans", "Gill Sans MT", Helvetica, Arial, "Nimbus Sans L", Roboto, sans-serif; display: block; width: 100%; text-align: center; margin-bottom: 2rem; }
   article:after { content: attr(data-title); font: 1.3rem "Iowan Old Style", "Book Antiqua", "Palatino Linotype", "Palatino", "URW Palladio L", "Palatino LT STD", "Droid Serif", "Georgia", serif; display: block; width: 100%; text-align: center; } }
 
-a, a:before { color: #c53727; }
+a, a:before { color: #174950; }
 
-a:visited { /* color:$blue-border */ }
+a:visited { color: #174950; }
 
 a:focus, a:hover { color: #35424c; }
 
-a:active { color: #000; outline: 0; }
+a:active { color: #35424c; outline: 0; }
+
+.anatomia-svg { display: block; height: auto; padding: 0; margin: 0 auto -1px; -ms-touch-action: manipulation; touch-action: manipulation; }
+
+.anatomia-green-bottom { border-bottom: 3px solid #174950; }
 
 /* musimy przekształcić normalny navbar na tablet-portrait-up wtedy będzie łatwiej go themować w zależności od kontentu */
 .navbar--anatomia { display: none; z-index: -1; position: absolute; left: 0; right: 0; top: 100%; -webkit-transform: translate(0, -150%); -ms-transform: translate(0, -150%); transform: translate(0, -150%); }
@@ -1628,25 +1630,27 @@ a:active { color: #000; outline: 0; }
 
 .btn-nav--koszyk { padding: 0 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; margin: 0.25rem; border-radius: 3px; }
 
-.btn-nav--koszyk:focus, .btn-nav--koszyk:hover, .btn-black:focus, .btn-black:hover { background-color: #c53727; color: #fff; }
+.btn-nav--koszyk:focus, .btn-nav--koszyk:hover, .btn-black:focus, .btn-black:hover { background-color: #174950; color: #fff; }
 
-.red-bottom { border-bottom: 3px solid #b0281a; }
+.anatomia-title-wrapper { width: 35rem; max-width: 100%; margin: 0 auto; padding-top: 6rem; }
 
-.anatomia-title { text-align: center; }
+@media (min-width: 900px) { .anatomia-title-wrapper { padding-top: 8rem; } }
 
-.anatomia-title__h { font-size: 3.2rem; line-height: 3.5rem; }
+.anatomia-title { text-align: center; padding-bottom: 2rem; }
 
-@media (min-width: 900px) { .anatomia-title__h { font-size: 4.2rem; line-height: 4.5rem; margin-bottom: 1rem; } }
+@media (min-width: 900px) { .anatomia-title { padding-bottom: 4rem; } }
 
-.anatomia-title__h { font-size: 3.2rem; line-height: 3.5rem; }
+.anatomia-title__h { font-size: 3.2rem; line-height: 3.5rem; margin-bottom: 1rem; }
 
-@media (min-width: 900px) { .anatomia-title__h { font-size: 4.2rem; line-height: 4.5rem; margin-bottom: 1rem; } }
+@media (min-width: 900px) { .anatomia-title__h { font-size: 4.2rem; line-height: 4.5rem; margin-bottom: 2rem; } }
+
+.anatomia-title__h-hide { font: 0/0 a; color: transparent; }
+
+.anatomia-title__h-replace { width: 407px; max-width: 100%; }
 
 .anatomia-title__p { font-size: 1.3rem; line-height: 2rem; margin-bottom: 0; font-style: italic; }
 
-@media (min-width: 900px) { .anatomia-title__p { font-size: 1.8rem; line-height: 2rem; } }
-
-.girl { width: 100%; border: 3px solid white; border-radius: 25%; padding-bottom: 150%; }
+.anatomia-cover-wrapper { margin-left: auto; margin-right: auto; overflow: hidden; }
 
 @media (min-width: 900px) { .anatomia-main-points { margin-left: -2rem; } }
 
@@ -1662,7 +1666,7 @@ a:active { color: #000; outline: 0; }
 
 .anatomia-main-points__item__learn { position: relative; margin: 0 0 0 2rem; }
 
-.anatomia-main-points__item__learn::before { font-size: 1rem; line-height: 1.5rem; display: inline-block; position: absolute; right: 100%; top: 0; width: 1rem; height: 1.5rem; content: '\2022'; color: #dd4b39; }
+.anatomia-main-points__item__learn::before { font-size: 1rem; line-height: 1.5rem; display: inline-block; position: absolute; right: 100%; top: 0; width: 1rem; height: 1.5rem; content: '\2022'; color: #60b3b3; }
 
 .anatomia-opinie__item { width: 34rem; max-width: 100%; padding: 1rem; margin-left: auto; margin-right: auto; }
 
@@ -1704,7 +1708,7 @@ a:active { color: #000; outline: 0; }
 
 .anatomia-order__text { border-radius: 3px 3px 0 0; text-align: center; }
 
-.anatomia-order__btn { margin: 0; width: 100%; border-radius: 0 0 3px 3px; padding: 1rem; }
+.anatomia-order__btn { margin: 0; width: 100%; border-radius: 0 0 3px 3px; padding: 1rem; background: #174950; }
 
 @media (min-width: 900px) { .anatomia-order__btn { padding: 1rem; } }
 
@@ -1724,4 +1728,4 @@ a:active { color: #000; outline: 0; }
 
 .section-bag__sum { font-size: 0.75rem; line-height: 1rem; padding: 0.25rem; }
 
-.section-bag__link { font-size: 0.75rem; line-height: 1rem; margin: 0; width: 100%; border-radius: 0; }
+.section-bag__link, .section-bag__link:visited { font-size: 0.75rem; line-height: 1rem; margin: 0; width: 100%; border-radius: 0; }
