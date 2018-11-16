@@ -310,7 +310,21 @@
   background: $white;
 
   text-align: left;
+
+  counter-reset: allOrdersCounter;
 }
+
+.all-orders-table--oslo tbody .all-orders-table__tr,
+.all-orders-table--brev tbody .all-orders-table__tr,
+.all-orders-table--pakke tbody .all-orders-table__tr {
+  display: none;
+}
+.all-orders-table--oslo tbody .shipping-oslo,
+.all-orders-table--brev tbody .shipping-brev,
+.all-orders-table--pakke tbody .shipping-pakke {
+  display: table-row;
+}
+
 
 .all-orders-table th,
 .all-orders-table td {
@@ -320,6 +334,10 @@
 
 .all-orders-table__tr {
   position: relative;
+  counter-increment: allOrdersCounter;
+}
+.all-orders-table__tr--just-edited .all-orders-table__td {
+  border-bottom-color: $red-border;
 }
 
 .all-orders-table__tr:nth-child(odd) .all-orders-table__td {
@@ -336,7 +354,7 @@
 }
 
 .all-orders-table__td--price {
-  width: $space-4;
+  width: $space-3;
   text-align: right;
 }
 
@@ -362,7 +380,7 @@
 
 
 .all-orders-table__td--more {
-  width: $space * 3;
+  width: $space-2;
   padding: $space-quarter;
   border: 0;
   text-align: right;
@@ -370,9 +388,13 @@
 
 .all-orders-table__btn-more {
   margin: 0;
-  height: $space-2;
-  width: $space-2;
+  height: $space * 1.5;
+  width: $space * 1.5;
   padding: 0;
+}
+
+.alle-order-table__numbering::before {
+  content: counter(allOrdersCounter) ". ";
 }
 
 
@@ -390,6 +412,19 @@
 }
 .all-orders-table__tr--show-more .all-orders-table__hidden {
   display: block;
+}
+
+.all-orders-add-note {
+  height: $space-4;
+  padding: 0 3px;
+  border: 1px solid $beige;
+
+  @include font-body;
+  @include size-0;
+}
+
+.all-orders-add-note:focus {
+ border: 1px solid $beige-border;
 }
 
 
