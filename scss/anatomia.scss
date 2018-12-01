@@ -198,7 +198,6 @@ a:active {
 .anatomia-title__p {
   @include size-2;
   margin-bottom: 0;
-  font-style: italic;
 
   @include for-tablet-landscape-up {
     //@include size-3;

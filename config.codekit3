@@ -148,26 +148,19 @@
 		"oAP": "/build/google1d1a1ebbc4f7e1ae.html",
 		"oF": 0
 		},
-	"/build/index copy.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/build/index copy.html",
-		"oF": 0
-		},
 	"/build/index.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/build/index.html",
-		"oF": 1
+		"oF": 0
 		},
-	"/build/index_normal_sale.html": {
+	"/build/index_presale.html": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 0,
-		"oAP": "/build/index_normal_sale.html",
-		"oF": 0
+		"oA": 1,
+		"oAP": "/build/index_presale.html",
+		"oF": 1
 		},
 	"/build/j-anatomia-min.js": {
 		"ft": 64,
@@ -178,6 +171,13 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"/build/linki/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "/build/linki/index.html",
+		"oF": 0
 		},
 	"/build/marcin_anatomia_norweskiego_800.jpg": {
 		"ft": 16384,
@@ -570,11 +570,11 @@
 		"oAP": "/build/index.html",
 		"oF": 2
 		},
-	"/index_normal_sale.html": {
+	"/index_presale.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/build/index_normal_sale.html",
+		"oAP": "/build/index_presale.html",
 		"oF": 2
 		},
 	"/js/j-anatomia.js": {
