@@ -1668,7 +1668,7 @@ a:active { color: #35424c; outline: 0; }
 
 .anatomia-title__h-hide { font: 0/0 a; color: transparent; }
 
-.anatomia-title__h-replace { width: 407px; max-width: 100%; }
+.anatomia-title__h-replace { width: 407px; max-width: 90%; }
 
 .anatomia-title__p { font-size: 1.3rem; line-height: 2rem; margin-bottom: 0; }
 
