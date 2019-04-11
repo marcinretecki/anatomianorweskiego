@@ -176,6 +176,182 @@
 		"oAP": "/build/google1d1a1ebbc4f7e1ae.html",
 		"oF": 0
 		},
+	"/build/i/anatomia_binding_16x9_min.jpg": {
+		"ft": 16384,
+		"iS": 263096,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_binding_16x9_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_binding_3x4_min.jpg": {
+		"ft": 16384,
+		"iS": 190660,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_binding_3x4_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_detail_16x9_min.jpg": {
+		"ft": 16384,
+		"iS": 190472,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_detail_16x9_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_detail_2_16x9_min.jpg": {
+		"ft": 16384,
+		"iS": 110238,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_detail_2_16x9_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_detail_2_3x4_min.jpg": {
+		"ft": 16384,
+		"iS": 110993,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_detail_2_3x4_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_detail_3x4_min.jpg": {
+		"ft": 16384,
+		"iS": 187711,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_detail_3x4_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_endpaper_16x9_min.jpg": {
+		"ft": 16384,
+		"iS": 216478,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_endpaper_16x9_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_endpaper_3x4_min.jpg": {
+		"ft": 16384,
+		"iS": 176045,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_endpaper_3x4_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_hylle_16x9_min.jpg": {
+		"ft": 16384,
+		"iS": 227911,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_hylle_16x9_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_hylle_3x4_min.jpg": {
+		"ft": 16384,
+		"iS": 209050,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_hylle_3x4_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_norweskiego_16x9_min.jpg": {
+		"ft": 16384,
+		"iS": 265747,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_norweskiego_16x9_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_norweskiego_3x4_min.jpg": {
+		"ft": 16384,
+		"iS": 231469,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_norweskiego_3x4_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_tresc_16x9_min.jpg": {
+		"ft": 16384,
+		"iS": 259581,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_tresc_16x9_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_tresc_3x4_min.jpg": {
+		"ft": 16384,
+		"iS": 228962,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_tresc_3x4_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_zakladka_16x9_min.jpg": {
+		"ft": 16384,
+		"iS": 273447,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_zakladka_16x9_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/build/i/anatomia_zakladka_3x4_min.jpg": {
+		"ft": 16384,
+		"iS": 226370,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/build/i/anatomia_zakladka_3x4_min.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/build/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -591,6 +767,12 @@
 		"oA": 0,
 		"oAP": "/build/google1d1a1ebbc4f7e1ae.html",
 		"oF": 3
+		},
+	"/i": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "/build/i",
+		"oF": 0
 		},
 	"/index pre illustration.html": {
 		"cB": 0,
@@ -2761,7 +2943,7 @@
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, .idea, /storage/framework/sessions, node_modules, /i",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"tsAllowSyntheticDefaultImports": 0,
