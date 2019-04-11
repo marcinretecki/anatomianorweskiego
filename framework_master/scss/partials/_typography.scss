@@ -376,6 +376,13 @@ h4 a:visited {
   padding-left: $space;
 }
 
+.post .dl-eg--in-row + .dl-eg--in-row {
+  @media #{$m640} {
+    margin-top: $space-half;
+    margin-bottom: 0;
+  }
+}
+
 // DO POPRAWY
 .note a {
   color: $white;
