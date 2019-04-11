@@ -220,44 +220,30 @@ a:active {
 //  Anatomia to
 //
 .anatomia-main-points {
-  @include for-tablet-landscape-up {
-    margin-left:-($space-2);
-  }
+
 }
 .anatomia-main-points__item {
-  position: relative;
-  @include for-tablet-landscape-up {
-    float: left;
-    width: 50%;
-  }
+  padding: 0 $space;
+  float: left;
+  width: 50%;
 }
 
-.anatomia-main-points__item:nth-child(2) {
-  margin-top: $space;
-  @include for-tablet-landscape-up {
-    margin-top: 0;
-  }
+.anatomia-main-points__item:nth-child(-n + 2) {
+  margin: 0 0 $space-half;
 }
 .anatomia-main-points__item:nth-child(n + 3) {
-  margin-top: $space;
+
+}
+
+.anatomia-main-points__p {
+  margin:0;
+  padding: $space-half 0;
+  border-top: 1px solid $green-light;
 }
 
 
-.anatomia-main-points__item__learn {
-  position: relative;
-  margin: 0 0 0 $space-2;
-}
-.anatomia-main-points__item__learn::before {
-  @include size-1;
-  display: inline-block;
-  position: absolute;
-  right: 100%;
-  top: 0;
-  width: $size-1;
-  height: $size-1 * $line-1;
-  content: '\2022';
-  color: $green-light;
-}
+
+
 
 //
 //  Opinie

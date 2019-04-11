@@ -786,9 +786,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/build/index.html",
-		"oF": 2
+		"oF": 3
 		},
 	"/index_presale.html": {
 		"cB": 0,
