@@ -101,6 +101,14 @@
   display: inline-block;
 }
 
+.radio-option__shipping-icon {
+  display:inline;
+  height: 1.5rem;
+  max-height: 1.5rem;
+  width: auto;
+  vertical-align: bottom;
+}
+
 .radio-option__radio:checked + .radio-option__label {
   color: $font-dark;
   background: $beige-hover;
@@ -149,7 +157,10 @@
   position: relative;
   padding: $space 0;
   margin: 0;
-  border-bottom: 1px solid $gray;
+
+}
+.bag-item + .bag-item {
+  border-top: 1px solid $gray;
 }
 
 .bag-item::before {
@@ -384,6 +395,7 @@
   padding: $space-quarter;
   border: 0;
   text-align: right;
+  overflow: visible;
 }
 
 .all-orders-table__btn-more {
@@ -447,9 +459,9 @@
 
 .confirm-action-modal{
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: 0;
+  bottom: 0;
   z-index: 1;
 
   width: 100%;
