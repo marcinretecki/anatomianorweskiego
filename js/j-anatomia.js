@@ -6,6 +6,11 @@
 
   var debug = false;
 
+  if ( ( location.hostname === '' ) || ( location.hostname === 'localhost' ) ) {
+    debug = true;
+    showDebugMsg('Debug mode on');
+  }
+
   var kassaUrl = 'https://nocnasowa.pl/kassa/';
 
   //  Elements
@@ -81,6 +86,11 @@
       target = getClosest(event.target, '.js-close-bag');
     }
 
+    //  if target is not a js-remove-item, try js-slider
+    if (target === null) {
+      target = getClosest(event.target, '.js-slider');
+    }
+
     //  if it is still null, ignore
     if (target === null) {
       return;
@@ -103,6 +113,15 @@
     //  close bag
     //  dunno if needed
     if (target.classList.contains('js-close-bag')) {
+      return;
+    }
+
+    //  Slider
+    if (target.classList.contains('js-slider')) {
+      //  prevent jerk
+      event.preventDefault();
+      event.stopPropagation();
+      sliderMove(target, event);
       return;
     }
   }
@@ -256,6 +275,34 @@
     //  update link
     elements.bagLink.href = kassaUrl + '?bag=' + bagString;
   }
+
+
+  //  Move slider to next or prev slide
+  function sliderMove(target) {
+
+    //  get href and remove #
+    var targetSlideId = target.getAttribute('href').slice(1);
+    var slide = document.getElementById(targetSlideId);
+
+    var sliderId = target.getAttribute('data-ns-slider');
+    var slides = document.getElementById(sliderId);
+
+    showDebugMsg(slide);
+    showDebugMsg(slides);
+
+    Velocity(
+      slide,
+      "scroll",
+      { duration: 500,
+        container: slides,
+        axis: "x",
+        easing: "easeOutQuart",
+        queue: false,
+       }
+    );
+
+  }
+
 
   //  Helpers
   function showDebugMsg(msg) {

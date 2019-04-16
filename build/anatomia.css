@@ -193,6 +193,8 @@ h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited, h4 a, h4 a:visited {
 
 .post .dl-eg--in-row { margin-top: 0; margin-bottom: 0; padding-left: 1rem; }
 
+@media screen and (max-width: 640px) { .post .dl-eg--in-row + .dl-eg--in-row { margin-top: 0.5rem; margin-bottom: 0; } }
+
 .note a { color: #fff; text-decoration: underline; }
 
 .book { margin: 0 0 1rem; }
@@ -753,7 +755,7 @@ input + .note { margin-top: 0.5rem; }
 
 @media screen and (max-width: 770px) { .section-box__box--kto { margin: 0; } }
 
-@media screen and (max-width: 770px) { .front__title { font-size: 2.4rem; } }
+@media screen and (max-width: 770px) { .front__title { font-size: 2.4rem; line-height: 2.5rem; } }
 
 @media screen and (max-width: 640px) { .front__title { text-align: center; } }
 
@@ -787,7 +789,7 @@ input + .note { margin-top: 0.5rem; }
 
 .section-trans--fixed { background-attachment: fixed; }
 
-@media all and (-webkit-min-device-pixel-ratio: 1) { .section-trans--fixed { background-attachment: scroll; } }
+@media all and (hover: none) { .section-trans--fixed { background-attachment: scroll; } }
 
 .section-trans__fixed { position: fixed; left: 0; top: 0; width: 100%; height: 100%; }
 
@@ -1674,11 +1676,65 @@ a:active { color: #35424c; outline: 0; }
 
 .anatomia-cover-wrapper { margin-left: auto; margin-right: auto; overflow: hidden; }
 
-.anatomia-main-points__item { padding: 0 1rem; float: left; width: 50%; }
+.anatomia-main-points__item { padding: 0 1rem; }
 
-.anatomia-main-points__item:nth-child(-n + 2) { margin: 0 0 0.5rem; }
+@media (min-width: 600px) { .anatomia-main-points__item { float: left; width: 50%; } }
 
-.anatomia-main-points__p { margin: 0; padding: 0.5rem 0; border-top: 1px solid #60b3b3; }
+.anatomia-main-points__item + .anatomia-main-points__item { margin: 1rem 0 0; }
+
+@media (min-width: 600px) { .anatomia-main-points__item:nth-child(-n + 2) { margin: 0 0 1rem; } }
+
+.anatomia-main-points__p { margin: 0; padding: 0 0.5rem; border: 1px solid #60b3b3; border-width: 0 0 0 1px; }
+
+@media (min-width: 600px) { .anatomia-main-points__p { padding: 0.5rem 0 0; border-width: 1px 0 0 0; } }
+
+.anatomia-slider { overflow: hidden; position: relative; }
+
+.anatomia-slides { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; overflow-x: false; -webkit-overflow-scrolling: touch; -ms-scroll-snap-points-x: repeat(100%); scroll-snap-points-x: repeat(100%); -ms-scroll-snap-type: mandatory; scroll-snap-type: mandatory; -ms-scroll-snap-type: x mandatory; scroll-snap-type: x mandatory; }
+
+@supports ((-ms-scroll-snap-type: mandatory) or (scroll-snap-type: mandatory)) { .anatomia-slides { overflow-x: auto; } }
+
+.anatomia-slides__item { scroll-snap-align: start; -ms-flex-negative: 0; flex-shrink: 0; width: 100%; padding-bottom: 75%; position: relative; background-size: 100%; background-repeat: no-repeat; }
+
+@media (min-width: 900px) { .anatomia-slides__item { padding-bottom: 56.25%; } }
+
+.anatomia-slides__item--anatomia-norweskiego { background-image: url("i/anatomia_norweskiego_3x4_min.jpg"); }
+
+@media (min-width: 900px) { .anatomia-slides__item--anatomia-norweskiego { background-image: url("i/anatomia_norweskiego_16x9_min.jpg"); } }
+
+.anatomia-slides__item--anatomia_tresc { background-image: url("i/anatomia_tresc_3x4_min.jpg"); }
+
+@media (min-width: 900px) { .anatomia-slides__item--anatomia_tresc { background-image: url("i/anatomia_tresc_16x9_min.jpg"); } }
+
+.anatomia-slides__item--anatomia_hylle { background-image: url("i/anatomia_hylle_3x4_min.jpg"); }
+
+@media (min-width: 900px) { .anatomia-slides__item--anatomia_hylle { background-image: url("i/anatomia_hylle_16x9_min.jpg"); } }
+
+.anatomia-slides__item--anatomia_zakladka { background-image: url("i/anatomia_zakladka_3x4_min.jpg"); }
+
+@media (min-width: 900px) { .anatomia-slides__item--anatomia_zakladka { background-image: url("i/anatomia_zakladka_16x9_min.jpg"); } }
+
+.anatomia-slides__item--anatomia_binding { background-image: url("i/anatomia_binding_3x4_min.jpg"); }
+
+@media (min-width: 900px) { .anatomia-slides__item--anatomia_binding { background-image: url("i/anatomia_binding_16x9_min.jpg"); } }
+
+.anatomia-slides__item--anatomia_endpaper { background-image: url("i/anatomia_endpaper_3x4_min.jpg"); }
+
+@media (min-width: 900px) { .anatomia-slides__item--anatomia_endpaper { background-image: url("i/anatomia_endpaper_16x9_min.jpg"); } }
+
+.anatomia-slides__item--anatomia_detail { background-image: url("i/anatomia_detail_3x4_min.jpg"); }
+
+@media (min-width: 900px) { .anatomia-slides__item--anatomia_detail { background-image: url("i/anatomia_detail_16x9_min.jpg"); } }
+
+.anatomia-slides__item--anatomia_detail_2 { background-image: url("i/anatomia_detail_2_3x4_min.jpg"); }
+
+@media (min-width: 900px) { .anatomia-slides__item--anatomia_detail_2 { background-image: url("i/anatomia_detail_2_16x9_min.jpg"); } }
+
+.anatomia-slides__a-right { position: absolute; left: 50%; right: 0; top: 0; bottom: 0; padding: 1rem; opacity: 0.5; background-image: url("i/arrow-right.svg"); background-repeat: no-repeat; background-position: 95% center; background-position: right 1rem center; background-size: 2rem; }
+
+.anatomia-slides__a-left { position: absolute; left: 0; right: 50%; top: 0; bottom: 0; padding: 1rem; opacity: 0.5; background-image: url("i/arrow-left.svg"); background-repeat: no-repeat; background-position: 5% center; background-position: left 1rem center; background-size: 2rem; }
+
+.anatomia-slides__a-right:hover, .anatomia-slides__a-left:hover { opacity: 1; }
 
 .anatomia-opinie__item { width: 34rem; max-width: 100%; padding: 1rem; margin-left: auto; margin-right: auto; }
 

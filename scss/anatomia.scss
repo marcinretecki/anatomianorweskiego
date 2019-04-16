@@ -224,24 +224,168 @@ a:active {
 }
 .anatomia-main-points__item {
   padding: 0 $space;
-  float: left;
-  width: 50%;
+  @include for-tablet-portrait-up {
+    float: left;
+    width: 50%;
+  }
+}
+.anatomia-main-points__item + .anatomia-main-points__item{
+  margin: $space 0 0;
 }
 
 .anatomia-main-points__item:nth-child(-n + 2) {
-  margin: 0 0 $space-half;
-}
-.anatomia-main-points__item:nth-child(n + 3) {
-
+  @include for-tablet-portrait-up {
+    margin: 0 0 $space;
+  }
 }
 
 .anatomia-main-points__p {
-  margin:0;
-  padding: $space-half 0;
-  border-top: 1px solid $green-light;
+  margin: 0;
+  padding: 0 $space-half;
+  border: 1px solid $green-light;
+  border-width: 0 0 0 1px;
+
+  @include for-tablet-portrait-up {
+    padding: $space-half 0 0;
+    border-width: 1px 0 0 0;
+  }
 }
 
 
+//
+//  Slider
+//
+.anatomia-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.anatomia-slides {
+  width: 100%;
+  display: flex;
+  overflow-x: false;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-points-x: repeat(100%);
+  scroll-snap-type: mandatory;
+  scroll-snap-type: x mandatory;
+}
+
+@supports (scroll-snap-type: mandatory) {
+  .anatomia-slides {
+    overflow-x: auto;
+  }
+}
+
+.anatomia-slides__item {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  padding-bottom: 75%;
+  position: relative;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  @include for-tablet-landscape-up {
+    padding-bottom: 56.25%;
+  }
+}
+.anatomia-slides__item--anatomia-norweskiego {
+  background-image: url("i/anatomia_norweskiego_3x4_min.jpg");
+  @include for-tablet-landscape-up {
+    background-image: url("i/anatomia_norweskiego_16x9_min.jpg");
+  }
+}
+.anatomia-slides__item--anatomia_tresc {
+  background-image: url("i/anatomia_tresc_3x4_min.jpg");
+  @include for-tablet-landscape-up {
+    background-image: url("i/anatomia_tresc_16x9_min.jpg");
+  }
+}
+.anatomia-slides__item--anatomia_hylle {
+  background-image: url("i/anatomia_hylle_3x4_min.jpg");
+  @include for-tablet-landscape-up {
+    background-image: url("i/anatomia_hylle_16x9_min.jpg");
+  }
+}
+.anatomia-slides__item--anatomia_zakladka {
+  background-image: url("i/anatomia_zakladka_3x4_min.jpg");
+  @include for-tablet-landscape-up {
+    background-image: url("i/anatomia_zakladka_16x9_min.jpg");
+  }
+}
+.anatomia-slides__item--anatomia_binding {
+  background-image: url("i/anatomia_binding_3x4_min.jpg");
+  @include for-tablet-landscape-up {
+    background-image: url("i/anatomia_binding_16x9_min.jpg");
+  }
+}
+.anatomia-slides__item--anatomia_endpaper {
+  background-image: url("i/anatomia_endpaper_3x4_min.jpg");
+  @include for-tablet-landscape-up {
+    background-image: url("i/anatomia_endpaper_16x9_min.jpg");
+  }
+}
+.anatomia-slides__item--anatomia_detail {
+  background-image: url("i/anatomia_detail_3x4_min.jpg");
+  @include for-tablet-landscape-up {
+    background-image: url("i/anatomia_detail_16x9_min.jpg");
+  }
+}
+.anatomia-slides__item--anatomia_detail_2 {
+  background-image: url("i/anatomia_detail_2_3x4_min.jpg");
+  @include for-tablet-landscape-up {
+    background-image: url("i/anatomia_detail_2_16x9_min.jpg");
+  }
+}
+
+.anatomia-slides__a-right {
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: $space;
+  opacity: 0.5;
+  background-image: url('i/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-position: right $space center;
+  background-size: $space-2;
+}
+.anatomia-slides__a-left {
+  position: absolute;
+  left: 0;
+  right: 50%;
+  top: 0;
+  bottom: 0;
+  padding: $space;
+  opacity: 0.5;
+  background-image: url('i/arrow-left.svg');
+  background-repeat: no-repeat;
+  background-position: 5% center;
+  background-position: left $space center;
+  background-size: $space-2;
+}
+.anatomia-slides__a-right:hover,
+.anatomia-slides__a-left:hover {
+  opacity: 1;
+}
+
+// .slider-nav {
+//   padding: $space-half;
+//   text-align: center;
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   font-size: 0;
+// }
+
+// .slider-nav > .btn {
+//   opacity: 0.5;
+//   padding: $space-quarter;
+//   width: $space + $space-quarter;
+//   margin-right: $space;
+// }
 
 
 
