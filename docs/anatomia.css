@@ -1692,7 +1692,7 @@ a:active { color: #35424c; outline: 0; }
 
 .anatomia-slider { overflow: hidden; position: relative; }
 
-.anatomia-slides { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; overflow-x: false; -webkit-overflow-scrolling: touch; -ms-scroll-snap-points-x: repeat(100%); scroll-snap-points-x: repeat(100%); -ms-scroll-snap-type: mandatory; scroll-snap-type: mandatory; -ms-scroll-snap-type: x mandatory; scroll-snap-type: x mandatory; }
+.anatomia-slides { position: relative; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; overflow-x: scroll; -webkit-overflow-scrolling: touch; -ms-scroll-snap-points-x: repeat(100%); scroll-snap-points-x: repeat(100%); -ms-scroll-snap-type: mandatory; scroll-snap-type: mandatory; -ms-scroll-snap-type: x mandatory; scroll-snap-type: x mandatory; }
 
 @supports ((-ms-scroll-snap-type: mandatory) or (scroll-snap-type: mandatory)) { .anatomia-slides { overflow-x: auto; } }
 
