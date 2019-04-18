@@ -223,10 +223,12 @@ a:active {
 
 }
 .anatomia-main-points__item {
-  padding: 0 $space;
+  padding-left: $space;
+
   @include for-tablet-portrait-up {
     float: left;
     width: 50%;
+    padding-left: 0;
   }
 }
 .anatomia-main-points__item + .anatomia-main-points__item{
@@ -240,15 +242,26 @@ a:active {
 }
 
 .anatomia-main-points__p {
+  position: relative;
   margin: 0;
-  padding: 0 $space-half;
-  border: 1px solid $green-light;
-  border-width: 0 0 0 1px;
+  padding-left: $space-half;
+  padding-right: $space-half;
 
   @include for-tablet-portrait-up {
-    padding: $space-half 0 0;
-    border-width: 1px 0 0 0;
+    padding-left: $space;
+    padding-right: $space-quarter;
   }
+}
+.anatomia-main-points__p::before {
+  content: '';
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  border-radius: 3px;
+  background: $green;
 }
 
 
@@ -396,51 +409,49 @@ a:active {
 }
 
 .anatomia-opinie__item {
-  width: 34rem;
-  max-width: 100%;
-  padding: $space;
-  margin-left: auto;
-  margin-right: auto;
+  margin-bottom: $space;
+  @include for-tablet-portrait-up {
+    margin-bottom: $space-2;
+  }
+  @include for-tablet-landscape-up {
+    width: 50%;
+    float: left;
+  }
 }
 .anatomia-opinie__block {
   position: relative;
-  margin-right: ($space-6 - $space);
-  padding: $space-half;
+  padding: $space-half $space;
   border-radius: 3px;
-  background: $beige;
-}
-.anatomia-opinie__block::before {
-  display: block;
-  position: absolute;
-  top: $space-2;
-  left: 100%;
-  border: $space-half solid transparent;
-  border-left-color: $beige;
-  content: '';
+  border: 1px solid $beige;
 }
 
-.anatomia-opinie__img {
-  float: right;
-  display: block;
-  border-radius: 3px;
-  width: $space-4;
-}
-.anatomia-opinie__text {
-  font-size: $space;
+.anatomia-opinie__blockquote > p {
+  @include size-0;
+  font-style: italic;
   margin: 0;
 }
-.anatomia-order__one-book {
-  margin-bottom: $space-half;
-
-  @include for-tablet-landscape-up {
-    margin-bottom: ($space-2 + $space-half);
-  }
+.anatomia-opinie__blockquote > p + p {
+  margin-top: $space-half;
+  display: none;
 }
 
-.anatomia-order__cards {
-  width: $space-8;
-  height: auto;
+.anatomia-opinie__open-q {
+  text-indent: -0.25rem;
 }
+.anatomia-opinie__open-q::before {
+  content: "“";
+}
+.anatomia-opinie__close-q::after {
+  content: "”";
+}
+
+
+.anatomia-opinie__author {
+  @include size-0;
+  margin-top: $space-half;
+}
+
+
 
 //
 //  Spis treści
@@ -458,6 +469,9 @@ a:active {
 .anatomia-spis-ul {
   @include size-0;
   margin: 0 0 $space $space-half;
+}
+.anatomia-spis-ul--last {
+  margin-bottom: 0;
 }
 .anatomia-spis-ul > li {
   margin: 0;
@@ -485,41 +499,96 @@ a:active {
 //
 //  Zamówienia
 //
+
 .anatomia-order {
 }
 .anatomia-order__item-wrap {
   margin-bottom: $space-2;
+  padding: 0 $space;
+
   @include for-tablet-landscape-up {
     float: left;
     width: 33.33%;
-    padding: 0 $space;
   }
 }
+
 .anatomia-order__item {
+  position: relative;
   border-radius: 3px;
   overflow: hidden;
-  box-shadow: 0 3px 6px   rgba(0,0,0,0.16), 0 3px 6px   rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
   cursor: pointer;
+
 }
 .anatomia-order__item:hover {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px   rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 .anatomia-order__text {
-  border-radius: 3px 3px 0 0;
+  border-radius: 3px 0 0 3px;
   text-align: center;
+  width: 50.00%;
+  padding: $space;
+
+  @include for-tablet-landscape-up {
+    border-radius: 3px 3px 0 0;
+    width: 100%;
+    padding: $space $space ($space + $space-half);
+  }
+}
+.anatomia-order__title {
+  @include size-2;
+  margin: 0;
+  @include for-tablet-portrait-up {
+    @include size-3;
+  }
+}
+.anatomia-order__title--one-book {
+  margin-bottom: $space-half;
+
+  @include for-tablet-landscape-up {
+    margin-bottom: ($space-2 + $space-half);
+  }
+}
+.anatomia-order__gratis {
+  @include size-0;
+  margin-bottom: $space-half;
+
+  @include for-tablet-portrait-up {
+    margin-bottom: $space;
+    @include size-1;
+  }
+}
+.anatomia-order__price {
+  @include size-1;
+
+  @include for-tablet-portrait-up {
+    @include size-2;
+  }
 }
 
 .anatomia-order__btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
   margin: 0;
-  width: 100%;
-  border-radius: 0 0 3px 3px;
+  width: 50%;
+  border-radius: 0 3px 3px 0;
   padding: $space;
   background: $anatomia-green;
+  white-space: normal;
   @include for-tablet-landscape-up {
-    padding: $space;
+    position: static;
+    border-radius: 0 0 3px 3px;
+    width: 100%;
   }
+}
+
+.anatomia-order__cards {
+  width: $space-8;
+  height: auto;
 }
 
 

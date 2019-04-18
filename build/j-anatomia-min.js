@@ -91,6 +91,11 @@
       target = getClosest(event.target, '.js-slider');
     }
 
+    //  if target is not a js-slider, try .js-opinie
+    if (target === null) {
+      target = getClosest(event.target, '.js-opinie');
+    }
+
     //  if it is still null, ignore
     if (target === null) {
       return;
@@ -122,6 +127,15 @@
       event.preventDefault();
       event.stopPropagation();
       sliderMove(target, event);
+      return;
+    }
+
+    //  Opinie
+    if (target.classList.contains('js-opinie')) {
+      //  prevent jerk
+      event.preventDefault();
+      event.stopPropagation();
+      openOpinie(target, event);
       return;
     }
   }
@@ -292,14 +306,61 @@
 
     Velocity(
       slide,
-      "scroll",
+      'scroll',
       { duration: 500,
         container: slides,
-        axis: "x",
-        easing: "easeOutQuart",
+        axis: 'x',
+        easing: 'easeOutQuart',
         queue: false,
        }
     );
+
+  }
+
+  //  Open opinie
+  function openOpinie( target, event ) {
+
+    var href = target.getAttribute('href').slice(1);
+    var opinia = document.getElementById(href);
+    var opiniaParagraphs = opinia.childNodes;
+
+    showDebugMsg(opiniaParagraphs);
+
+    //  start with 1, because 0 is visible
+    var i = 1;
+    var l = opiniaParagraphs.length;
+
+    Velocity(
+      target,
+      'fadeOut',
+      {
+        duration: 500,
+        easing: 'easeInOut',
+        complete: function() {
+          target.parentNode.removeChild(target);
+        }
+      }
+    );
+
+    for (i; i < l; i++) {
+      if (opiniaParagraphs[i].tagName && ( opiniaParagraphs[i].className !== 'anatomia-opinie__open-q') ) {
+        openP( opiniaParagraphs[i] );
+      }
+    }
+
+    function openP(p) {
+      Velocity(
+        p,
+        'slideDown',
+        {
+          duration: 500,
+          easing: 'easeInOut',
+          display: 'block',
+        }
+      );
+    }
+
+
 
   }
 
@@ -407,8 +468,8 @@
 
     //  animate
     function animateMask( c ) {
-      Velocity(c, {opacity: 1}, {duration: 150, easing: "easeInCubic"});
-      Velocity(c, {opacity: 0}, {duration: 7000, easing: "easeOutSine",
+      Velocity(c, {opacity: 1}, {duration: 150, easing: 'easeInCubic'});
+      Velocity(c, {opacity: 0}, {duration: 7000, easing: 'easeOutSine',
         complete: function() {
           maskEl.removeChild(c);
         },
@@ -417,8 +478,8 @@
 
     function reveal() {
       Velocity(revealEl, 'stop');
-      Velocity(revealEl, {opacity: 1}, {duration: 450, easing: "easeInCubic"});
-      Velocity(revealEl, {opacity: 0}, {duration: 7000, delay: 450, easing: "easeOutSine"});
+      Velocity(revealEl, {opacity: 1}, {duration: 450, easing: 'easeInCubic'});
+      Velocity(revealEl, {opacity: 0}, {duration: 7000, delay: 450, easing: 'easeOutSine'});
     }
 
 

@@ -1676,17 +1676,19 @@ a:active { color: #35424c; outline: 0; }
 
 .anatomia-cover-wrapper { margin-left: auto; margin-right: auto; overflow: hidden; }
 
-.anatomia-main-points__item { padding: 0 1rem; }
+.anatomia-main-points__item { padding-left: 1rem; }
 
-@media (min-width: 600px) { .anatomia-main-points__item { float: left; width: 50%; } }
+@media (min-width: 600px) { .anatomia-main-points__item { float: left; width: 50%; padding-left: 0; } }
 
 .anatomia-main-points__item + .anatomia-main-points__item { margin: 1rem 0 0; }
 
 @media (min-width: 600px) { .anatomia-main-points__item:nth-child(-n + 2) { margin: 0 0 1rem; } }
 
-.anatomia-main-points__p { margin: 0; padding: 0 0.5rem; border: 1px solid #60b3b3; border-width: 0 0 0 1px; }
+.anatomia-main-points__p { position: relative; margin: 0; padding-left: 0.5rem; padding-right: 0.5rem; }
 
-@media (min-width: 600px) { .anatomia-main-points__p { padding: 0.5rem 0 0; border-width: 1px 0 0 0; } }
+@media (min-width: 600px) { .anatomia-main-points__p { padding-left: 1rem; padding-right: 0.25rem; } }
+
+.anatomia-main-points__p::before { content: ''; overflow: hidden; position: absolute; left: 0; top: 0; height: 100%; width: 2px; border-radius: 3px; background: #308c8c; }
 
 .anatomia-slider { overflow: hidden; position: relative; }
 
@@ -1736,27 +1738,33 @@ a:active { color: #35424c; outline: 0; }
 
 .anatomia-slides__a-right:hover, .anatomia-slides__a-left:hover { opacity: 1; }
 
-.anatomia-opinie__item { width: 34rem; max-width: 100%; padding: 1rem; margin-left: auto; margin-right: auto; }
+.anatomia-opinie__item { margin-bottom: 1rem; }
 
-.anatomia-opinie__block { position: relative; margin-right: 5rem; padding: 0.5rem; border-radius: 3px; background: #edeae7; }
+@media (min-width: 600px) { .anatomia-opinie__item { margin-bottom: 2rem; } }
 
-.anatomia-opinie__block::before { display: block; position: absolute; top: 2rem; left: 100%; border: 0.5rem solid transparent; border-left-color: #edeae7; content: ''; }
+@media (min-width: 900px) { .anatomia-opinie__item { width: 50%; float: left; } }
 
-.anatomia-opinie__img { float: right; display: block; border-radius: 3px; width: 4rem; }
+.anatomia-opinie__block { position: relative; padding: 0.5rem 1rem; border-radius: 3px; border: 1px solid #edeae7; }
 
-.anatomia-opinie__text { font-size: 1rem; margin: 0; }
+.anatomia-opinie__blockquote > p { font-size: 0.75rem; line-height: 1rem; font-style: italic; margin: 0; }
 
-.anatomia-order__one-book { margin-bottom: 0.5rem; }
+.anatomia-opinie__blockquote > p + p { margin-top: 0.5rem; display: none; }
 
-@media (min-width: 900px) { .anatomia-order__one-book { margin-bottom: 2.5rem; } }
+.anatomia-opinie__open-q { text-indent: -0.25rem; }
 
-.anatomia-order__cards { width: 8rem; height: auto; }
+.anatomia-opinie__open-q::before { content: "“"; }
+
+.anatomia-opinie__close-q::after { content: "”"; }
+
+.anatomia-opinie__author { font-size: 0.75rem; line-height: 1rem; margin-top: 0.5rem; }
 
 .anatomia-spis-columns { -webkit-column-width: 13rem; column-width: 13rem; -webkit-column-gap: 1rem; column-gap: 1rem; }
 
 .anatomia-spis-columns__item { page-break-inside: avoid; -webkit-column-break-inside: avoid; break-inside: avoid; }
 
 .anatomia-spis-ul { font-size: 0.75rem; line-height: 1rem; margin: 0 0 1rem 0.5rem; }
+
+.anatomia-spis-ul--last { margin-bottom: 0; }
 
 .anatomia-spis-ul > li { margin: 0; padding-left: 0.5rem; }
 
@@ -1766,19 +1774,39 @@ a:active { color: #35424c; outline: 0; }
 
 .autorzy-img { float: left; width: 50%; padding: 0 1rem; }
 
-.anatomia-order__item-wrap { margin-bottom: 2rem; }
+.anatomia-order__item-wrap { margin-bottom: 2rem; padding: 0 1rem; }
 
-@media (min-width: 900px) { .anatomia-order__item-wrap { float: left; width: 33.33%; padding: 0 1rem; } }
+@media (min-width: 900px) { .anatomia-order__item-wrap { float: left; width: 33.33%; } }
 
-.anatomia-order__item { border-radius: 3px; overflow: hidden; -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); cursor: pointer; }
+.anatomia-order__item { position: relative; border-radius: 3px; overflow: hidden; -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); cursor: pointer; }
 
 .anatomia-order__item:hover { -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
 
-.anatomia-order__text { border-radius: 3px 3px 0 0; text-align: center; }
+.anatomia-order__text { border-radius: 3px 0 0 3px; text-align: center; width: 50.00%; padding: 1rem; }
 
-.anatomia-order__btn { margin: 0; width: 100%; border-radius: 0 0 3px 3px; padding: 1rem; background: #3B6A6C; }
+@media (min-width: 900px) { .anatomia-order__text { border-radius: 3px 3px 0 0; width: 100%; padding: 1rem 1rem 1.5rem; } }
 
-@media (min-width: 900px) { .anatomia-order__btn { padding: 1rem; } }
+.anatomia-order__title { font-size: 1.3rem; line-height: 2rem; margin: 0; }
+
+@media (min-width: 600px) { .anatomia-order__title { font-size: 1.8rem; line-height: 2rem; } }
+
+.anatomia-order__title--one-book { margin-bottom: 0.5rem; }
+
+@media (min-width: 900px) { .anatomia-order__title--one-book { margin-bottom: 2.5rem; } }
+
+.anatomia-order__gratis { font-size: 0.75rem; line-height: 1rem; margin-bottom: 0.5rem; }
+
+@media (min-width: 600px) { .anatomia-order__gratis { margin-bottom: 1rem; font-size: 1rem; line-height: 1.5rem; } }
+
+.anatomia-order__price { font-size: 1rem; line-height: 1.5rem; }
+
+@media (min-width: 600px) { .anatomia-order__price { font-size: 1.3rem; line-height: 2rem; } }
+
+.anatomia-order__btn { position: absolute; right: 0; top: 0; bottom: 0; margin: 0; width: 50%; border-radius: 0 3px 3px 0; padding: 1rem; background: #3B6A6C; white-space: normal; }
+
+@media (min-width: 900px) { .anatomia-order__btn { position: static; border-radius: 0 0 3px 3px; width: 100%; } }
+
+.anatomia-order__cards { width: 8rem; height: auto; }
 
 .anatomia-faq__h3 { margin: 2rem 0 0; }
 
