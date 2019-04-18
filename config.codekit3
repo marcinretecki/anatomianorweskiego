@@ -17,6 +17,14 @@
 		"oAP": "/.gitattributes",
 		"oF": 1
 		},
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/20190220_MFryziak_Anatomia__MG_5175.jpg": {
 		"ft": 16384,
 		"iS": 217840,
