@@ -28,6 +28,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/anatomia-norweskiego-fb.png": {
+		"ft": 32768,
+		"iS": 242097,
+		"oA": 0,
+		"oAP": "/anatomia-norweskiego-fb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/anatomianorweskiego.sublime-project": {
 		"cB": 0,
 		"ft": 8192,
@@ -60,11 +71,11 @@
 		"oAP": "/docs/.htaccess",
 		"oF": 1
 		},
-	"/docs/anatomia-norweskiego-fb_v2.png": {
+	"/docs/anatomia-norweskiego-fb.png": {
 		"ft": 32768,
-		"iS": 216537,
+		"iS": 242097,
 		"oA": 0,
-		"oAP": "/docs/anatomia-norweskiego-fb_v2.png",
+		"oAP": "/docs/anatomia-norweskiego-fb.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -388,14 +399,6 @@
 		"oAP": "/docs/index.html",
 		"oF": 0
 		},
-	"/docs/index_presale.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 1,
-		"oAP": "/docs/index_presale.html",
-		"oF": 1
-		},
 	"/docs/j-anatomia-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -436,14 +439,6 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
-		},
-	"/docs/test.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/docs/test.html",
-		"oF": 0
 		},
 	"/docs/website_cover.svg": {
 		"ft": 2097152,
@@ -993,10 +988,10 @@
 		"oF": 0
 		},
 	"/index.html": {
-		"cB": 1,
+		"cB": 0,
 		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
+		"hM": 1,
+		"oA": 2,
 		"oAP": "/docs/index.html",
 		"oF": 3
 		},
