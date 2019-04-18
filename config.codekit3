@@ -22,7 +22,7 @@
 		"iS": 217840,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/anatomia_norweskiego_ksiazka.jpg",
+		"oAP": "/docs/anatomia_norweskiego_ksiazka.jpg",
 		"oF": 2,
 		"oIPL": 0,
 		"opt": 1,
@@ -44,351 +44,359 @@
 		"oAP": "/anatomianorweskiego.sublime-workspace",
 		"oF": 1
 		},
-	"/build/.htaccess": {
+	"/data-types:book .html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/data-types:book .html",
+		"oF": 0
+		},
+	"/docs/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/.htaccess",
+		"oAP": "/docs/.htaccess",
 		"oF": 1
 		},
-	"/build/anatomia-norweskiego-fb_v2.png": {
+	"/docs/anatomia-norweskiego-fb_v2.png": {
 		"ft": 32768,
 		"iS": 216537,
 		"oA": 0,
-		"oAP": "/build/anatomia-norweskiego-fb_v2.png",
+		"oAP": "/docs/anatomia-norweskiego-fb_v2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/build/anatomia.css": {
+	"/docs/anatomia.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/build/anatomia-min.css",
+		"oAP": "/docs/anatomia-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"/build/anatomia_norweskiego_ksiazka.jpg": {
+	"/docs/anatomia_norweskiego_ksiazka.jpg": {
 		"ft": 16384,
 		"iS": 205528,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/anatomia_norweskiego_ksiazka.jpg",
+		"oAP": "/docs/anatomia_norweskiego_ksiazka.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/anatomia_tick.svg": {
+	"/docs/anatomia_tick.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 1,
-		"oAP": "/build/anatomia_tick.svg",
+		"oAP": "/docs/anatomia_tick.svg",
 		"oF": 1,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/build/android-icon-192x192.png": {
+	"/docs/android-icon-192x192.png": {
 		"ft": 32768,
 		"iS": 4870,
 		"oA": 1,
-		"oAP": "/build/android-icon-192x192.png",
+		"oAP": "/docs/android-icon-192x192.png",
 		"oF": 1,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/build/apple-icon-152x152.png": {
+	"/docs/apple-icon-152x152.png": {
 		"ft": 32768,
 		"iS": 3555,
 		"oA": 1,
-		"oAP": "/build/apple-icon-152x152.png",
+		"oAP": "/docs/apple-icon-152x152.png",
 		"oF": 1,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/build/apple-icon-180x180.png": {
+	"/docs/apple-icon-180x180.png": {
 		"ft": 32768,
 		"iS": 4752,
 		"oA": 1,
-		"oAP": "/build/apple-icon-180x180.png",
+		"oAP": "/docs/apple-icon-180x180.png",
 		"oF": 1,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/build/favicon-16x16.png": {
+	"/docs/favicon-16x16.png": {
 		"ft": 32768,
 		"iS": 495,
 		"oA": 0,
-		"oAP": "/build/favicon-16x16.png",
+		"oAP": "/docs/favicon-16x16.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/build/favicon-32x32.png": {
+	"/docs/favicon-32x32.png": {
 		"ft": 32768,
 		"iS": 924,
 		"oA": 1,
-		"oAP": "/build/favicon-32x32.png",
+		"oAP": "/docs/favicon-32x32.png",
 		"oF": 1,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/build/favicon-96x96.png": {
+	"/docs/favicon-96x96.png": {
 		"ft": 32768,
 		"iS": 2163,
 		"oA": 1,
-		"oAP": "/build/favicon-96x96.png",
+		"oAP": "/docs/favicon-96x96.png",
 		"oF": 1,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/build/favicon.ico": {
+	"/docs/favicon.ico": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/favicon.ico",
+		"oAP": "/docs/favicon.ico",
 		"oF": 0
 		},
-	"/build/google1d1a1ebbc4f7e1ae.html": {
+	"/docs/google1d1a1ebbc4f7e1ae.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/google1d1a1ebbc4f7e1ae.html",
+		"oAP": "/docs/google1d1a1ebbc4f7e1ae.html",
 		"oF": 0
 		},
-	"/build/i/anatomia_binding_16x9_min.jpg": {
+	"/docs/i/anatomia_binding_16x9_min.jpg": {
 		"ft": 16384,
 		"iS": 263096,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_binding_16x9_min.jpg",
+		"oAP": "/docs/i/anatomia_binding_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_binding_3x4_min.jpg": {
+	"/docs/i/anatomia_binding_3x4_min.jpg": {
 		"ft": 16384,
 		"iS": 190660,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_binding_3x4_min.jpg",
+		"oAP": "/docs/i/anatomia_binding_3x4_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_detail_16x9_min.jpg": {
+	"/docs/i/anatomia_detail_16x9_min.jpg": {
 		"ft": 16384,
 		"iS": 190472,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_detail_16x9_min.jpg",
+		"oAP": "/docs/i/anatomia_detail_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_detail_2_16x9_min.jpg": {
+	"/docs/i/anatomia_detail_2_16x9_min.jpg": {
 		"ft": 16384,
 		"iS": 110238,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_detail_2_16x9_min.jpg",
+		"oAP": "/docs/i/anatomia_detail_2_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_detail_2_3x4_min.jpg": {
+	"/docs/i/anatomia_detail_2_3x4_min.jpg": {
 		"ft": 16384,
 		"iS": 110993,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_detail_2_3x4_min.jpg",
+		"oAP": "/docs/i/anatomia_detail_2_3x4_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_detail_3x4_min.jpg": {
+	"/docs/i/anatomia_detail_3x4_min.jpg": {
 		"ft": 16384,
 		"iS": 187711,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_detail_3x4_min.jpg",
+		"oAP": "/docs/i/anatomia_detail_3x4_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_endpaper_16x9_min.jpg": {
+	"/docs/i/anatomia_endpaper_16x9_min.jpg": {
 		"ft": 16384,
 		"iS": 216478,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_endpaper_16x9_min.jpg",
+		"oAP": "/docs/i/anatomia_endpaper_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_endpaper_3x4_min.jpg": {
+	"/docs/i/anatomia_endpaper_3x4_min.jpg": {
 		"ft": 16384,
 		"iS": 176045,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_endpaper_3x4_min.jpg",
+		"oAP": "/docs/i/anatomia_endpaper_3x4_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_hylle_16x9_min.jpg": {
+	"/docs/i/anatomia_hylle_16x9_min.jpg": {
 		"ft": 16384,
 		"iS": 227911,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_hylle_16x9_min.jpg",
+		"oAP": "/docs/i/anatomia_hylle_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_hylle_3x4_min.jpg": {
+	"/docs/i/anatomia_hylle_3x4_min.jpg": {
 		"ft": 16384,
 		"iS": 209050,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_hylle_3x4_min.jpg",
+		"oAP": "/docs/i/anatomia_hylle_3x4_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_norweskiego_16x9_min.jpg": {
+	"/docs/i/anatomia_norweskiego_16x9_min.jpg": {
 		"ft": 16384,
 		"iS": 265747,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_norweskiego_16x9_min.jpg",
+		"oAP": "/docs/i/anatomia_norweskiego_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_norweskiego_3x4_min.jpg": {
+	"/docs/i/anatomia_norweskiego_3x4_min.jpg": {
 		"ft": 16384,
 		"iS": 231469,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_norweskiego_3x4_min.jpg",
+		"oAP": "/docs/i/anatomia_norweskiego_3x4_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_tresc_16x9_min.jpg": {
+	"/docs/i/anatomia_tresc_16x9_min.jpg": {
 		"ft": 16384,
 		"iS": 259581,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_tresc_16x9_min.jpg",
+		"oAP": "/docs/i/anatomia_tresc_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_tresc_3x4_min.jpg": {
+	"/docs/i/anatomia_tresc_3x4_min.jpg": {
 		"ft": 16384,
 		"iS": 228962,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_tresc_3x4_min.jpg",
+		"oAP": "/docs/i/anatomia_tresc_3x4_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_zakladka_16x9_min.jpg": {
+	"/docs/i/anatomia_zakladka_16x9_min.jpg": {
 		"ft": 16384,
 		"iS": 273447,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_zakladka_16x9_min.jpg",
+		"oAP": "/docs/i/anatomia_zakladka_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/anatomia_zakladka_3x4_min.jpg": {
+	"/docs/i/anatomia_zakladka_3x4_min.jpg": {
 		"ft": 16384,
 		"iS": 226370,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/i/anatomia_zakladka_3x4_min.jpg",
+		"oAP": "/docs/i/anatomia_zakladka_3x4_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/i/arrow-left.svg": {
+	"/docs/i/arrow-left.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/build/i/arrow-left.svg",
+		"oAP": "/docs/i/arrow-left.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/build/i/arrow-right.svg": {
+	"/docs/i/arrow-right.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/build/i/arrow-right.svg",
+		"oAP": "/docs/i/arrow-right.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/build/index.html": {
+	"/docs/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/index.html",
+		"oAP": "/docs/index.html",
 		"oF": 0
 		},
-	"/build/index_presale.html": {
+	"/docs/index_presale.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 1,
-		"oAP": "/build/index_presale.html",
+		"oAP": "/docs/index_presale.html",
 		"oF": 1
 		},
-	"/build/j-anatomia-min.js": {
+	"/docs/j-anatomia-min.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
@@ -399,105 +407,97 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"/build/linki/index.html": {
+	"/docs/linki/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/linki/index.html",
+		"oAP": "/docs/linki/index.html",
 		"oF": 0
 		},
-	"/build/marcin_anatomia_norweskiego_800.jpg": {
+	"/docs/marcin_anatomia_norweskiego_800.jpg": {
 		"ft": 16384,
 		"iS": 52428,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/marcin_anatomia_norweskiego_800.jpg",
+		"oAP": "/docs/marcin_anatomia_norweskiego_800.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/marta_anatomia_norweskiego_800.jpg": {
+	"/docs/marta_anatomia_norweskiego_800.jpg": {
 		"ft": 16384,
 		"iS": 53074,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/marta_anatomia_norweskiego_800.jpg",
+		"oAP": "/docs/marta_anatomia_norweskiego_800.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/test.html": {
+	"/docs/test.html": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/test.html",
+		"oAP": "/docs/test.html",
 		"oF": 0
 		},
-	"/build/website_cover.svg": {
+	"/docs/website_cover.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/build/website_cover.svg",
+		"oAP": "/docs/website_cover.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/build/website_cover_01.jpg": {
+	"/docs/website_cover_01.jpg": {
 		"ft": 16384,
 		"iS": 486844,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/website_cover_01.jpg",
+		"oAP": "/docs/website_cover_01.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/website_cover_01.png": {
+	"/docs/website_cover_01.png": {
 		"ft": 32768,
 		"iS": 227773,
 		"oA": 0,
-		"oAP": "/build/website_cover_01.png",
+		"oAP": "/docs/website_cover_01.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/build/website_cover_02.jpg": {
+	"/docs/website_cover_02.jpg": {
 		"ft": 16384,
 		"iS": 661993,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/website_cover_02.jpg",
+		"oAP": "/docs/website_cover_02.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/build/website_cover_02.png": {
+	"/docs/website_cover_02.png": {
 		"ft": 32768,
 		"iS": 339135,
 		"oA": 0,
-		"oAP": "/build/website_cover_02.png",
+		"oAP": "/docs/website_cover_02.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
-		},
-	"/data-types:book .html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/data-types:book .html",
-		"oF": 0
 		},
 	"/framework_master/.gitignore": {
 		"cB": 0,
@@ -785,7 +785,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/google1d1a1ebbc4f7e1ae.html",
+		"oAP": "/docs/google1d1a1ebbc4f7e1ae.html",
 		"oF": 3
 		},
 	"/i/anatomia_binding_16x9.jpg": {
@@ -957,8 +957,8 @@
 		"ft": 16384,
 		"iS": 342663,
 		"jF": 0,
-		"oA": 0,
-		"oAP": "/build/i/anatomia_zakladka_3x4_min.jpg",
+		"oA": 1,
+		"oAP": "/docs/i/anatomia_zakladka_3x4_min.jpg",
 		"oF": 3,
 		"oIPL": 0,
 		"opt": 1,
@@ -997,7 +997,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/index.html",
+		"oAP": "/docs/index.html",
 		"oF": 3
 		},
 	"/index_presale.html": {
@@ -1005,7 +1005,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/index_presale.html",
+		"oAP": "/index_presale.html",
 		"oF": 2
 		},
 	"/js/j-anatomia.js": {
@@ -1014,7 +1014,7 @@
 		"ma": 0,
 		"mi": 0,
 		"oA": 2,
-		"oAP": "/build/j-anatomia-min.js",
+		"oAP": "/docs/j-anatomia-min.js",
 		"oF": 3,
 		"sC": 1,
 		"tS": 0
@@ -1043,7 +1043,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/build/anatomia.css",
+		"oAP": "/docs/anatomia.css",
 		"oF": 2,
 		"oS": 2,
 		"uL": 1
@@ -1053,7 +1053,7 @@
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/build/test.html",
+		"oAP": "/test.html",
 		"oF": 2
 		},
 	"/website_cover_01.jpg": {
@@ -1061,7 +1061,7 @@
 		"iS": 484293,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/website_cover_01.jpg",
+		"oAP": "/docs/website_cover_01.jpg",
 		"oF": 2,
 		"oIPL": 0,
 		"opt": 1,
@@ -1071,7 +1071,7 @@
 		"ft": 32768,
 		"iS": 546122,
 		"oA": 0,
-		"oAP": "/build/website_cover_01.png",
+		"oAP": "/docs/website_cover_01.png",
 		"oF": 2,
 		"oIPL": 0,
 		"opt": 1,
@@ -1083,7 +1083,7 @@
 		"iS": 661063,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/build/website_cover_02.jpg",
+		"oAP": "/docs/website_cover_02.jpg",
 		"oF": 2,
 		"oIPL": 0,
 		"opt": 1,
@@ -1093,7 +1093,7 @@
 		"ft": 32768,
 		"iS": 778971,
 		"oA": 0,
-		"oAP": "/build/website_cover_02.png",
+		"oAP": "/docs/website_cover_02.png",
 		"oF": 2,
 		"oIPL": 0,
 		"opt": 1,
