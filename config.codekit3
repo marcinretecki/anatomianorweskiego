@@ -1064,9 +1064,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
-		"oAP": "/build/linki/index.html",
-		"oF": 2
+		"oA": 2,
+		"oAP": "/docs/linki/index.html",
+		"oF": 3
 		},
 	"/opinie.html": {
 		"cB": 0,
