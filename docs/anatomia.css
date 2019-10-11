@@ -1652,7 +1652,7 @@ a:active { color: #35424c; outline: 0; }
 
 @media (min-width: 900px) { .section-nav__toggle--anatomia { display: none; } }
 
-.btn-nav--koszyk { padding: 0 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; margin: 0.25rem; border-radius: 3px; }
+.btn-nav--koszyk { padding: 0 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; margin: 0.25rem 1rem; border-radius: 3px; }
 
 .btn-nav--koszyk:focus, .btn-nav--koszyk:hover, .btn-black:focus, .btn-black:hover { background-color: #3B6A6C; color: #fff; }
 
@@ -1692,7 +1692,7 @@ a:active { color: #35424c; outline: 0; }
 
 .anatomia-slider { overflow: hidden; position: relative; }
 
-.anatomia-slides { position: relative; width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; overflow-x: scroll; -webkit-overflow-scrolling: touch; -ms-scroll-snap-points-x: repeat(100%); scroll-snap-points-x: repeat(100%); -ms-scroll-snap-type: mandatory; scroll-snap-type: mandatory; -ms-scroll-snap-type: x mandatory; scroll-snap-type: x mandatory; }
+.anatomia-slides { width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; overflow-x: scroll; -webkit-overflow-scrolling: touch; -ms-scroll-snap-points-x: repeat(100%); scroll-snap-points-x: repeat(100%); -ms-scroll-snap-type: mandatory; scroll-snap-type: mandatory; -ms-scroll-snap-type: x mandatory; scroll-snap-type: x mandatory; }
 
 @supports ((-ms-scroll-snap-type: mandatory) or (scroll-snap-type: mandatory)) { .anatomia-slides { overflow-x: auto; } }
 
@@ -1758,9 +1758,9 @@ a:active { color: #35424c; outline: 0; }
 
 .anatomia-opinie__author { font-size: 0.75rem; line-height: 1rem; margin-top: 0.5rem; }
 
-.anatomia-spis-columns { -webkit-column-width: 13rem; column-width: 13rem; -webkit-column-gap: 1rem; column-gap: 1rem; }
+.anatomia-spis-columns { -webkit-column-width: 13rem; -moz-column-width: 13rem; column-width: 13rem; -webkit-column-gap: 1rem; -moz-column-gap: 1rem; column-gap: 1rem; }
 
-.anatomia-spis-columns__item { page-break-inside: avoid; -webkit-column-break-inside: avoid; break-inside: avoid; }
+.anatomia-spis-columns__item { page-break-inside: avoid; -webkit-column-break-inside: avoid; -moz-column-break-inside: avoid; break-inside: avoid; }
 
 .anatomia-spis-ul { font-size: 0.75rem; line-height: 1rem; margin: 0 0 1rem 0.5rem; }
 
@@ -1774,54 +1774,28 @@ a:active { color: #35424c; outline: 0; }
 
 .autorzy-img { float: left; width: 50%; padding: 0 1rem; }
 
-.anatomia-order__item-wrap { margin-bottom: 2rem; padding: 0 1rem; }
+.anatomia-order__col { float: left; padding: 0 1rem; width: 33%; }
 
-@media (min-width: 900px) { .anatomia-order__item-wrap { float: left; width: 33.33%; } }
+@media (min-width: 900px) { .anatomia-order__col { width: 50%; } }
 
-.anatomia-order__item { position: relative; border-radius: 3px; overflow: hidden; -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); cursor: pointer; }
+.anatomia-order__col + .anatomia-order__col { width: 67%; }
 
-.anatomia-order__item:hover { -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+@media (min-width: 900px) { .anatomia-order__col + .anatomia-order__col { width: 50%; } }
 
-.anatomia-order__text { border-radius: 3px 0 0 3px; text-align: center; width: 50.00%; padding: 1rem; }
+.order-table { width: 100%; max-width: 24rem; margin-bottom: 2rem; }
 
-@media (min-width: 900px) { .anatomia-order__text { border-radius: 3px 3px 0 0; width: 100%; padding: 1rem 1rem 1.5rem; } }
+.order-table__thead-th { padding: 0.25rem; border: none; border-bottom: 1px solid #ccc; font-weight: normal; text-align: left; }
 
-.anatomia-order__title { font-size: 1.3rem; line-height: 2rem; margin: 0; }
+.order-table__cell { padding: 0.25rem; border: none; font-weight: normal; text-align: left; font-variant-numeric: ordinal; }
 
-@media (min-width: 600px) { .anatomia-order__title { font-size: 1.8rem; line-height: 2rem; } }
+.order-minicart__input { display: inline-block; width: 4rem; padding: 0.25rem; margin: 0; border: 1px solid #ccc; border-width: 1px 0; border-radius: 0; font-size: 1rem; line-height: 1.5rem; }
 
-.anatomia-order__title--one-book { margin-bottom: 0.5rem; }
+.order-minicart__math { display: inline-block; width: 2rem; padding: 0.25rem; margin: 0; border: 1px solid #ccc; border-radius: 3px 0 0 3px; font-size: 1rem; line-height: 1.5rem; }
 
-@media (min-width: 900px) { .anatomia-order__title--one-book { margin-bottom: 2.5rem; } }
+.order-minicart__math--plus { border-radius: 0 3px 3px 0; }
 
-.anatomia-order__gratis { font-size: 0.75rem; line-height: 1rem; margin-bottom: 0.5rem; }
-
-@media (min-width: 600px) { .anatomia-order__gratis { margin-bottom: 1rem; font-size: 1rem; line-height: 1.5rem; } }
-
-.anatomia-order__price { font-size: 1rem; line-height: 1.5rem; }
-
-@media (min-width: 600px) { .anatomia-order__price { font-size: 1.3rem; line-height: 2rem; } }
-
-.anatomia-order__btn { position: absolute; right: 0; top: 0; bottom: 0; margin: 0; width: 50%; border-radius: 0 3px 3px 0; padding: 1rem; background: #3B6A6C; white-space: normal; }
-
-@media (min-width: 900px) { .anatomia-order__btn { position: static; border-radius: 0 0 3px 3px; width: 100%; } }
+.order-minicart__buy { margin: 1rem 0 0 0; }
 
 .anatomia-order__cards { width: 8rem; height: auto; }
 
 .anatomia-faq__h3 { margin: 2rem 0 0; }
-
-.section-bag { position: absolute; top: 2.25rem; right: 0.25rem; z-index: 1; opacity: 0; display: none; width: 50%; max-width: 16rem; padding: 0; border-radius: 3px; overflow: hidden; -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); -webkit-transition: none; -o-transition: none; transition: none; }
-
-.bag-item { font-size: 0.75rem; line-height: 1rem; position: relative; display: none; padding: 0.5rem 0.25rem 0.5rem; margin: 0; cursor: pointer; -webkit-transition: none; -o-transition: none; transition: none; }
-
-.bag-item + .bag-item { border-top: 1px solid #616b73; }
-
-.bag-item__title { display: inline-block; padding: 0 0.5rem; }
-
-.bag-item__price { float: right; }
-
-.bag-item__remove { font-size: 0.75rem; line-height: 1rem; position: absolute; right: 0; top: 0; }
-
-.section-bag__sum { font-size: 0.75rem; line-height: 1rem; padding: 0.25rem; }
-
-.section-bag__link, .section-bag__link:visited { font-size: 0.75rem; line-height: 1rem; margin: 0; width: 100%; border-radius: 0; }

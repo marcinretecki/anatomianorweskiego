@@ -52,7 +52,7 @@
 <header class="header-top header-top--fixed section-black">
   <div id="header-anatomia" class="section-nav">
              <button class="btn btn-black btn-nav section-nav__toggle section-nav__toggle--anatomia js-open-nav" data-open-target="navMain">Menu
-    </button><a data-ga-category="Header Nav" data-ga-action="Zamawiam" href="#zamowienia" class="btn btn-green btn-nav btn-nav--koszyk alignright js-koszyk">Zamawiam
+    </button><a data-ga-category="Header Nav" data-ga-action="Zamawiam" href="#zamowienia" class="btn btn-green btn-nav btn-nav--koszyk alignright js-koszyk">Zamówienia
     </a><nav id="navMain" class="navbar navbar--anatomia section-black" aria-label="Navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
       <ul class="navbar__list">
                  <li><a class="btn btn-black btn-nav" data-ga-category="Header Nav" data-ga-action="Anatomia" href="#anatomia">Anatomia norweskiego
@@ -63,18 +63,6 @@
         </a></li>
       </ul>
     </nav>
-  </div>
-
-  <div id="section-bag" class="section-black section-bag">
-
-    <div id="bag-items" class="section-bag__items"></div>
-
-    <div class="section-bag__sum rightened">
-      Suma: <span id="bag-sum"></span> kr
-    </div>
-
-    <a id="bag-link" class="btn btn-red section-bag__link" href="/" data-ga-category="Koszyk" data-ga-action="Przejdź do kasy" data-ga-label="Przejdź do kasy">Przejdź do kasy</a>
-
   </div>
 
 </header>
@@ -469,49 +457,60 @@
 </section>
 
 
-<section id="zamowienia" class="section-beige">
+<section id="zamowienia" class="section-beige anatomia-order">
   <div class="section-content">
-    <div class="row">
-      <div class="main-column centered">
-        <h2 class="section-h-thin">Zamówienia</h2>
-        <p>Kliknij, żeby dodać <span class="no-break">do koszyka</span>.</p>
-      </div>
-    </div>
+    <h2 class="section-h-thin centered space-2">Zamówienia</h2>
 
-    <div class="group">
-      <div class="anatomia-order__item-wrap">
-        <div class="anatomia-order__item js-order" data-ns-product-id="AN-1">
-          <div class="section-white anatomia-order__text">
-            <h3 class="h2 bariol-thin anatomia-order__title anatomia-order__title--one-book">1 książka</h3>
+    <div class="row space-2">
 
-            <div class="anatomia-order__price">399,-</div>
-          </div>
-          <button class="btn btn-dark anatomia-order__btn" data-ga-category="Koszyk" data-ga-action="Dodaj do koszyka" data-ga-label="AN 1">Dodaj do koszyka</button>
-        </div>
+      <div class="anatomia-order__col">
+        <img src="i/an_bok_sidebar.png" alt="">
       </div>
 
-      <div class="anatomia-order__item-wrap">
-        <div class="anatomia-order__item js-order" data-ns-product-id="AN-5">
-          <div class="section-white anatomia-order__text">
-            <h3 class="h2 bariol-thin anatomia-order__title">5 książek</h3>
-            <div class="anatomia-order__gratis">+ 1 sztuka gratis</div>
+      <div class="anatomia-order__col">
+        <p>Możesz zamówić jedną książkę dla siebie albo większą ilość dla znajomych lub szkoły językowej.</p>
 
-            <div class="anatomia-order__price">1995,-</div>
-          </div>
-          <button class="btn btn-dark anatomia-order__btn" data-ga-category="Koszyk" data-ga-action="Dodaj do koszyka" data-ga-label="AN 5">Dodaj do koszyka</button>
-        </div>
-      </div>
+        <p>Im więcej sztuk zamówisz, tym większy rabat otrzymasz.</p>
 
-      <div class="anatomia-order__item-wrap">
-        <div class="anatomia-order__item js-order" data-ns-product-id="AN-12">
-          <div class="section-white anatomia-order__text">
-            <h3 class="h2 bariol-thin anatomia-order__title">12 książek</h3>
-            <div class="anatomia-order__gratis">+ 3 sztuki gratis</div>
+        <table class="order-table">
+          <thead>
+            <tr>
+              <th class="order-table__thead-th text-muted">Ilość sztuk</th>
+              <th class="order-table__thead-th text-muted">Cena za sztukę</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="order-table__cell">1-5</th>
+              <td class="order-table__cell">399 kr</td>
+            </tr>
+            <tr>
+              <th class="order-table__cell">6-10</th>
+              <td class="order-table__cell">349 kr</td>
+            </tr>
+            <tr>
+              <th class="order-table__cell">11-30</th>
+              <td class="order-table__cell">319 kr</td>
+            </tr>
+            <tr>
+              <th class="order-table__cell">30+</th>
+              <td class="order-table__cell">299 kr</td>
+            </tr>
+          </tbody>
+        </table>
 
-            <div class="anatomia-order__price">4785,-</div>
-          </div>
-          <button class="btn btn-dark anatomia-order__btn" data-ga-category="Koszyk" data-ga-action="Dodaj do koszyka" data-ga-label="AN 12">Dodaj do koszyka</button>
-        </div>
+        <form class="order-minicart">
+
+          Wybierz ilość:
+
+          <button id="order-minus" type="button" class="btn order-minicart__math js-minus">-</button><!--
+           --><input id="order-count" class="order-minicart__input" type="number" aria-describedby="quantity-error" name="Ilość" value="1"  /><!--
+           --><button id="order-plus" type="button" class="btn order-minicart__math order-minicart__math--plus js-plus">+</button>
+
+          <a id="order-link" class="btn btn-red order-minicart__buy" href="https://nocnasowa.pl/kassa/?bagx=1" target="_blank" data-ga-category="Koszyk" data-ga-action="Dodaj do koszyka" data-ga-label="Dodaj do koszyka">Dodaj do koszyka</a>
+
+        </form>
+
       </div>
     </div>
 
@@ -553,13 +552,6 @@
       <div class="main-column">
 
         <h2 id="faq" class="size-3 centered">Często zadawane pytania</h2>
-
-        <h3 class="anatomia-faq__h3">Gratisy?</h3>
-        <p>Tak. Gdy zamówisz pięć, dostaniesz sześć. Zamów&nbsp;12, wyślemy Ci&nbsp;15. Publikujemy tę książkę, żeby się nią dzielić, pomagać innym, uczyć ich.</p>
-
-
-        <h3 class="anatomia-faq__h3">Czy mogę zamówić dwie sztuki?</h3>
-        <p>Jasne. Wystarczy, że klikniesz na jedną sztukę dwa razy.</p>
 
 
         <h3 class="anatomia-faq__h3">Kiedy wysyłacie książkę po zamówieniu?</h3>
@@ -613,6 +605,7 @@
     </div>
   </div>
 </section>
+
 
 
 <footer id="footer" class="section section-black">

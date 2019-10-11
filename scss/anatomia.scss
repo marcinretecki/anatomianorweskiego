@@ -138,7 +138,7 @@ a:active {
   padding: 0 $space;
   padding-top: $space-quarter;
   padding-bottom: $space-quarter;
-  margin: $space-quarter;
+  margin: $space-quarter $space;
   border-radius: 3px;
 }
 
@@ -500,91 +500,73 @@ a:active {
 //  Zamówienia
 //
 
-.anatomia-order {
-}
-.anatomia-order__item-wrap {
-  margin-bottom: $space-2;
-  padding: 0 $space;
+.anatomia-order {}
 
+.anatomia-order__col {
+  float: left;
+  padding:0 $space;
+  width: 33%;
   @include for-tablet-landscape-up {
-    float: left;
-    width: 33.33%;
+    width: 50%;
+  }
+}
+.anatomia-order__col + .anatomia-order__col {
+  width: 67%;
+  @include for-tablet-landscape-up {
+    width: 50%;
   }
 }
 
-.anatomia-order__item {
-  position: relative;
-  border-radius: 3px;
-  overflow: hidden;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
-  cursor: pointer;
 
+.order-table {
+  width: 100%;
+  max-width: 24 * $space;
+  margin-bottom: $space-2
 }
-.anatomia-order__item:hover {
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+.order-table__thead-th {
+  padding: $space-quarter;
+  border: none;
+  border-bottom: 1px solid $gray;
+  font-weight: normal;
+  text-align: left;
+}
+.order-table__cell {
+  padding: $space-quarter;
+  border: none;
+  font-weight: normal;
+  text-align: left;
+  font-variant-numeric: ordinal;
 }
 
-.anatomia-order__text {
-  border-radius: 3px 0 0 3px;
-  text-align: center;
-  width: 50.00%;
-  padding: $space;
 
-  @include for-tablet-landscape-up {
-    border-radius: 3px 3px 0 0;
-    width: 100%;
-    padding: $space $space ($space + $space-half);
-  }
-}
-.anatomia-order__title {
-  @include size-2;
+.order-minicart {}
+.order-minicart__input {
+  display: inline-block;
+  width: $space-4;
+  padding: $space-quarter;
   margin: 0;
-  @include for-tablet-portrait-up {
-    @include size-3;
-  }
-}
-.anatomia-order__title--one-book {
-  margin-bottom: $space-half;
-
-  @include for-tablet-landscape-up {
-    margin-bottom: ($space-2 + $space-half);
-  }
-}
-.anatomia-order__gratis {
-  @include size-0;
-  margin-bottom: $space-half;
-
-  @include for-tablet-portrait-up {
-    margin-bottom: $space;
-    @include size-1;
-  }
-}
-.anatomia-order__price {
+  border: 1px solid $gray;
+  border-width: 1px 0;
+  border-radius: 0;
   @include size-1;
-
-  @include for-tablet-portrait-up {
-    @include size-2;
-  }
 }
-
-.anatomia-order__btn {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
+.order-minicart__math {
+  display: inline-block;
+  width: $space-2;
+  padding: $space-quarter;
   margin: 0;
-  width: 50%;
-  border-radius: 0 3px 3px 0;
-  padding: $space;
-  background: $anatomia-green;
-  white-space: normal;
-  @include for-tablet-landscape-up {
-    position: static;
-    border-radius: 0 0 3px 3px;
-    width: 100%;
-  }
+  border: 1px solid $gray;
+  border-radius: 3px 0 0 3px;
+  @include size-1;
 }
+.order-minicart__math--plus {
+  border-radius: 0 3px 3px 0;
+}
+.order-minicart__buy {
+  margin: $space 0 0 0;
+}
+
 
 .anatomia-order__cards {
   width: $space-8;
@@ -594,85 +576,4 @@ a:active {
 
 .anatomia-faq__h3 {
   margin: $space-2 0 0;
-}
-
-
-
-//
-//  Koszyk
-//
-.section-bag {
-  position: absolute;
-  top: $space-2 + $space-quarter;
-  right: $space-quarter;
-  z-index: 1;
-  opacity: 0;
-  display: none;
-
-  width: 50%;
-  max-width: $space * 16;
-  padding: 0;
-  border-radius: 3px;
-  overflow: hidden;
-
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px   rgba(0,0,0,0.23);
-  transition: none;
-}
-
-
-//  Bag
-.bag-item {
-  @include size-0;
-  position: relative;
-
-  display: none;
-
-  padding: $space-half $space-quarter $space-half;
-  margin: 0;
-
-  cursor: pointer;
-  transition: none;
-}
-
-.bag-item + .bag-item {
-  border-top: 1px solid $dark-light;
-}
-
-.bag-item__title {
-  display: inline-block;
-  padding: 0 $space-half;
-}
-
-.bag-item__price {
-  float: right;
-}
-
-.bag-item__remove {
-  @include size-0;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.section-bag__sum {
-  @include size-0;
-  padding: $space-quarter;
-}
-
-.section-bag__link,
-.section-bag__link:visited {
-  @include size-0;
-  margin: 0;
-  width: 100%;
-  border-radius: 0;
-  //color: #fff;
-  //background: $anatomia-green;
-}
-.section-bag__link:focus,
-.section-bag__link:hover {
-  //color: #fff;
-}
-.section-bag__link:active {
-  //background: $dark;
-  //color: #fff;
 }
