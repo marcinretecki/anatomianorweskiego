@@ -1652,7 +1652,9 @@ a:active { color: #35424c; outline: 0; }
 
 @media (min-width: 900px) { .section-nav__toggle--anatomia { display: none; } }
 
-.btn-nav--koszyk { padding: 0 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; margin: 0.25rem 1rem; border-radius: 3px; }
+.btn-nav--koszyk { padding: 0 1rem; padding-top: 0.25rem; padding-bottom: 0.25rem; margin: 0.25rem; border-radius: 3px; }
+
+@media (min-width: 900px) { .btn-nav--koszyk { margin: 0.25rem 1rem; } }
 
 .btn-nav--koszyk:focus, .btn-nav--koszyk:hover, .btn-black:focus, .btn-black:hover { background-color: #3B6A6C; color: #fff; }
 
@@ -1774,28 +1776,34 @@ a:active { color: #35424c; outline: 0; }
 
 .autorzy-img { float: left; width: 50%; padding: 0 1rem; }
 
-.anatomia-order__col { float: left; padding: 0 1rem; width: 33%; }
+.anatomia-order__col { padding: 0 1rem; }
 
-@media (min-width: 900px) { .anatomia-order__col { width: 50%; } }
+@media (min-width: 900px) { .anatomia-order__col { float: left; width: 50%; } }
 
-.anatomia-order__col + .anatomia-order__col { width: 67%; }
+.anatomia-order__body { padding-right: 33%; }
 
-@media (min-width: 900px) { .anatomia-order__col + .anatomia-order__col { width: 50%; } }
+@media (min-width: 900px) { .anatomia-order__body { padding-right: 0; } }
 
-.order-table { width: 100%; max-width: 24rem; margin-bottom: 2rem; }
+.anatomia-order__col--img { width: 33%; position: absolute; top: 0; right: 0; }
+
+@media (min-width: 900px) { .anatomia-order__col--img { position: static; width: 50%; } }
+
+.order-table { width: 100%; max-width: 24rem; margin-bottom: 4rem; }
 
 .order-table__thead-th { padding: 0.25rem; border: none; border-bottom: 1px solid #ccc; font-weight: normal; text-align: left; }
 
 .order-table__cell { padding: 0.25rem; border: none; font-weight: normal; text-align: left; font-variant-numeric: ordinal; }
 
-.order-minicart__input { display: inline-block; width: 4rem; padding: 0.25rem; margin: 0; border: 1px solid #ccc; border-width: 1px 0; border-radius: 0; font-size: 1rem; line-height: 1.5rem; }
+.order-minicart { margin-bottom: 1rem; }
 
-.order-minicart__math { display: inline-block; width: 2rem; padding: 0.25rem; margin: 0; border: 1px solid #ccc; border-radius: 3px 0 0 3px; font-size: 1rem; line-height: 1.5rem; }
+.order-minicart__input { display: inline-block; width: 4rem; padding: 0.25rem; margin: 0 0 1rem; border: 1px solid #ccc; border-radius: 0; font-size: 1rem; line-height: 1.5rem; text-align: center; -webkit-appearance: none; }
 
-.order-minicart__math--plus { border-radius: 0 3px 3px 0; }
+.order-minicart__math { display: inline-block; width: 2rem; padding: 0.25rem; margin: 0; border: 1px solid #ccc; border-width: 1px 0 1px 1px; border-radius: 3px 0 0 3px; font-size: 1rem; line-height: 1.5rem; }
 
-.order-minicart__buy { margin: 1rem 0 0 0; }
+.order-minicart__math--plus { border-width: 1px 1px 1px 0; border-radius: 0 3px 3px 0; margin-right: 1rem; }
 
-.anatomia-order__cards { width: 8rem; height: auto; }
+.order-minicart__buy { margin: 0 0 1rem; }
+
+.anatomia-order__cards { width: 8rem; height: auto; margin: 0; }
 
 .anatomia-faq__h3 { margin: 2rem 0 0; }

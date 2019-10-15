@@ -370,6 +370,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/docs/i/anatomia_norweskiego_okladka.jpg": {
+		"ft": 16384,
+		"iS": 593263,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/i/anatomia_norweskiego_okladka.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/docs/i/anatomia_tresc_16x9_min.jpg": {
 		"ft": 16384,
 		"iS": 259581,
@@ -837,17 +848,6 @@
 		"oAP": "/docs/google1d1a1ebbc4f7e1ae.html",
 		"oF": 3
 		},
-	"/i/an_bok_sidebar.png": {
-		"ft": 32768,
-		"iS": 351053,
-		"oA": 0,
-		"oAP": "/docs/i/an_bok_sidebar.png",
-		"oF": 2,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 2,
-		"q": 100
-		},
 	"/i/anatomia_binding_16x9.jpg": {
 		"ft": 16384,
 		"iS": 400038,
@@ -978,6 +978,17 @@
 		"oF": 1,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"/i/anatomia_norweskiego_okladka.jpg": {
+		"ft": 16384,
+		"iS": 299712,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/i/anatomia_norweskiego_okladka.jpg",
+		"oF": 2,
+		"oIPL": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/i/anatomia_tresc_16x9.jpg": {

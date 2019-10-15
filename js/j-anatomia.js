@@ -130,13 +130,21 @@
     }
   }
 
-
+  /// TODO
+  /// if field is NaN, send 1 order count anyway
   function updateOrderCountFromField() {
-    if (elements.orderCount.value !== '' && parseInt(elements.orderCount.value) !== orderCount) {
+
+    if ( isNaN(parseInt(elements.orderCount.value)) && (elements.orderCount.value !== '')) {
+      showDebugMsg('field value was NaN');
+      orderCount = 1;
+      updateOrder();
+    }
+    else if (!isNaN(parseInt(elements.orderCount.value)) && parseInt(elements.orderCount.value) !== orderCount) {
       showDebugMsg('update order count from field');
       orderCount = elements.orderCount.value;
       updateOrder();
     }
+
   }
 
 
