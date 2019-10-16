@@ -27,7 +27,8 @@
   //  init
   function init() {
     showDebugMsg('init');
-
+    //  after refresh order would be wrong
+    updateOrderCountFromField();
     addEventListeners();
     listenToOrderCount();
   }
