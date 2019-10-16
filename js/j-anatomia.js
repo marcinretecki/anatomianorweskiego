@@ -4,7 +4,7 @@
 (function() {
   'use strict';
 
-  var debug = true;
+  var debug = false;
 
   if ( ( location.hostname === '' ) || ( location.hostname === 'localhost' ) ) {
     debug = true;
