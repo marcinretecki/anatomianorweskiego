@@ -183,8 +183,13 @@
 
     showDebugMsg('newOrderString: ' + orderCount);
 
+    var bagx = 'bagx=' + orderCount;
+
     //  update link
-    elements.orderLink.href = kassaUrl + '?bagx=' + orderCount;
+    elements.orderLink.href = kassaUrl + '?' + bagx;
+
+    //  update ga label
+    elements.orderLink.setAttribute('data-ga-label', bagx);
   }
 
   //
