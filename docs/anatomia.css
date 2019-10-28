@@ -1778,29 +1778,31 @@ a:active { color: #35424c; outline: 0; }
 
 .anatomia-order__col { padding: 0 1rem; }
 
-@media (min-width: 900px) { .anatomia-order__col { float: left; width: 50%; } }
+@media (min-width: 600px) { .anatomia-order__col { float: left; width: 50%; } }
 
 .anatomia-order__body { padding-right: 33%; }
 
-@media (min-width: 900px) { .anatomia-order__body { padding-right: 0; } }
+@media (min-width: 600px) { .anatomia-order__body { padding-right: 0; } }
 
 .anatomia-order__col--img { width: 33%; position: absolute; top: 0; right: 0; }
 
-@media (min-width: 900px) { .anatomia-order__col--img { position: static; width: 50%; } }
+@media (min-width: 600px) { .anatomia-order__col--img { position: static; width: 50%; } }
 
-.order-table { width: 100%; max-width: 24rem; margin-bottom: 4rem; }
+.order-table { width: 100%; max-width: 24rem; margin-bottom: 2rem; }
 
-.order-table__thead-th { padding: 0.25rem; border: none; border-bottom: 1px solid #ccc; font-weight: normal; text-align: left; }
+.order-table__thead-th { padding: 0.25rem; border: none; border-bottom: 1px solid #aaa7a2; font-weight: normal; text-align: left; }
 
 .order-table__cell { padding: 0.25rem; border: none; font-weight: normal; text-align: left; font-variant-numeric: ordinal; }
 
 .order-minicart { margin-bottom: 1rem; }
 
-.order-minicart__input { display: inline-block; width: 4rem; padding: 0.25rem; margin: 0 0 1rem; border: 1px solid #ccc; border-radius: 0; font-size: 1rem; line-height: 1.5rem; text-align: center; -webkit-appearance: none; }
+.order-minicart__input { display: inline-block; width: 4rem; padding: 0.25rem; margin: 0 0 1rem; border: 1px solid #aaa7a2; border-radius: 0; font-size: 1rem; line-height: 1.5rem; text-align: center; -webkit-appearance: none; }
 
-.order-minicart__math { display: inline-block; width: 2rem; padding: 0.25rem; margin: 0; border: 1px solid #ccc; border-width: 1px 0 1px 1px; border-radius: 3px 0 0 3px; font-size: 1rem; line-height: 1.5rem; }
+.order-minicart__math { display: inline-block; width: 2rem; padding: 0.25rem; margin: 0; border: 1px solid #aaa7a2; border-width: 1px 0 1px 1px; border-radius: 3px 0 0 3px; font-size: 1rem; line-height: 1.5rem; }
 
 .order-minicart__math--plus { border-width: 1px 1px 1px 0; border-radius: 0 3px 3px 0; margin-right: 1rem; }
+
+.order-minicart__math:focus, .order-minicart__math:hover { border-color: #35424c; background: #edeae7; }
 
 .order-minicart__buy { margin: 0 0 1rem; }
 

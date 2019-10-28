@@ -1117,6 +1117,14 @@
 		"oAP": "/opinie.html",
 		"oF": 1
 		},
+	"/order_one.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/order_one.html",
+		"oF": 2
+		},
 	"/scss/anatomia.scss": {
 		"aP": 1,
 		"bl": 0,

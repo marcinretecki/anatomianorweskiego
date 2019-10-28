@@ -507,14 +507,14 @@ a:active {
 
 .anatomia-order__col {
   padding:0 $space;
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     float: left;
     width: 50%;
   }
 }
 .anatomia-order__body {
   padding-right: 33%;
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     padding-right: 0;
   }
 }
@@ -524,7 +524,7 @@ a:active {
   position: absolute;
   top: 0;
   right: 0;
-  @include for-tablet-landscape-up {
+  @include for-tablet-portrait-up {
     position: static;
     width: 50%;
   }
@@ -535,12 +535,12 @@ a:active {
 .order-table {
   width: 100%;
   max-width: 24 * $space;
-  margin-bottom: $space-4;
+  margin-bottom: $space-2;
 }
 .order-table__thead-th {
   padding: $space-quarter;
   border: none;
-  border-bottom: 1px solid $gray;
+  border-bottom: 1px solid $beige-border;
   font-weight: normal;
   text-align: left;
 }
@@ -561,7 +561,7 @@ a:active {
   width: $space-4;
   padding: $space-quarter;
   margin: 0 0 $space;
-  border: 1px solid $gray;
+  border: 1px solid $beige-border;
   border-radius: 0;
   @include size-1;
   text-align: center;
@@ -572,7 +572,7 @@ a:active {
   width: $space-2;
   padding: $space-quarter;
   margin: 0;
-  border: 1px solid $gray;
+  border: 1px solid $beige-border;
   border-width: 1px 0 1px 1px;
   border-radius: 3px 0 0 3px;
   @include size-1;
@@ -581,6 +581,11 @@ a:active {
   border-width: 1px 1px 1px 0;
   border-radius: 0 3px 3px 0;
   margin-right: $space;
+}
+.order-minicart__math:focus,
+.order-minicart__math:hover {
+  border-color: $dark;
+  background: $beige;
 }
 .order-minicart__buy {
   margin: 0 0 $space;
