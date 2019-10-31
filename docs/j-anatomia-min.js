@@ -24,13 +24,43 @@
   var orderCount = 1;
   var orderSum = 399;
 
+  var utm = {
+    utmSource: '',
+    utmMedium: '',
+    utmCampaign: '',
+  };
+
   //  init
   function init() {
     showDebugMsg('init');
     //  after refresh order would be wrong
     updateOrderCountFromField();
     addEventListeners();
+    updateUtm();
+    updateOrderString();
     listenToOrderCount();
+  }
+
+  function updateUtm() {
+    if (window.ga === undefined) {
+      return;
+    }
+
+    ga(function(tracker) {
+
+      if (tracker.get('campaignSource') !== undefined) {
+        utm.utmSource = tracker.get('campaignSource');
+      }
+
+      if (tracker.get('campaignName') !== undefined) {
+        utm.utmCampaign = tracker.get('campaignName');
+      }
+
+      if (tracker.get('campaignMedium') !== undefined) {
+        utm.utmMedium = tracker.get('campaignMedium');
+      }
+
+    });
   }
 
   //  add listeners
@@ -181,12 +211,24 @@
   //  update order string
   function updateOrderString() {
 
+    var utmUrl = '';
+
     showDebugMsg('newOrderString: ' + orderCount);
+
+    if (utm.utmSource.length > 0) {
+      utmUrl += '&utm_source=' + utm.utmSource;
+    }
+    if (utm.utmMedium.length >0) {
+      utmUrl += '&utm_medium=' + utm.utmMedium;
+    }
+    if (utm.utmCampaign.length > 0) {
+      utmUrl += '&utm_campaign=' + utm.utmCampaign;
+    }
 
     var bagx = 'bagx=' + orderCount;
 
     //  update link
-    elements.orderLink.href = kassaUrl + '?' + bagx;
+    elements.orderLink.href = kassaUrl + '?' + bagx + utmUrl;
 
     //  update ga label
     elements.orderLink.setAttribute('data-ga-label', bagx);
