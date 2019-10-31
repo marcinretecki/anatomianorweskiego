@@ -79,6 +79,984 @@
 		"oAP": "/data-types:book .html",
 		"oF": 0
 		},
+	"/design/an_bok_sidebar.png": {
+		"ft": 32768,
+		"iS": 351053,
+		"oA": 0,
+		"oAP": "/design/an_bok_sidebar.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/an_kulisy_cover.jpg": {
+		"ft": 16384,
+		"iS": 280652,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/an_kulisy_cover.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/an-placeholder.png": {
+		"ft": 32768,
+		"iS": 5627,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/an-placeholder.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/an_icon.png": {
+		"ft": 32768,
+		"iS": 25362,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/an_icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Anatomia website.sketch": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Anatomia website.sketch",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/anatomia-norweskiego-fb.png": {
+		"ft": 32768,
+		"iS": 242097,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/anatomia-norweskiego-fb.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/anatomia_tick.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/design/anatomianorweskiego.com/anatomia_tick.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/design/anatomianorweskiego.com/android-icon-192x192.png": {
+		"ft": 32768,
+		"iS": 4198,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/android-icon-192x192.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/apple-icon-152x152.png": {
+		"ft": 32768,
+		"iS": 3064,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/apple-icon-152x152.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/apple-icon-180x180.png": {
+		"ft": 32768,
+		"iS": 3991,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/apple-icon-180x180.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/book-mockup-test.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/book-mockup-test.psd",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/book-mockup.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/book-mockup.psd",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/favicon-16x16.png": {
+		"ft": 32768,
+		"iS": 496,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/favicon-16x16.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/favicon-32x32.png": {
+		"ft": 32768,
+		"iS": 1035,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/favicon-32x32.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/favicon-96x96.png": {
+		"ft": 32768,
+		"iS": 2000,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/favicon-96x96.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Hardcover-Book-MockUp.zip": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Hardcover-Book-MockUp.zip",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/marcin_anatomia_norweskiego.jpg": {
+		"ft": 16384,
+		"iS": 178447,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/marcin_anatomia_norweskiego.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/marcin_anatomia_norweskiego_800.jpg": {
+		"ft": 16384,
+		"iS": 52428,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/marcin_anatomia_norweskiego_800.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/marta_anatomia_norweskiego.jpg": {
+		"ft": 16384,
+		"iS": 191520,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/marta_anatomia_norweskiego.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/marta_anatomia_norweskiego_800.jpg": {
+		"ft": 16384,
+		"iS": 53074,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/marta_anatomia_norweskiego_800.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Okładka opp 2.png": {
+		"ft": 32768,
+		"iS": 4054417,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Okładka opp 2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_binding_16x9.jpg": {
+		"ft": 16384,
+		"iS": 400038,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_binding_16x9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_binding_3x4.jpg": {
+		"ft": 16384,
+		"iS": 311893,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_binding_3x4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_detail_16x9.jpg": {
+		"ft": 16384,
+		"iS": 312672,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_detail_16x9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_detail_2_16x9.jpg": {
+		"ft": 16384,
+		"iS": 307507,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_detail_2_16x9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_detail_2_3x4.jpg": {
+		"ft": 16384,
+		"iS": 296667,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_detail_2_3x4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_detail_3x4.jpg": {
+		"ft": 16384,
+		"iS": 274628,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_detail_3x4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_endpaper_16x9.jpg": {
+		"ft": 16384,
+		"iS": 334249,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_endpaper_16x9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_endpaper_3x4.jpg": {
+		"ft": 16384,
+		"iS": 289187,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_endpaper_3x4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_hylle_16x9.jpg": {
+		"ft": 16384,
+		"iS": 623031,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_hylle_16x9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_hylle_3x4.jpg": {
+		"ft": 16384,
+		"iS": 571181,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_hylle_3x4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_norweskiego_16x9.jpg": {
+		"ft": 16384,
+		"iS": 891860,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_norweskiego_16x9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_norweskiego_3x4.jpg": {
+		"ft": 16384,
+		"iS": 775043,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_norweskiego_3x4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_norweskiego_okladka.jpg": {
+		"ft": 16384,
+		"iS": 299712,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_norweskiego_okladka.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_norweskiego_okladka_p.jpg": {
+		"ft": 16384,
+		"iS": 314140,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_norweskiego_okladka_p.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_szkielet_podpisy.jpg": {
+		"ft": 16384,
+		"iS": 140218,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_szkielet_podpisy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_tresc_16x9.jpg": {
+		"ft": 16384,
+		"iS": 392040,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_tresc_16x9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_tresc_3x4.jpg": {
+		"ft": 16384,
+		"iS": 344384,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_tresc_3x4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_zakladka_16x9.jpg": {
+		"ft": 16384,
+		"iS": 408166,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_zakladka_16x9.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/photos/anatomia_zakladka_3x4.jpg": {
+		"ft": 16384,
+		"iS": 342663,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/photos/anatomia_zakladka_3x4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/right-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/design/anatomianorweskiego.com/right-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/design/anatomianorweskiego.com/sketch-favicon-exporter-template-master/favicon-exporter.sketch": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/sketch-favicon-exporter-template-master/favicon-exporter.sketch",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/sketch-favicon-exporter-template-master/LICENSE": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/sketch-favicon-exporter-template-master/LICENSE",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/sketch-favicon-exporter-template-master/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/sketch-favicon-exporter-template-master/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"/design/anatomianorweskiego.com/ss/Screen Shot 2019-10-31 at 18.11.35-fullpage.png": {
+		"ft": 32768,
+		"iS": 4346252,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/ss/Screen Shot 2019-10-31 at 18.11.35-fullpage.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Big/Icon\r": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Big/Icon\r",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Big/powered_by_stripe.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Big/powered_by_stripe.pdf",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Big/powered_by_stripe.png": {
+		"ft": 32768,
+		"iS": 1940,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Big/powered_by_stripe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Big/powered_by_stripe.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Big/powered_by_stripe.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Big/powered_by_stripe@2x.png": {
+		"ft": 32768,
+		"iS": 6444,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Big/powered_by_stripe@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Big/powered_by_stripe@3x.png": {
+		"ft": 32768,
+		"iS": 9450,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Big/powered_by_stripe@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Icon\r": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Icon\r",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Dark/Icon\r": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Dark/Icon\r",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Dark/powered_by_stripe.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Dark/powered_by_stripe.pdf",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Dark/powered_by_stripe.png": {
+		"ft": 32768,
+		"iS": 1477,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Dark/powered_by_stripe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Dark/powered_by_stripe.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Dark/powered_by_stripe.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Dark/powered_by_stripe@2x.png": {
+		"ft": 32768,
+		"iS": 2510,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Dark/powered_by_stripe@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Dark/powered_by_stripe@3x.png": {
+		"ft": 32768,
+		"iS": 3517,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Dark/powered_by_stripe@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Light/Icon\r": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Light/Icon\r",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Light/powered_by_stripe.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Light/powered_by_stripe.pdf",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Light/powered_by_stripe.png": {
+		"ft": 32768,
+		"iS": 1400,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Light/powered_by_stripe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Light/powered_by_stripe.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Light/powered_by_stripe.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Light/powered_by_stripe@2x.png": {
+		"ft": 32768,
+		"iS": 2950,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Light/powered_by_stripe@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Outline Light/powered_by_stripe@3x.png": {
+		"ft": 32768,
+		"iS": 4569,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Outline Light/powered_by_stripe@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Dark/Icon\r": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Dark/Icon\r",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Dark/powered_by_stripe.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Dark/powered_by_stripe.pdf",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Dark/powered_by_stripe.png": {
+		"ft": 32768,
+		"iS": 1449,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Dark/powered_by_stripe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Dark/powered_by_stripe.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Dark/powered_by_stripe.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Dark/powered_by_stripe@2x.png": {
+		"ft": 32768,
+		"iS": 2431,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Dark/powered_by_stripe@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Dark/powered_by_stripe@3x.png": {
+		"ft": 32768,
+		"iS": 3419,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Dark/powered_by_stripe@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Light/Icon\r": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Light/Icon\r",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Light/powered_by_stripe.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Light/powered_by_stripe.pdf",
+		"oF": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Light/powered_by_stripe.png": {
+		"ft": 32768,
+		"iS": 1362,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Light/powered_by_stripe.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Light/powered_by_stripe.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Light/powered_by_stripe.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Light/powered_by_stripe@2x.png": {
+		"ft": 32768,
+		"iS": 2789,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Light/powered_by_stripe@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/Stripe badge/Solid Light/powered_by_stripe@3x.png": {
+		"ft": 32768,
+		"iS": 4314,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/Stripe badge/Solid Light/powered_by_stripe@3x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/website_cover.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/design/anatomianorweskiego.com/website_cover.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/design/anatomianorweskiego.com/website_cover_01.jpg": {
+		"ft": 16384,
+		"iS": 484293,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/website_cover_01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/website_cover_01.png": {
+		"ft": 32768,
+		"iS": 546122,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/website_cover_01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/website_cover_02.jpg": {
+		"ft": 16384,
+		"iS": 661063,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/website_cover_02.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/website_cover_02.png": {
+		"ft": 32768,
+		"iS": 778971,
+		"oA": 0,
+		"oAP": "/design/anatomianorweskiego.com/website_cover_02.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/design/anatomianorweskiego.com/website_cover_test.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/design/anatomianorweskiego.com/website_cover_test.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/design/Ilustracje Marta Płusa/drafts/1(1).jpeg": {
+		"ft": 16384,
+		"iS": 384502,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/drafts/1(1).jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/Ilustracje Marta Płusa/drafts/1-1.jpeg": {
+		"ft": 16384,
+		"iS": 147266,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/drafts/1-1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/Ilustracje Marta Płusa/drafts/2(1) copy.jpeg": {
+		"ft": 16384,
+		"iS": 153729,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/drafts/2(1) copy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/Ilustracje Marta Płusa/drafts/2(1).jpeg": {
+		"ft": 16384,
+		"iS": 412425,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/drafts/2(1).jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/Ilustracje Marta Płusa/drafts/20180808 m.jpg": {
+		"ft": 16384,
+		"iS": 413844,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/drafts/20180808 m.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/Ilustracje Marta Płusa/drafts/20180808.jpg": {
+		"ft": 16384,
+		"iS": 324054,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/drafts/20180808.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/Ilustracje Marta Płusa/drafts/3.jpeg": {
+		"ft": 16384,
+		"iS": 376070,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/drafts/3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/Ilustracje Marta Płusa/drafts/Marta Płusa szkic 1.jpeg": {
+		"ft": 16384,
+		"iS": 2685486,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/drafts/Marta Płusa szkic 1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/design/Ilustracje Marta Płusa/Okładka cut.tif": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/Okładka cut.tif",
+		"oF": 0
+		},
+	"/design/Ilustracje Marta Płusa/Okładka wyrównanie.psd": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/Okładka wyrównanie.psd",
+		"oF": 0
+		},
+	"/design/Ilustracje Marta Płusa/Okładka.tif": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/Okładka.tif",
+		"oF": 0
+		},
+	"/design/Ilustracje Marta Płusa/Wersja anatomiczna cut.tif": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/Wersja anatomiczna cut.tif",
+		"oF": 0
+		},
+	"/design/Ilustracje Marta Płusa/Wersja anatomiczna.tif": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/design/Ilustracje Marta Płusa/Wersja anatomiczna.tif",
+		"oF": 0
+		},
 	"/docs/.htaccess": {
 		"cB": 0,
 		"ft": 8192,
@@ -381,6 +1359,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/docs/i/anatomia_norweskiego_okladka_p.jpg": {
+		"ft": 16384,
+		"iS": 314140,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/i/anatomia_norweskiego_okladka_p.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/docs/i/anatomia_tresc_16x9_min.jpg": {
 		"ft": 16384,
 		"iS": 259581,
@@ -504,6 +1493,14 @@
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
+		},
+	"/docs/order_one.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/order_one.html",
+		"oF": 0
 		},
 	"/docs/website_cover.svg": {
 		"ft": 2097152,
@@ -989,6 +1986,17 @@
 		"oF": 2,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/i/anatomia_norweskiego_okladka_p.jpg": {
+		"ft": 16384,
+		"iS": 314140,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/i/anatomia_norweskiego_okladka_p.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"/i/anatomia_tresc_16x9.jpg": {
