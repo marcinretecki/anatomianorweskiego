@@ -17,7 +17,12 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-7904644-17', { 'optimize_id': 'GTM-PPNK64M'});
+  gtag('config', 'UA-7904644-17', {
+    'optimize_id': 'GTM-PPNK64M',
+    'linker': {
+      'domains': ['nocnasowa.pl'],
+    },
+  });
   </script>
 
 
@@ -58,7 +63,7 @@
 </head>
 <body id="top">
 
-<header class="header-top header-top--fixed section-black">
+<header class="header-top header-top--fixed section-black" >
   <div id="header-anatomia" class="section-nav">
              <button class="btn btn-black btn-nav section-nav__toggle section-nav__toggle--anatomia js-open-nav" data-open-target="navMain">Menu
     </button><a data-ga-category="Header Nav" data-ga-action="Zamawiam" href="#zamowienia" class="btn btn-green btn-nav btn-nav--koszyk alignright js-koszyk">Zamówienia

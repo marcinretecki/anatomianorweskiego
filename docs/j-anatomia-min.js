@@ -382,14 +382,20 @@
         clickNo = 0;
 
         try {
-          ga('send', 'event', 'Cover', 'Anatomy Click', 'Reveal');
+          gtag('event', 'Anatomy Click', {
+            'event_category': 'Cover',
+            'event_label': 'Reveal'
+          });
         } catch (err) {}
       }
 
       var label = 'X: ' + Math.floor(coords.x) + '; Y: ' + Math.floor(coords.y);
 
       try {
-        ga('send', 'event', 'Cover', 'Anatomy Click', label);
+        gtag('event', 'Anatomy Click', {
+          'event_category': 'Cover',
+          'event_label': label
+        });
       } catch (err) {}
     }
 
