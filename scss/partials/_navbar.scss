@@ -162,32 +162,52 @@ a:hover .caret,
 .navbar__btn--white:focus,
 .navbar__btn--white:hover,
 .navbar__btn--white--active,
-.navbar__btn--white--active:visited,
-.js-active > .navbar__btn--white,
-.js-active > .navbar__btn--white:visited {
+.navbar__btn--white--active:visited {
   color: $font-dark;
   background: none;
 }
 
 .navbar__like {
-  padding: $space $space;
+  padding: $space $space-quarter;
   display: inline-block;
   vertical-align: top;
-  padding-bottom: 0;
 
   @include for-tablet-landscape-up {
-    padding: $space-half $space;
-    display:block;
-    float: right;
-    padding-bottom: inherit;
+    padding: $space-half $space-quarter;
   }
 }
 .navbar__like > iframe {
   border: none;
   overflow: hidden;
-  width: 124px;
+  width: 126px;
   height: 20px;
-  display: block
+  display: block;
+  margin: -2px 0;
+  @include for-tablet-landscape-up {
+    margin: 0;
+  }
+}
+
+.navbar__arrow {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index:120;
+  display: none;
+  background: linear-gradient(90deg, rgba(37,44,51,1) 0%, rgba(37,44,51,1) 67%, rgba(37,44,51,0) 100%) !important;
+}
+.navbar__arrow--right {
+  left: auto;
+  right: 0;
+  background: linear-gradient(270deg, rgba(37,44,51,1) 0%, rgba(37,44,51,1) 67%, rgba(37,44,51,0) 100%) !important;
+}
+.navbar__arrow--white {
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 67%, rgba(255,255,255,0) 100%) !important;
+}
+.navbar__arrow--right-white {
+  left: auto;
+  right: 0;
+  background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 67%, rgba(255,255,255,0) 100%) !important;
 }
 
 
