@@ -172,11 +172,13 @@ textarea:focus {
 .comment-form textarea {
 }
 .comment-form input {
-  width: 50%;
+  width: 100%;
+  @include for-tablet-landscape-up {
+    width: 50%;
+  }
 }
-.comment-form textarea,
-.comment-form input {
-  @media #{$m400} {
+.comment-form textarea {
+  @include for-phone-only {
     width: 100%;
   }
 }
@@ -197,38 +199,11 @@ input + .note {
   margin: 0 auto $space-half;
 }
 
-/* TRZEBA ujednolicić formy, tam gdzie 100% width */
 
-// Treningi
-.form-treningi {
-}
-.form-treningi .hidden-input {
-  display: none;
-}
 
-.form-treningi h4 {
-  margin: $space 0 0;
-}
-.form-treningi label,
-.form-treningi-email {
-  margin: $space-half $space-half 0 0;
-}
 
-.form-treningi input:checked + label {
-  background: $green;
-  color: $white;
-}
-.form-treningi input:checked + label:hover {
-  background: $green-hover;
-  color: $white;
-}
 
-.form-treningi-email {
-  border: 1px solid $beige;
-}
-.form-treningi-email:focus {
-  border-color: $dark;
-}
+
 
 //
 // Main search form
@@ -236,12 +211,24 @@ input + .note {
 .search-form {
   margin-bottom: $space-4;
 }
-.search-form .s {
+.search-form__flex {
+  display: flex;
+}
+.search-form__input {
   display: inline-block;
   width: 72.5%;
   margin: 0 2.5% 0 0;
   font: normal normal normal $size-1/normal $body-font;
+  flex: 1 1 auto;
 }
-.search-form .btn-search {
+.search-form__btn {
   width: 25%;
+  margin: 0;
+  padding: $space-half $space;
+  line-height: normal;
+  flex: 1;
+
+  @include for-tablet-portrait-up {
+    padding: $space-half $space-2;
+  }
 }

@@ -21,11 +21,14 @@
 .label--stripe {
   @include size-1;
   display: block;
-  margin-bottom: 0;
+  margin-bottom: $space-quarter;
   padding: 0;
 }
 .label--card {
   padding: 0 $space;
+}
+.label--card__muted {
+  line-height: $space * 1.5;
 }
 
 .input--stripe {
@@ -275,7 +278,7 @@
   margin-right: $space-half;
   vertical-align: baseline;
 
-  background-image: url('/c/i/shop/payments_lock.png');
+  background-image: url('/c/i/shop/payment_lock_g.png');
   background-size: auto $space;
   background-position: center;
   background-repeat: no-repeat;
@@ -288,6 +291,10 @@
   overflow: hidden;
   background: $beige;
 }
+.payment-card__stripe-logo {
+  width: 119px;
+  margin-top: $space-half;
+}
 
 .payment-bank {
 }
@@ -297,6 +304,7 @@
   margin: $space 0 0;
   width: 100%;
   padding: $space;
+  white-space: normal;
 }
 
 .stripe-form--blocked .payment__btn {
@@ -310,6 +318,34 @@
   color: $gray-on-dark;
 }
 
+
+
+.all-order-graph {
+  border-bottom: 1px solid #ddd9d2;
+  font-size:0;
+  line-height: 0;
+}
+
+.all-order-graph__bar {
+  position: relative;
+  vertical-align: bottom;
+  display: inline-block;
+  width: 3%;
+  margin-right: 0.33%;
+  background: #ddd9d2;
+}
+
+.all-order-graph__stat {
+  position: absolute;
+  left:0;
+  top: 100%;
+  display: none;
+  transform: translateX(-50%);
+}
+
+.all-order-graph__bar:hover .all-order-graph__stat {
+  display: block;
+}
 
 
 
@@ -462,7 +498,7 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: 100;
 
   width: 100%;
   padding: $space-2 $space-2 $space;

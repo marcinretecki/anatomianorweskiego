@@ -142,19 +142,7 @@
   }
 }
 
-.warsztaty-oslo-form {
-  color: $font-dark;
-}
-.warsztaty-oslo-form label {
-  display: block;
-  margin-bottom: 3px;
-  padding: 0;
-}
-.warsztaty-oslo-form input {
-  display: inline-block;
-  width: 100%;
-  margin-bottom: $space;
-}
+
 
 // Treningi Liczb i podobne tematy
 
@@ -216,35 +204,7 @@
   margin-top: $space;
 }
 
-//
-//  Table in position: static;
-//  used in norweskie zaimki dzierżawcze i zwrotne
-//
-.con-table {
-  width: 100%;
-  margin: 0 0 $space-2;
-  overflow: hidden;
-  text-align: left;
-  border-collapse: collapse;
-}
-.con-table td,
-.con-table th {
-  padding: $space-half $space;
-  margin: 0;
-  vertical-align: top;
-}
-.con-table td {
-  font-style: italic;
-}
-.con-table tr {
-  margin: 0;
-}
-.con-table tr + tr {
-  border-top: 1px solid $beige;
-}
-.con-table thead tr {
-  border-bottom: 1px solid $beige-border;
-}
+
 
 //  usefull for emoji
 // .inline-svg {

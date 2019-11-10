@@ -637,9 +637,9 @@ hr {
   @include size-5;
 }
 .size-6 {
-  @include size-6;
-  @media #{$m400} {
-    @include size-5;
+  @include size-5;
+  @include for-tablet-landscape-up {
+    @include size-6;
   }
 }
 
@@ -651,6 +651,10 @@ hr {
 }
 .color-gray {
   color: $gray;
+}
+
+.color-light {
+  color: $font-light;
 }
 
 .no-break {
