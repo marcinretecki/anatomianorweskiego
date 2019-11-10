@@ -1,6 +1,9 @@
 //
 //  Anatomia JS
 //
+
+//  @codekit-prepend quiet '_j-libs.js';
+
 (function() {
   'use strict';
 
@@ -498,57 +501,6 @@
 
 
   }, false);
-
-//
-// Open Nav when on small screen
-//
-function menuHandler(event) {
-  var eventTarget = event.target;
-
-  // jeśli to nie jest naszy przycisk, to koniec funkcji
-  if (!hasClass(eventTarget, 'js-open-nav')) {
-    return;
-  }
-
-  var openTarget = eventTarget.getAttribute('data-open-target'),
-    nav = document.getElementById(openTarget),
-    state = eventTarget.getAttribute('data-open-state');
-
-  if (!state) {
-    eventTarget.setAttribute('data-open-state', 'closed');
-    state = 'closed';
-  }
-
-  function closeMenu() {
-    // usuń event, który zamyka menu
-    document.removeEventListener('click', closeMenu, false);
-
-    eventTarget.setAttribute('data-open-state', 'closed');
-
-    // Animate
-    Velocity(nav, 'reverse', { display: 'none' });
-  }
-
-  function openMenu() {
-    // Dodaj event, który zamyka menu
-    document.addEventListener('click', closeMenu, false);
-
-    eventTarget.setAttribute('data-open-state', 'open');
-
-    // Animate
-    Velocity(
-      nav,
-      { translateY: [0, '-150%'] },
-      { duration: 400, easing: 'ease', display: 'block' }
-    );
-  }
-
-  // check if the menu is open
-  if (state === 'closed') {
-    openMenu();
-  }
-}
-document.addEventListener('click', menuHandler, false);
 
 
 //  End Anatomia JS

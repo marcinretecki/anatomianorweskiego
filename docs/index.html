@@ -63,22 +63,22 @@
 </head>
 <body id="top">
 
-<header class="header-top header-top--fixed section-black" role="banner">
-  <div id="header-anatomia" class="section-nav">
-             <button class="btn btn-black btn-nav section-nav__toggle section-nav__toggle--anatomia js-open-nav" data-open-target="navMain">Menu
-    </button><a data-ga-category="Header Nav" data-ga-action="Zamawiam" href="#zamowienia" class="btn btn-green btn-nav btn-nav--koszyk alignright js-koszyk">Zamówienia
-    </a><nav id="navMain" class="navbar navbar--anatomia section-black" aria-label="Navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-      <ul class="navbar__list">
-                 <li><a class="btn btn-black btn-nav" data-ga-category="Header Nav" data-ga-action="Anatomia" href="#anatomia">Anatomia norweskiego
-        </a></li><li><a class="btn btn-black btn-nav" data-ga-category="Header Nav" data-ga-action="Opinie" href="#opinie">Opinie
-        </a></li><li><a class="btn btn-black btn-nav" data-ga-category="Header Nav" data-ga-action="Spis treści" href="#tresci">Spis treści
-        </a></li><li><a class="btn btn-black btn-nav" data-ga-category="Header Nav" data-ga-action="Autorzy" href="#autorzy">Autorzy
-        </a></li><li><a class="btn btn-black btn-nav" data-ga-category="Header Nav" data-ga-action="FAQ" href="#faq">Pytania
-        </a></li>
+<div class="header-spacer section-black"></div>
+<header class="header-top header-top--fixed headroom section-black" role="banner">
+  <div id="header-anatomia" class="section-nav"><!--
+    --><a class="btn btn-black btn-nav" data-ga-category="Header Nav" data-ga-action="Anatomia" href="#anatomia">Anatomia norweskiego</a><!--
+    --><a data-ga-category="Header Nav" data-ga-action="Zamawiam" href="#zamowienia" class="btn btn-green btn-nav btn-nav--koszyk alignright js-koszyk">Zamówienia</a><!--
+    --><nav id="navMain" class="navbar navbar--anatomia section-black" aria-label="Navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+      <ul class="navbar__list navbar__list--main"><!--
+        --><li><a class="btn btn-black btn-nav" data-ga-category="Header Nav" data-ga-action="Opinie" href="#opinie">Opinie</a></li><!--
+        --><li><a class="btn btn-black btn-nav" data-ga-category="Header Nav" data-ga-action="Spis treści" href="#tresci">Spis treści</a></li><!--
+        --><li><a class="btn btn-black btn-nav" data-ga-category="Header Nav" data-ga-action="Autorzy" href="#autorzy">Autorzy</a></li><!--
+        --><li><a class="btn btn-black btn-nav" data-ga-category="Header Nav" data-ga-action="FAQ" href="#faq">Pytania</a></li>
       </ul>
     </nav>
+    <button data-nav-to-scroll="navMain" class="btn btn-nav navbar__btn navbar__arrow js-navbar-scroll js-navbar-scroll--left" data-ga-category="Header Nav" data-ga-action="Scroll Menu" data-ga-label="Left"><</button>
+    <button  data-nav-to-scroll="navMain" class="btn btn-nav navbar__btn navbar__arrow navbar__arrow--right js-navbar-scroll js-navbar-scroll--right" data-ga-category="Header Nav" data-ga-action="Scroll Menu" data-ga-label="Right">></button>
   </div>
-
 </header>
 
 <header id="anatomia" class="section-beige">
@@ -151,7 +151,7 @@
 
       <div class="main-column">
 
-        <p class="h2 centered size-3">Z naszą małą pomocą możesz samodzielnie nauczyć&nbsp;się norweskiej&nbsp;gramatyki.</p>
+        <p class="h2 centered anatomia-h2-our-help">Z naszą małą pomocą możesz samodzielnie nauczyć&nbsp;się norweskiej&nbsp;gramatyki.</p>
 
         <h2 class="size-2 centered">Cała gramatyka w&nbsp;przyjaznej formie</h2>
 
@@ -714,7 +714,7 @@
 <script src='https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js'></script>
 <script src='https://unpkg.com/scrollama@1.4.3/build/scrollama.js'></script>
 
-<!-- <script src="https://nocnasowa.pl/c/j/j-min.js"></script> -->
-<script src="http://livecopy.nocnasowa.pl/c/j/j-min.js"></script>
+<script src="https://nocnasowa.pl/c/j/j-min.js"></script>
+<!-- <script src="http://livecopy.nocnasowa.pl/c/j/j-min.js"></script> -->
 <script src="j-anatomia-min.js"></script>
 </body>

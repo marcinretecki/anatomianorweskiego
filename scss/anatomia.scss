@@ -91,30 +91,27 @@ a:active {
   musimy przekształcić normalny navbar na tablet-portrait-up
   wtedy będzie łatwiej go themować w zależności od kontentu
  */
-.navbar--anatomia {
+// .navbar--anatomia {
+//   display: none;
+//   z-index: -1;
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 100%;
+//   transform: translate(0, -150%);
 
-  display: none;
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 100%;
-  transform: translate(0, -150%);
-
-  @include for-tablet-landscape-up {
-    display: inline-block;
-    position: static;
-    transform: translate(0, 0);
-    z-index: 0;
-  }
-}
-// .navbar--anatomia .btn-nav {
-//   @include for-tablet-portrait-up {
-//     display: block;
-//     padding-top: $space;
-//     padding-bottom: $space;
-//     text-align: left;
+//   @include for-tablet-landscape-up {
+//     display: inline-block;
+//     position: static;
+//     transform: translate(0, 0);
+//     z-index: 0;
 //   }
+// }
+
+// .navbar--anatomia .btn-nav {
+//   display: block;
+//   text-align: left;
+
 //   @include for-tablet-landscape-up {
 //     display: inline-block;;
 //     padding-top: $space-half;
@@ -123,25 +120,27 @@ a:active {
 //   }
 // }
 //  when the menu hides, buttons change
-.section-nav__toggle--anatomia {
-  display: block;
-  //padding-top: $space;
-  //padding-bottom: $space;
-  text-align: left;
+// .section-nav__toggle--anatomia {
+//   display: inline-block;
+//   text-align: left;
 
-  @include for-tablet-landscape-up {
-    display: none;
-  }
-}
+//   @include for-tablet-landscape-up {
+//     display: none;
+//   }
+// }
 
 .btn-nav--koszyk {
-  padding: 0 $space;
-  padding-top: $space-quarter;
-  padding-bottom: $space-quarter;
-  margin: $space-quarter;
+  padding: $space-half $space;
+  margin: $space-half;
   border-radius: 3px;
+
+  @include for-tablet-portrait-up {
+    padding: $space-half $space-2;
+  }
+
   @include for-tablet-landscape-up {
     margin: $space-quarter $space;
+    padding: $space-quarter $space;
   }
 }
 
@@ -160,10 +159,9 @@ a:active {
   width: 35 * $space;
   max-width: 100%;
   margin: 0 auto;
-  padding-top: $space-6;
+  padding-top: $space-4;
 
   @include for-tablet-landscape-up {
-    padding-top: $space-8;
   }
 }
 .anatomia-title {
@@ -216,6 +214,13 @@ a:active {
   overflow: hidden;
 }
 
+
+.anatomia-h2-our-help {
+  @include size-2;
+  @include for-tablet-landscape-up {
+    @include size-3;
+  }
+}
 
 
 
