@@ -246,21 +246,21 @@
 .section-box__box {
   position: relative;
   z-index: 1;
-  padding: $space $space-2;
+  padding: $space;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.9);
   color: $font-dark;
 
-  @media #{$m770} {
-    padding: $space-half $space;
+  @include for-tablet-landscape-up {
+    padding: $space $space-2;
   }
 }
 
 .section-box__box--kto {
-  margin: 0 #{- $space-2};
+  margin: 0;
 
-  @media #{$m770} {
-    margin: 0;
+  @include for-tablet-landscape-up {
+    margin: 0 #{- $space-2};
   }
 }
 
@@ -364,6 +364,14 @@
   }
 }
 
+.section-single-workshop {
+  padding: $space;
+  @include for-tablet-portrait-up {
+    $padding: $space-2 $space;
+  }
+}
+
+
 //
 // Background images
 //
@@ -420,9 +428,6 @@
   position: relative;
   padding: $space-2 0;
   background-image: url('/c/i/warsztaty/mapa_valkyriegata_min.png');
-  @media #{$m770} {
-    padding: 0;
-  }
 }
 
 .img-wp {
