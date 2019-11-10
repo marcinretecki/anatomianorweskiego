@@ -325,3 +325,42 @@ li .np + p {
 .rodzina-kristin:after {
   background-position: -300px -300px;
 }
+
+
+
+//
+//  Table in position: static;
+//  used in norweskie zaimki dzierżawcze i zwrotne
+//
+.con-table {
+  width: 100%;
+  margin: 0 0 $space-2;
+  overflow: hidden;
+  text-align: left;
+  border-collapse: collapse;
+}
+.con-table td,
+.con-table th {
+  padding: $space-half $space;
+  margin: 0;
+  vertical-align: top;
+}
+.con-table td {
+  font-style: italic;
+}
+.con-table tr {
+  margin: 0;
+}
+.con-table tr + tr {
+  border-top: 1px solid $beige;
+}
+.con-table thead tr {
+  border-bottom: 1px solid $beige-border;
+}
+
+
+//  tables that are hard on phones
+.wide-con-table-wrapper {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}

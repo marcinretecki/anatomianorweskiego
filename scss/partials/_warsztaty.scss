@@ -1,0 +1,54 @@
+//
+//  Form Warsztaty
+//
+
+.warsztaty-oslo-form {
+  color: $font-dark;
+  padding: $space;
+
+  @include for-tablet-portrait-up {
+
+    padding: $space-2;
+  }
+}
+
+
+.label--warsztaty {
+  @include size-1;
+  display: block;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.label--warsztaty-muted {
+  @include size-0;
+  color: $font-light;
+  display: block;
+  margin-bottom: $space-quarter;
+  padding: 0;
+}
+
+.input--warsztaty {
+  @include font-body;
+  display: block;
+  padding: $space-half $space;
+  border: 1px solid $beige-border;
+  border-radius: 3px;
+  line-height: 1.1875;
+  background: $white;
+  display: inline-block;
+  width: 100%;
+  // margin-bottom: $space;
+}
+
+.textarea--warsztaty {
+  @include font-body;
+  display: block;
+  padding: $space-half $space;
+  border: 1px solid $beige-border;
+  border-radius: 3px;
+  line-height: 1.1875;
+  background: $white;
+  width: 100%;
+  height: $space-8;
+}

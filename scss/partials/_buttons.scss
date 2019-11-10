@@ -257,17 +257,6 @@ input.btn-blue:hover {
 // Button options
 //
 
-// Button Nav
-//  tu będzie do usunięcia margin, bo jest w navbar__list
-.btn-nav {
-  padding-left: $space;
-  padding-right: $space;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-  font-family: $bariol_reg;
-}
-
 // Size
 .btn-small {
   padding: $space-quarter $space;
@@ -301,12 +290,6 @@ input.btn-blue:hover {
   padding: $space-half $space;
   width: auto;
 }
-.btn-search {
-  padding: $space-half $space;
-  margin: 0;
-  font-size: $size-1;
-  line-height: normal;
-}
 
 .check {
   width: auto;
@@ -325,30 +308,29 @@ input.btn-blue:hover {
 }
 
 //
-// Icons
+//  Icons
 //
 
-.btn-icon {
+//  Icons should have no space after svg
+.icon {
+  height: $size-1;
   width: auto;
-  vertical-align: middle;
-  padding: $space-quarter $space-half;
-  border-color: rgba(255, 255, 255, 0.5);
-  margin-top: 0;
-  margin-bottom: 0;
-
-  @media #{$m400} {
-    transform: scale(0.8);
-    margin: -($space * 0.2);
-  }
+  vertical-align: bottom;
+  margin-right: $space-quarter;
 }
-.btn-icon:hover,
-.btn-icon:focus {
-  background: rgba(0, 0, 0, 0.1);
+.icon--search {
+  fill: $gray-on-dark;
+}
+button:hover .icon--search {
+  fill: $white;
+}
+.icon--more {
+  fill: $font-light;
+}
+button:hover .icon--more {
+  fill: $font-dark;
 }
 
-.btn-icon.btn-beige {
-  border-color: transparent;
-} // to jest hack, pomyśl w przyszłości jak to poprawić
 
 .i-fb {
   padding-left: 30px;
@@ -421,3 +403,6 @@ a.m {
   background: url('/c/i/file.png') no-repeat scroll 0 0;
   content: '';
 }
+
+
+

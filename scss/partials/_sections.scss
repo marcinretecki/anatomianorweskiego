@@ -172,6 +172,10 @@
   padding-top: $space-6;
   padding-bottom: $space-4;
 }
+.section-6-6 {
+  padding-top: $space-6;
+  padding-bottom: $space-6;
+}
 
 .section-8-0 {
   padding-top: $space-8;
@@ -454,32 +458,7 @@
     padding: $space-2;
   }
 }
-.letter-stamped {
-  margin-top: $space;
-  padding: $space-4 $space-8;
-  background: $white url('/c/i/stamp.png') 95% $space-2 no-repeat;
-  @media #{$m905} {
-    padding: $space-2 $space-4;
-    background-size: 76px 90px;
-    background-position: 99% 1%;
-  }
-  @media #{$m400} {
-    background-image: none;
-    padding: $space $space-2;
-  }
-}
 
-.l-stamped {
-  border-radius: 3px;
-  background: $white url('/c/i/stamp.png') 95% $space-2 no-repeat;
-  @media #{$m905} {
-    background-size: 76px 90px;
-    background-position: 99% 1%;
-  }
-  @media #{$m400} {
-    background-image: none;
-  }
-}
 
 .section-dark .section-beige hr {
   border-color: $gray;
@@ -791,7 +770,7 @@
 .aside-entry ol,
 .aside-entry ul,
 .section-entry aside p {
-  font-size: $size-0;
+  @include size-0;
   margin-bottom: $space-half;
 }
 .aside-entry p:last-child,
@@ -857,14 +836,13 @@
   vertical-align: bottom;
   margin: 0 $space-half;
 }
-.avatar-bottom {
-  position: absolute;
-  right: 100%;
-  margin-right: $space-half;
-  background: $gray;
-  vertical-align: text-bottom;
-  @media #{$m770} {
-    position: static;
+.avatar-comment {
+  margin: 0 $space-half 0 0;
+  @include for-tablet-landscape-up {
+    position: absolute;
+    right: 100%;
+    background: $gray;
+    vertical-align: text-bottom;
   }
 }
 .avatar-32 {
@@ -876,9 +854,8 @@
   height: 160px;
 }
 .comment-author {
+  @include size-1;
   margin-right: $space-half;
-  font-size: $size-2;
-  font-style: normal;
 }
 .comment time {
   color: $dark-gray;
@@ -893,19 +870,9 @@
 .comment p,
 .comment ul,
 .comment ol {
-  line-height: 1.25;
+  line-height: $line-0;
 }
 
-.comment-reply-form {
-  padding: $space-half 0 $space-half $space-2;
-  border-left: 1px solid $gray;
-  margin-left: -$space-2;
-  @media #{$m770} {
-    margin-left: 0;
-    border: 0;
-    padding-left: 0;
-  }
-}
 
 /*????*/
 .attachment-blog {
