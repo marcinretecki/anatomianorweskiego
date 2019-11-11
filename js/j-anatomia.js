@@ -291,6 +291,18 @@
     var i = 1;
     var l = opiniaParagraphs.length;
 
+    function openP(p) {
+      Velocity(
+        p,
+        'slideDown',
+        {
+          duration: 500,
+          easing: 'easeInOut',
+          display: 'block',
+        }
+      );
+    }
+
     Velocity(
       target,
       'fadeOut',
@@ -308,19 +320,6 @@
         openP( opiniaParagraphs[i] );
       }
     }
-
-    function openP(p) {
-      Velocity(
-        p,
-        'slideDown',
-        {
-          duration: 500,
-          easing: 'easeInOut',
-          display: 'block',
-        }
-      );
-    }
-
 
 
   }
@@ -482,15 +481,21 @@
 
   }
 
+  window.addEventListener(
+    'load',
+    function() {
+      var spy = new Gumshoe('#navMain a', {
+        navClass: 'js-active',
+        events: true,
 
-  var spy = new Gumshoe('#navMain a', {
-    navClass: 'js-active',
-    events: true,
-
-    offset: function () {
-      return document.getElementById('navMain').getBoundingClientRect().height;
+        offset: function () {
+          return document.getElementById('navMain').getBoundingClientRect().height;
+        },
+      });
     },
-  });
+    false
+  );
+
 
   // Listen for activate events
   document.addEventListener('gumshoeActivate', function (event) {
