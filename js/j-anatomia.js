@@ -2,8 +2,6 @@
 //  Anatomia JS
 //
 
-//  @codekit-prepend quiet '_j-libs.js';
-
 (function() {
   'use strict';
 
@@ -485,20 +483,29 @@
   }
 
 
-  window.addEventListener('load', function() {
+  var spy = new Gumshoe('#navMain a', {
+    navClass: 'js-active',
+    events: true,
 
-    // Gumshoe
-    // track sections so user knows where he is
-    //
-    gumshoe.init({
-      activeClass: 'btn-black--active',
-      selector: '#header-anatomia a',
-      offset: 200
-    });
+    offset: function () {
+      return document.getElementById('navMain').getBoundingClientRect().height;
+    },
+  });
 
+  // Listen for activate events
+  document.addEventListener('gumshoeActivate', function (event) {
+    //  Add class
+    event.detail.link.classList.add('btn-black--active', 'navbar__btn--active');
 
-    anCoverAnimate();
+    scrollNavToActiveEl('navMain');
 
+  }, false);
+
+  // Listen for activate events
+  document.addEventListener('gumshoeDeactivate', function (event) {
+
+    //  remove class
+    event.detail.link.classList.remove('btn-black--active', 'navbar__btn--active');
 
   }, false);
 

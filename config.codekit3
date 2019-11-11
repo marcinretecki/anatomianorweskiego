@@ -2111,23 +2111,12 @@
 		"oAP": "/index_presale.html",
 		"oF": 2
 		},
-	"/js/_j-libs.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/_j-libs-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/js/j-anatomia.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
-		"mi": 0,
-		"oA": 2,
+		"mi": 1,
+		"oA": 0,
 		"oAP": "/docs/j-anatomia-min.js",
 		"oF": 3,
 		"sC": 1,
