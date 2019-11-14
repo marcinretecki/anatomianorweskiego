@@ -297,6 +297,10 @@ a:active {
   }
 }
 
+.anatomia-slides--animating {
+  scroll-snap-type: unset;
+}
+
 .anatomia-slides__item {
   scroll-snap-align: start;
   flex-shrink: 0;

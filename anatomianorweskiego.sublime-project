@@ -2,6 +2,41 @@
 	"folders":
 	[
 		{
+			"file_exclude_patterns":
+			[
+				"*.idb",
+				"*.so",
+				"*.db",
+				"*.dll",
+				"*.class",
+				"*.lib",
+				"*.sublime-workspace",
+				"*.pyo",
+				"*.obj",
+				"*.psd",
+				"*.suo",
+				"*.ncb",
+				"*.pdb",
+				"*.o",
+				"*.dylib",
+				"*.pyc",
+				".DS_Store",
+				"*.sdf",
+				"*.exe",
+				"*.a",
+        "*.codekit?",
+        "*.jpg",
+        "*.png"
+			],
+			"folder_exclude_patterns":
+			[
+				"CVS",
+				".git",
+				".svn",
+				".hg",
+        "docs",
+        "design"
+			],
 			"path": "."
 		}
 	]

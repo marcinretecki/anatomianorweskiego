@@ -4,16 +4,96 @@
 		"selected_items":
 		[
 			[
+				"utm",
+				"utmUrl"
+			],
+			[
+				"btn",
+				"btn-small"
+			],
+			[
+				"padding-",
+				"padding-right\tproperty"
+			],
+			[
+				"par",
+				"parseInt"
+			],
+			[
+				"order",
+				"orderCount"
+			],
+			[
+				"ord",
+				"orderCount"
+			],
+			[
+				"or",
+				"orderCount"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			],
+			[
+				"le",
+				"letter-spacing\tproperty"
+			],
+			[
+				"fon",
+				"font-weight\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"mai",
+				"main-column"
+			],
+			[
+				"for",
+				"forEach"
+			],
+			[
+				"op",
+				"opinieBlock"
+			],
+			[
+				"remove",
+				"removeChild"
+			],
+			[
+				"back",
+				"background-repeat\tproperty"
+			],
+			[
+				"background-",
+				"background-image\tproperty"
+			],
+			[
+				"class",
+				"className"
+			],
+			[
+				"nor",
+				"norweskiego"
+			],
+			[
+				"backg",
+				"background-attachment\tproperty"
+			],
+			[
+				"circle",
+				"circles"
+			],
+			[
 				"space-",
 				"space-half"
 			],
 			[
 				"ms",
 				"msg_start"
-			],
-			[
-				"order",
-				"orderConfirm"
 			],
 			[
 				"tra",
@@ -54,10 +134,6 @@
 			[
 				"form",
 				"form_sum"
-			],
-			[
-				"class",
-				"classList"
 			],
 			[
 				"check",
@@ -220,14 +296,6 @@
 				"start-1"
 			],
 			[
-				"le",
-				"length"
-			],
-			[
-				"back",
-				"background-color"
-			],
-			[
 				"create",
 				"createElement"
 			],
@@ -266,10 +334,6 @@
 			[
 				"pop",
 				"popup_cookie"
-			],
-			[
-				"text",
-				"text-transform"
 			],
 			[
 				"ucze",
@@ -392,10 +456,6 @@
 				"border-radius"
 			],
 			[
-				"background-",
-				"background-position"
-			],
-			[
 				"1em",
 				"1em"
 			],
@@ -454,54 +514,6 @@
 			[
 				"a",
 				"a\tAnchor Link"
-			],
-			[
-				"id",
-				"id"
-			],
-			[
-				"port",
-				"portfolio"
-			],
-			[
-				"php",
-				"php\tphp-<?"
-			],
-			[
-				"p-nav",
-				"p-nav"
-			],
-			[
-				"prev",
-				"prev"
-			],
-			[
-				"func",
-				"function"
-			],
-			[
-				"c-",
-				"c-big"
-			],
-			[
-				"right",
-				"right"
-			],
-			[
-				"no",
-				"normal"
-			],
-			[
-				"vi",
-				"visible"
-			],
-			[
-				"15px",
-				"15px"
-			],
-			[
-				"left",
-				"left"
 			]
 		]
 	},
@@ -511,16 +523,16 @@
 			"file": "scss/anatomia.scss",
 			"settings":
 			{
-				"buffer_size": 7059,
+				"buffer_size": 11088,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "test.html",
+			"file": "js/j-anatomia.js",
 			"settings":
 			{
-				"buffer_size": 23177,
+				"buffer_size": 10832,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -529,7 +541,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 23231,
+				"buffer_size": 50921,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -547,12 +559,12 @@
 		"selected_items":
 		[
 			[
-				"js",
-				"JsPrettier: Format Code"
+				"",
+				"Indentation: Reindent Lines"
 			],
 			[
-				"",
-				"Arithmetic"
+				"js",
+				"JsPrettier: Format Code"
 			],
 			[
 				"pret",
@@ -656,10 +668,46 @@
 	"expanded_folders":
 	[
 		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/framework_master",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/js",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/linki",
 		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/scss"
 	],
 	"file_history":
 	[
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/anatomianorweskiego.sublime-project",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/docs/j-anatomia-min.js",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/order_one.html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/js/_j-libs.js",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework Master/scss/partials/_navbar.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/c/s.css",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/docs/anatomia.css",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/test.html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/js/j-anatomia.js",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/docs/order_one.html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/linki/index.html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/config.codekit3",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/docs/linki/index.html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/framework_master/scss/partials/_layout.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/.htaccess",
+		"/Users/marcinretecki/Sites/nocnasowa/live/.htaccess",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/framework_master/scss/partials/_typography.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/opinie.html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/framework_master/scss/partials/_grids.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/build/j-anatomia-min.js",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/arrow-right.svg",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/arrow-left.svg",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/framework_master/scss/partials/_scaffolding.scss",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/index_test_photos.html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/index.html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/index_normal_sale.html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/data-types:book .html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/index_test.html",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/build/.htaccess",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/build/website_cover.svg",
+		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/test copy.html",
+		"/Users/marcinretecki/Sites/nocnasowa/Design/Anatomia/anatomianorweskiego.com/website_cover.svg",
+		"/Users/marcinretecki/Sites/nocnasowa/Design/Anatomia/anatomianorweskiego.com/website_cover_test.svg",
 		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop-checkout.php",
 		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-products.php",
 		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/index.php",
@@ -676,8 +724,6 @@
 		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/stripe-functions.php",
 		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-order-info.php",
 		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/nocnasowa_theme/shop/shop-emails.php",
-		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/js/j-anatomia.js",
-		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/index.html",
 		"/Users/marcinretecki/Sites/nocnasowa/anatomianorweskiego/build/index.html",
 		"/Users/marcinretecki/Sites/nocnasowa/livecopy/.htaccess",
 		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/js/j-checkout.js",
@@ -748,7 +794,6 @@
 		"/Users/marcinretecki/Library/Application Support/Sublime Text 3/Packages/User/StandardFormat.sublime-settings",
 		"/Users/marcinretecki/Library/Application Support/Sublime Text 3/Packages/StandardFormat/StandardFormat.sublime-settings",
 		"/Users/marcinretecki/Sites/nocnasowa/Framework NocnaSowa Theme/s.scss",
-		"/Users/marcinretecki/Sites/nocnasowa/live/.htaccess",
 		"/Users/marcinretecki/Library/Application Support/Sublime Text 2/Packages/Language - English/README_en_US.txt",
 		"/Users/marcinretecki/Library/Application Support/Sublime Text 2/Packages/Language - English/en_US.aff",
 		"/Users/marcinretecki/Library/Application Support/Sublime Text 2/Packages/Language - English/en_US.dic",
@@ -757,37 +802,7 @@
 		"/Users/marcinretecki/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-12.md",
 		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/hoyre/h-2.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/hoyre/h-4.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/hoyre/h-6.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/hoyre/h-3.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/foran/f-2.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/hoyre/h-5.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/all-posts.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/ideer.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/kart.html",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/start-1.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-10.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-7.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-8.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-11.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-2.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-13.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-14.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-4.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-15.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-9.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/midpoint/mid-140.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-3.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-5.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/venstre/v-6.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/Gruntfile.js",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/package.json",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/midpoint/140.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/1.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/dora-til-venstre.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/dora-foran.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/index.md",
-		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/dora-til-hoyre.md"
+		"/Users/marcinretecki/Sites/nocnasowa/slottet-mysteriet/posts/hoyre/h-4.md"
 	],
 	"find":
 	{
@@ -798,6 +813,7 @@
 		"height": 112.0,
 		"where_history":
 		[
+			""
 		]
 	},
 	"find_state":
@@ -805,6 +821,109 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"anCoverAnimate",
+			"initGumShoe",
+			"Gumshoe",
+			"initGumShoe",
+			"init",
+			"Gumshoe",
+			"Zamów teraz",
+			"zamaw",
+			"active",
+			"navbar__list",
+			"btn-nav",
+			"bnt-nav",
+			"btn-nav",
+			"css",
+			"debounce",
+			"window",
+			"anatomia-spis-columns",
+			"label",
+			"utm",
+			"utm.",
+			"gtag",
+			"koszyk",
+			"ga(",
+			"Zamów teraz",
+			"data-ga-ca",
+			"order-minicart",
+			"bag",
+			"js-order",
+			"add",
+			"bagLink",
+			"updateBagString",
+			"bagElements",
+			"bagItems",
+			"bag-items",
+			"j-min.js",
+			".js",
+			"anatomianorweskiego.com",
+			"norweskiego",
+			"\"",
+			"&rdquo;",
+			"&ldquo;",
+			"<blockquote>",
+			"blockquote",
+			"max-45",
+			"anatomia-order__one-book",
+			"anatomia-order__item-wrap",
+			"\"scroll\"",
+			"no-scroll",
+			"\n.anatomia-slides__item--anatomia_tresc {\n  background-image: url(\"i/anatomia_tresc_16x9_min.jpg\");\n}",
+			"uniwer",
+			"<div class=\"centered\">",
+			"<h3 class=\"centered\">",
+			"btn-white",
+			"white-space",
+			"wrap",
+			"z ",
+			"target=\"",
+			"h2",
+			"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error nam voluptas, sunt, recusandae consectetur dolores repellendus ipsum. Iure soluta necessitatibus beatae atque architecto corrupti iusto fuga, commodi nisi possimus!</p>",
+			"section-white",
+			"anatomia",
+			"section-white",
+			"#1",
+			"anatomia-title__p",
+			"po wydaniu",
+			"//\n",
+			"anchor",
+			"anchors",
+			"showDebugMsg",
+			"conso",
+			"try",
+			"an-circle-23",
+			"an-circle-21",
+			"an-circle-19",
+			"an-circle-17",
+			"an-circle-15",
+			"an-circle-12",
+			"an-circle-10",
+			"an-circle-8",
+			"an-circle-6",
+			"an-circle-4",
+			"an-circle-2",
+			"an-circle-23",
+			"an-circle-12",
+			"an-circle-11",
+			"an-circle-21",
+			"an-circle-23",
+			"\"an-circle-2\"",
+			"an-circle-2",
+			"path-",
+			"mask=\"url(#",
+			"#Mask-Copy",
+			"Mask-Copy-",
+			"mask=\"Mask",
+			"xlink:href=\"/",
+			"<image xlink",
+			"chris.jpg",
+			"<use id=",
+			"</use>",
+			"red",
+			"failure",
+			"failure\"",
+			"failu"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -822,65 +941,179 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
 					"file": "scss/anatomia.scss",
-					"semi_transient": true,
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7059,
+						"buffer_size": 11088,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								299,
-								290
+								9190,
+								9190
 							]
 						],
 						"settings":
 						{
+							"SL.14.region_keys":
+							[
+							],
+							"SL.28.region_keys":
+							[
+							],
+							"SL.33.region_keys":
+							[
+							],
+							"SL.42.region_keys":
+							[
+							],
+							"SL.43.region_keys":
+							[
+							],
+							"SL.45.region_keys":
+							[
+							],
+							"SL.46.region_keys":
+							[
+							],
+							"SL.54.region_keys":
+							[
+							],
+							"SL.58.region_keys":
+							[
+							],
+							"SL.59.region_keys":
+							[
+							],
+							"SL.74.region_keys":
+							[
+							],
+							"SL.80.region_keys":
+							[
+							],
+							"SL.81.region_keys":
+							[
+							],
+							"SL.85.region_keys":
+							[
+							],
 							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 7082.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 1,
-					"file": "test.html",
+					"file": "js/j-anatomia.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 23177,
+						"buffer_size": 10832,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12862,
-								12851
+								7194,
+								7194
 							]
 						],
 						"settings":
 						{
-							"SL.139.region_keys":
+							"SL.86.region_keys":
+							[
+							],
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3753.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 50921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								50913,
+								50913
+							]
+						],
+						"settings":
+						{
+							"SL.16.region_keys":
+							[
+							],
+							"SL.17.region_keys":
+							[
+							],
+							"SL.18.region_keys":
+							[
+							],
+							"SL.35.region_keys":
+							[
+							],
+							"SL.48.region_keys":
+							[
+							],
+							"SL.58.region_keys":
+							[
+							],
+							"SL.59.region_keys":
+							[
+							],
+							"SL.60.region_keys":
+							[
+							],
+							"SL.62.region_keys":
+							[
+							],
+							"SL.70.region_keys":
+							[
+							],
+							"SL.76.region_keys":
+							[
+							],
+							"SL.82.region_keys":
+							[
+							],
+							"SL.85.region_keys":
+							[
+							],
+							"SL.87.region_keys":
 							[
 							],
 							"syntax": "Packages/HTML/HTML.sublime-syntax",
@@ -888,40 +1121,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3468.0,
+						"translation.y": 17707.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 23231,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								23231
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -955,7 +1158,7 @@
 		"cols":
 		[
 			0.0,
-			0.309439528024,
+			0.485998813004,
 			1.0
 		],
 		"rows":
@@ -981,7 +1184,7 @@
 	"project": "anatomianorweskiego.sublime-project",
 	"replace":
 	{
-		"height": 82.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -31,6 +31,16 @@
     utmCampaign: '',
   };
 
+
+  //  Init
+  window.addEventListener(
+    'load',
+    function() {
+      init();
+    },
+    false
+  );
+
   //  init
   function init() {
     showDebugMsg('init');
@@ -40,6 +50,7 @@
     updateUtm();
     updateOrderString();
     listenToOrderCount();
+    initGumShoe();
   }
 
   function updateUtm() {
@@ -265,15 +276,20 @@
     showDebugMsg(slide);
     showDebugMsg(slides);
 
-    Velocity(
-      slide,
-      'scroll',
-      { duration: 500,
+    Velocity(slide, 'scroll', {
+        duration: 600,
         container: slides,
         axis: 'x',
-        easing: 'easeOutQuart',
+        easing: 'easeOutCubic',
         queue: false,
-       }
+        begin: function() {
+          //  remove snapping to allow animation
+          slides.classList.add('anatomia-slides--animating');
+        },
+        complete: function() {
+          slides.classList.remove('anatomia-slides--animating');
+        },
+      }
     );
 
   }
@@ -337,22 +353,33 @@
     // Gumshoe
     // track sections so user knows where he is
     //
-    window.gumshoe.init({
-      activeClass: 'btn-black--active',
-      selector: '#header-anatomia a',
-      offset: 200,
+    var spy = new Gumshoe('#navMain a', {
+      navClass: 'js-active',
+      events: true,
+
+      offset: function () {
+        return document.getElementById('navMain').getBoundingClientRect().height;
+      },
     });
   }
 
 
-  //  Init
-  window.addEventListener(
-    'load',
-    function() {
-      init();
-    },
-    false
-  );
+  // Listen for activate events
+  document.addEventListener('gumshoeActivate', function (event) {
+    //  Add class
+    event.detail.link.classList.add('btn-black--active', 'navbar__btn--active');
+
+    scrollNavToActiveEl('navMain');
+
+  }, false);
+
+  // Listen for activate events
+  document.addEventListener('gumshoeDeactivate', function (event) {
+
+    //  remove class
+    event.detail.link.classList.remove('btn-black--active', 'navbar__btn--active');
+
+  }, false);
 
 
 
@@ -481,38 +508,8 @@
 
   }
 
-  window.addEventListener(
-    'load',
-    function() {
-      var spy = new Gumshoe('#navMain a', {
-        navClass: 'js-active',
-        events: true,
-
-        offset: function () {
-          return document.getElementById('navMain').getBoundingClientRect().height;
-        },
-      });
-    },
-    false
-  );
 
 
-  // Listen for activate events
-  document.addEventListener('gumshoeActivate', function (event) {
-    //  Add class
-    event.detail.link.classList.add('btn-black--active', 'navbar__btn--active');
-
-    scrollNavToActiveEl('navMain');
-
-  }, false);
-
-  // Listen for activate events
-  document.addEventListener('gumshoeDeactivate', function (event) {
-
-    //  remove class
-    event.detail.link.classList.remove('btn-black--active', 'navbar__btn--active');
-
-  }, false);
 
 
 //  End Anatomia JS
