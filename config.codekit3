@@ -1073,6 +1073,14 @@
 		"oAP": "/docs/.htaccess",
 		"oF": 1
 		},
+	"/docs/404.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/404.html",
+		"oF": 0
+		},
 	"/docs/anatomia-norweskiego-fb.png": {
 		"ft": 32768,
 		"iS": 242097,
@@ -2086,6 +2094,14 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"/img_top.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/img_top.html",
+		"oF": 2
 		},
 	"/index pre illustration.html": {
 		"cB": 0,
