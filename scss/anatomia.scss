@@ -208,10 +208,15 @@ a:active {
 
 
 .anatomia-cover-wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: - $space;
+  margin-right: - $space;
 
   overflow: hidden;
+
+  @include for-tablet-portrait-up {
+    margin-left: auto;
+  margin-right: auto;
+  }
 }
 
 

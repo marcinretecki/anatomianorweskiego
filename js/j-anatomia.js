@@ -7,7 +7,7 @@
 
   var debug = false;
 
-  if ( ( location.hostname === '' ) || ( location.hostname === 'localhost' ) ) {
+  if ( ( location.hostname === '' ) || ( location.hostname === 'localhost' ) || ( location.hostname === 'grenaten.local' ) ) {
     debug = true;
     showDebugMsg('Debug mode on');
   }
@@ -41,7 +41,9 @@
     false
   );
 
-  //  init
+  //
+  //  Init
+  //
   function init() {
     showDebugMsg('init');
     //  after refresh order would be wrong
@@ -51,8 +53,12 @@
     updateOrderString();
     listenToOrderCount();
     initGumShoe();
+    anCoverAnimate();
   }
 
+  //
+  //  Update UTM from tracker
+  //
   function updateUtm() {
     if (window.ga === undefined) {
       return;
@@ -394,12 +400,37 @@
 
     var circle1 = svg.getElementById('circle-1');
 
-    var clickNo = 0;
+    var firstAnimation = true;
 
+    //  coordinates
+    //  Created once for document
+    var pt = svg.createSVGPoint();
+
+    var animationNo = 0;
+
+    //  'head' || 'body'
+    var circleSide = 'head';
+
+    //  instantiate the scrollama
+    var scroller = scrollama();
+
+    // setup the instance, pass callback functions
+    scroller
+      .setup({
+        step: '.step', // required - class name of trigger steps
+        offset: 0.4,
+      })
+      .onStepEnter(function() {
+        startOnScrollAnimation();
+      });
+
+    showDebugMsg(svg.clientWidth);
 
     //  animate
     function animateMask( c ) {
-      Velocity(c, {opacity: 1}, {duration: 150, easing: 'easeInCubic'});
+      showDebugMsg('animation no: ' + animationNo);
+
+      Velocity(c, {opacity: [1, 0]}, {duration: 150, easing: 'easeInCubic'});
       Velocity(c, {opacity: 0}, {duration: 7000, easing: 'easeOutSine',
         complete: function() {
           maskEl.removeChild(c);
@@ -409,12 +440,16 @@
 
     function reveal() {
       Velocity(revealEl, 'stop');
-      Velocity(revealEl, {opacity: 1}, {duration: 450, easing: 'easeInCubic'});
+      Velocity(revealEl, {opacity: [1, 0]}, {duration: 450, easing: 'easeInCubic'});
       Velocity(revealEl, {opacity: 0}, {duration: 7000, delay: 450, easing: 'easeOutSine'});
     }
 
 
+    //
     //  return new circle
+    //  example circle
+    //  <circle id="circle-1" cx="653" cy="522" r="147" opacity="0" fill="url(#radialGradient)"></circle>
+    //
     function createNewCircle( coords ) {
 
       var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
@@ -424,31 +459,46 @@
       circle.setAttribute('opacity', 0);
       circle.setAttribute('fill', 'url(#radialGradient)');
 
-
-      //  <circle id="circle-1" cx="653" cy="522" r="147" opacity="0" fill="url(#radialGradient)"></circle>
-
       maskEl.appendChild(circle);
 
       return circle;
 
     }
 
+    //
+    //  Single circle animation
+    //  @event is optional
+    //
+    function createSingleAnimation(event) {
+      var coords;
+      var circle;
+      var label;
+      var randomCoords;
 
-    function handleClicks(event) {
+      //  if it comes from click
+      if (event !== undefined) {
+        showDebugMsg('createSingleAnimation has event');
+        showDebugMsg('event.clientX: ' + event.clientX);
+        showDebugMsg('event.clientY: ' + event.clientY);
+        coords = convertCoords({
+          x: event.clientX,
+          y: event.clientY,
+        });
 
-      showDebugMsg(event);
+      }
+      else {
+        showDebugMsg('createSingleAnimation no event');
+        coords = convertCoords(getRandomCoords());
+      }
 
-      var coords = getCoords(event);
-
-      var circle = createNewCircle( coords );
+      //testRandomCoords(coords);
+      circle = createNewCircle( coords );
 
       animateMask(circle);
 
-      clickNo += 1;
-
-      if (clickNo > 10 ) {
+      if (animationNo > 10 ) {
         reveal();
-        clickNo = 0;
+        animationNo = 0;
 
         try {
           gtag('event', 'Anatomy Click', {
@@ -458,7 +508,7 @@
         } catch (err) {}
       }
 
-      var label = 'X: ' + Math.floor(coords.x) + '; Y: ' + Math.floor(coords.y);
+      label = 'X: ' + Math.floor(coords.x) + '; Y: ' + Math.floor(coords.y);
 
       try {
         gtag('event', 'Anatomy Click', {
@@ -468,23 +518,24 @@
       } catch (err) {}
     }
 
-    //  add event listener
-    svg.addEventListener('click', function(event) {
-      handleClicks(event);
-      event.stopPropagation();
-    });
 
-
-    //  coordinates
-    var pt = svg.createSVGPoint();  // Created once for document
+    function getRandomNum(min, max) {
+      min = Math.ceil(min);
+      max = Math.floor(max);
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
 
     //  return obj
-    function getCoords(event) {
-        pt.x = event.clientX;
-        pt.y = event.clientY;
+    function convertCoords(coords) {
+        pt.x = coords.x;
+        pt.y = coords.y;
+
+        showDebugMsg('convertCoords, cursorpt');
 
         // The cursor point, translated into svg coordinates
         var cursorpt =  pt.matrixTransform(svg.getScreenCTM().inverse());
+
+        showDebugMsg('x: ' + cursorpt.x + ' | y: ' + cursorpt.y);
 
         return {
           x: cursorpt.x,
@@ -492,20 +543,213 @@
         };
     }
 
+    //
+    //  return obj with random coordinates
+    //  coordinates are always on other side than previously
+    //
+    function getRandomCoords() {
+      //  get first the position of svg
+      var x = svg.getBoundingClientRect().left;
+      var y = svg.getBoundingClientRect().top;
+      var randX;
+      var randY;
+      var xRange;
+      var yRange;
+      var svgWidth = svg.clientWidth;
+      var svgHeight = svg.clientHeight;
+
+      showDebugMsg(circleSide);
+
+      //  these come from proportions of image
+      //  measurements are in sketch file
+      if (circleSide === 'head') {
+        xRange = {
+          min: svgWidth * 0.40,
+          max: svgWidth - (svgWidth * 0.38),
+        };
+        yRange = {
+          min: svgHeight * 0.15,
+          max: svgHeight * 0.68,
+        }
+        //  change side
+        circleSide = 'body';
+      }
+      else {
+        //  body
+        xRange = {
+          min: svgWidth * 0.15,
+          max: svgWidth - (svgWidth * 0.15),
+        };
+        yRange = {
+          min: svgHeight * 0.75,
+          max: svgHeight - (svgHeight * 0.05),
+        }
+
+        //  change side
+        circleSide = 'head';
+      }
+
+      // showDebugMsg('xRange: ' + xRange.min + ' – ' + xRange.max);
+      // showDebugMsg('yRange: ' + yRange.min + ' – ' + yRange.max);
+
+      randX = getRandomNum(xRange.min, xRange.max);
+      randY = getRandomNum(yRange.min, yRange.max);
+
+      showDebugMsg('randX: ' + randX);
+      showDebugMsg('randY: ' + randY);
+
+      return {
+        x: x + randX,
+        y: y + randY,
+      };
+
+    }
+
+    // test
+    function testRandomCoords(coords) {
+
+      if (coords === undefined) {
+        coords = convertCoords(getRandomCoords());
+      }
+      showDebugMsg(coords);
+
+      var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+      circle.setAttribute('r', 20);
+      circle.setAttribute('cx', coords.x);
+      circle.setAttribute('cy', coords.y);
+      circle.setAttribute('opacity', 0.75);
 
 
 
-    //  instantiate the scrollama
-    var scroller = scrollama();
+      if (circleSide === 'head') {
+        circle.setAttribute('fill', '#900');
+      } else {
+        circle.setAttribute('fill', '#090');
+      }
 
-    // setup the instance, pass callback functions
-    scroller
-      .setup({
-        step: '.step', // required - class name of trigger steps
-        offset: 0.5,
-      })
-      .onStepEnter(function() { animateMask(circle1); });
+      svg.appendChild(circle);
 
+    }
+    // testRandomCoords();
+    // testRandomCoords();
+    // testRandomCoords();
+    // testRandomCoords();
+    // testRandomCoords();
+    // testRandomCoords();
+    // testRandomCoords();
+    // testRandomCoords();
+    // testRandomCoords();
+    // testRandomCoords();
+    // testRandomCoords();
+
+
+    function easing(p) {
+      var m=p-1;
+      return 1-m*m*m*m;
+    }
+
+    //  @return []
+    function generateIntervals(duration, no) {
+
+      var i;
+      var times = [];
+      var linearInteval = duration / (no - 1);
+      var currentFraction;
+      var interpolation;
+      var testSum = 0;
+
+      for (i = 0; i <= (no - 1); i++) {
+
+        currentFraction = (linearInteval * i) / duration;
+        // showDebugMsg('currentFraction: ' + currentFraction);
+
+        interpolation = easing(currentFraction);
+
+        // showDebugMsg('interpolation: ' + interpolation);
+
+        times[i] = interpolation * duration;
+
+      }
+
+      showDebugMsg(times);
+      showDebugMsg(testSum);
+
+      return times;
+
+    }
+
+    //
+    //  Intro animations
+    //
+    function startOnScrollAnimation() {
+
+      if (!firstAnimation) {
+        return;
+      }
+      firstAnimation = false;
+
+      var i;
+      var maxCircles = 16;
+      var last = false;
+      var num;
+      var timeSum = 0;
+      var duration = 3200;
+      var intervals = generateIntervals(duration, maxCircles);
+
+      function startTimer(time, last) {
+
+        if (last) {
+          setTimeout(function() {
+            reveal();
+          }, time + 50);
+        } else {
+          setTimeout(function() {
+            createSingleAnimation();
+          }, time);
+        }
+      }
+
+      //  first circle is always the same
+      animateMask(circle1);
+
+      // //  trigger 9 more random animations
+      for (i = 1; i <= maxCircles; i++) {
+
+        if (intervals[i] !== undefined) {
+          timeSum = intervals[i];
+        }
+        showDebugMsg(timeSum);
+
+        if (i === maxCircles) {
+          last = true;
+        }
+
+        startTimer(timeSum, last);
+
+
+      }
+
+    }
+
+
+    function handleClicks(event) {
+
+      showDebugMsg(event);
+      animationNo += 1;
+      createSingleAnimation(event);
+
+    }
+
+    //  add event listener
+    svg.addEventListener('click', function(event) {
+      handleClicks(event);
+      event.stopPropagation();
+    });
+
+
+
+
+  //  End anCoverAnimate()
   }
 
 
