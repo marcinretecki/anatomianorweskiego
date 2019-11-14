@@ -233,7 +233,7 @@ a:active {
 .anatomia-main-points__item {
   padding-left: $space;
 
-  @include for-tablet-portrait-up {
+  @include for-tablet-landscape-up {
     float: left;
     width: 50%;
     padding-left: 0;
@@ -244,7 +244,7 @@ a:active {
 }
 
 .anatomia-main-points__item:nth-child(-n + 2) {
-  @include for-tablet-portrait-up {
+  @include for-tablet-landscape-up {
     margin: 0 0 $space;
   }
 }
@@ -255,7 +255,7 @@ a:active {
   padding-left: $space-half;
   padding-right: $space-half;
 
-  @include for-tablet-portrait-up {
+  @include for-tablet-landscape-up {
     padding-left: $space;
     padding-right: $space-quarter;
   }
@@ -267,9 +267,13 @@ a:active {
   left: 0;
   top: 0;
   height: 100%;
-  width: 2px;
+  width: 1px;
   border-radius: 3px;
   background: $green;
+
+  @include for-tablet-portrait-up {
+    width: 2px;
+  }
 }
 
 
