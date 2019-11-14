@@ -44,6 +44,14 @@
 		"opt": 1,
 		"q": 100
 		},
+	"/404.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/docs/404.html",
+		"oF": 2
+		},
 	"/anatomia-norweskiego-fb.png": {
 		"ft": 32768,
 		"iS": 242097,
@@ -1494,14 +1502,6 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/docs/order_one.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/docs/order_one.html",
-		"oF": 0
-		},
 	"/docs/website_cover.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -2142,9 +2142,9 @@
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/docs/order_one.html",
-		"oF": 2
+		"oF": 3
 		},
 	"/scss/anatomia.scss": {
 		"aP": 1,
@@ -4451,7 +4451,7 @@
 			"flagValue": -1
 			},
 		"keep_classnames": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"keep_fargs": {
@@ -4459,7 +4459,7 @@
 			"flagValue": -1
 			},
 		"keep_fnames": {
-			"active": 0,
+			"active": 1,
 			"flagValue": -1
 			},
 		"keep_infinity": {
