@@ -438,10 +438,19 @@
       });
     }
 
-    function reveal() {
+    function reveal(event) {
       Velocity(revealEl, 'stop');
       Velocity(revealEl, {opacity: [1, 0]}, {duration: 450, easing: 'easeInCubic'});
       Velocity(revealEl, {opacity: 0}, {duration: 7000, delay: 450, easing: 'easeOutSine'});
+
+      if (event !== undefined) {
+        try {
+          gtag('event', 'Anatomy Click', {
+            'event_category': 'Cover',
+            'event_label': 'Reveal'
+          });
+        } catch (err) {}
+      }
     }
 
 
@@ -485,6 +494,16 @@
           y: event.clientY,
         });
 
+        //  Event is sent only for clicks
+        label = 'X: ' + Math.floor(coords.x) + '; Y: ' + Math.floor(coords.y);
+
+        try {
+          gtag('event', 'Anatomy Click', {
+            'event_category': 'Cover',
+            'event_label': label
+          });
+        } catch (err) {}
+
       }
       else {
         showDebugMsg('createSingleAnimation no event');
@@ -497,25 +516,9 @@
       animateMask(circle);
 
       if (animationNo > 10 ) {
-        reveal();
+        reveal(event);
         animationNo = 0;
-
-        try {
-          gtag('event', 'Anatomy Click', {
-            'event_category': 'Cover',
-            'event_label': 'Reveal'
-          });
-        } catch (err) {}
       }
-
-      label = 'X: ' + Math.floor(coords.x) + '; Y: ' + Math.floor(coords.y);
-
-      try {
-        gtag('event', 'Anatomy Click', {
-          'event_category': 'Cover',
-          'event_label': label
-        });
-      } catch (err) {}
     }
 
 
@@ -728,6 +731,13 @@
 
 
       }
+
+      try {
+        gtag('event', 'Anatomy Click', {
+          'event_category': 'Cover',
+          'event_label': 'On Scroll Animation'
+        });
+      } catch (err) {}
 
     }
 
