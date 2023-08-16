@@ -290,7 +290,7 @@
 		"oAP": "/docs/i/anatomia_binding_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
@@ -308,6 +308,19 @@
 		"q": 100,
 		"rq": 75
 		},
+	"/docs/i/anatomia_cover_ipad.jpg": {
+		"ft": 16384,
+		"iS": 78239,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/docs/i/anatomia_cover_ipad.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
 	"/docs/i/anatomia_detail_16x9_min.jpg": {
 		"ft": 16384,
 		"iS": 190472,
@@ -316,7 +329,7 @@
 		"oAP": "/docs/i/anatomia_detail_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
@@ -355,7 +368,7 @@
 		"oAP": "/docs/i/anatomia_detail_3x4_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
@@ -368,7 +381,7 @@
 		"oAP": "/docs/i/anatomia_endpaper_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
@@ -459,7 +472,7 @@
 		"oAP": "/docs/i/anatomia_norweskiego_okladka_p.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
@@ -472,7 +485,7 @@
 		"oAP": "/docs/i/anatomia_tresc_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
@@ -485,7 +498,7 @@
 		"oAP": "/docs/i/anatomia_tresc_3x4_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
@@ -498,7 +511,7 @@
 		"oAP": "/docs/i/anatomia_zakladka_16x9_min.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"ou": "lpckwebp-none",
 		"q": 100,
 		"rq": 75
@@ -920,6 +933,19 @@
 		"q": 100,
 		"rq": 75
 		},
+	"/i/anatomia_cover_ipad.jpg": {
+		"ft": 16384,
+		"iS": 341539,
+		"jF": 0,
+		"oA": 1,
+		"oAP": "/i/anatomia_cover_ipad.jpg",
+		"oF": 1,
+		"oIPL": 0,
+		"opt": 0,
+		"ou": "lpckwebp-none",
+		"q": 100,
+		"rq": 75
+		},
 	"/i/anatomia_detail_16x9.jpg": {
 		"ft": 16384,
 		"iS": 312672,
@@ -1175,6 +1201,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/index pre illustration.html",
+		"oF": 0
+		},
+	"/index-print.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/index-print.html",
 		"oF": 0
 		},
 	"/index.html": {
