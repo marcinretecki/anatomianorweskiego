@@ -527,23 +527,22 @@ a:active {
   padding:0 $space;
   @include for-tablet-portrait-up {
     float: left;
+    width: 60%;
+  }
+  @include for-tablet-landscape-up {
     width: 50%;
   }
 }
 .anatomia-order__body {
-  padding-right: 33%;
-  @include for-tablet-portrait-up {
-    padding-right: 0;
-  }
 }
 
 .anatomia-order__col--img {
-  width: 33%;
-  position: absolute;
-  top: 0;
-  right: 0;
+  display: none;
   @include for-tablet-portrait-up {
-    position: static;
+    display: block;
+    width: 40%;
+  }
+  @include for-tablet-landscape-up {
     width: 50%;
   }
 }
